@@ -1,7 +1,7 @@
-# Mesen-X
+# Mesen-Y
 
-Mesen-X is a fork of Mesen, which is a cross-platform NES/Famicom emulator for Windows & Linux built in C++ and C#.
-The original Mesen project has paused development, and this fork is meant to collect patches contributed by the community.
+Mesen-Y is a fork of Mesen-X, which is a fork of Mesen, it is an NES/Famicom emulator built in C++ and C#.
+The original Mesen project has stopped development, and this fork is meant to collect patches contributed by the community.
 
 Changes include:
 * Support for newer versions of Mono, for running Mesen on Linux
@@ -10,10 +10,9 @@ Changes include:
 * Replaced VRC7 synth code with Nuked-OPLL
 * Debugger improvements, for [Alchemy65](https://github.com/AlchemicRaker/alchemy65)
 
-[Original website (https://www.mesen.ca)](https://www.mesen.ca)  
-[Documentation](https://novasquirrel.github.io/Mesen-X/index.html)
+This fork contains more but minor changes, also just develop for short time.
 
-You should probably use [Mesen2](https://mesen.ca/) instead if you are able to.
+You should probably use [Mesen2](https://github.com/SourMesen/Mesen2) instead if you are able to.
 
 ## Development Builds
 
