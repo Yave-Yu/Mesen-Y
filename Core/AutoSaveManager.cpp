@@ -3,6 +3,7 @@
 #include "Console.h"
 #include "EmulationSettings.h"
 #include "SaveStateManager.h"
+#include "BatteryManager.h"
 
 AutoSaveManager::AutoSaveManager(shared_ptr<Console> console)
 {
@@ -20,6 +21,11 @@ AutoSaveManager::AutoSaveManager(shared_ptr<Console> console)
 					if(targetTime <= 0) {
 						if(!console->IsDebuggerAttached()) {
 							console->GetSaveStateManager()->SaveState(_autoSaveSlot, showMessage);
+							if(!console->GetRomFilePath().empty() && console->GetMapper())
+							{
+								//Also auto save battery
+								console->SaveBatteries();
+							}	
 						}
 						targetTime = (double)console->GetSettings()->GetAutoSaveDelay(showMessage) * 60 * 1000;
 						_timer.Reset();

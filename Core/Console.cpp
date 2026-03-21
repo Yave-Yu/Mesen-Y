@@ -558,6 +558,11 @@ VirtualFile Console::GetPatchFile()
 	return (VirtualFile)_patchFilename;
 }
 
+string Console::GetRomFilePath()
+{
+	return _romFilepath;
+}
+
 RomInfo Console::GetRomInfo()
 {
 	return _mapper ? _mapper->GetRomInfo() : (RomInfo {});
