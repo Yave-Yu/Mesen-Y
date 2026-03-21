@@ -27,33 +27,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.picPalette = new System.Windows.Forms.PictureBox();
-			((System.ComponentModel.ISupportInitialize)(this.picPalette)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// picPalette
-			// 
-			this.picPalette.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.picPalette.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.picPalette.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.picPalette.Location = new System.Drawing.Point(0, 0);
-			this.picPalette.Margin = new System.Windows.Forms.Padding(1);
-			this.picPalette.Name = "picPalette";
-			this.picPalette.Size = new System.Drawing.Size(338, 338);
-			this.picPalette.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.picPalette.TabIndex = 1;
-			this.picPalette.TabStop = false;
-			this.picPalette.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picPalette_MouseDown);
-			// 
-			// ctrlPaletteDisplay
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.picPalette);
-			this.Name = "ctrlPaletteDisplay";
-			this.Size = new System.Drawing.Size(338, 338);
-			((System.ComponentModel.ISupportInitialize)(this.picPalette)).EndInit();
-			this.ResumeLayout(false);
+            this.picPalette = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picPalette)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // picPalette
+            // 
+            this.picPalette.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picPalette.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPalette.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picPalette.Location = new System.Drawing.Point(0, 0);
+            this.picPalette.Margin = new System.Windows.Forms.Padding(1);
+            this.picPalette.Name = "picPalette";
+            this.picPalette.Size = new System.Drawing.Size(338, 312);
+            this.picPalette.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPalette.TabIndex = 1;
+            this.picPalette.TabStop = false;
+            this.picPalette.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picPalette_MouseDown);
+            // 
+            // ctrlPaletteDisplay
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.picPalette);
+            this.Name = "ctrlPaletteDisplay";
+            this.Size = new System.Drawing.Size(338, 312);
+            ((System.ComponentModel.ISupportInitialize)(this.picPalette)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 
