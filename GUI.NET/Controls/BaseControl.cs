@@ -69,6 +69,19 @@ namespace Mesen.GUI.Controls
 					base.AutoScaleDimensions = value; 
 				}
 			}
-		} 		
-	}
+		}
+
+	  private void InitializeComponent()
+	  {
+            this.SuspendLayout();
+            // 
+            // BaseControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Name = "BaseControl";
+            this.ResumeLayout(false);
+
+	  }
+   }
 }

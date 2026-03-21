@@ -27,16 +27,17 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.SuspendLayout();
-			// 
-			// ctrlRenderer
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Name = "ctrlRenderer";
-			this.MouseLeave += new System.EventHandler(this.ctrlRenderer_MouseLeave);
-			this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ctrlRenderer_MouseMove);
-			this.ResumeLayout(false);
+            this.SuspendLayout();
+            // 
+            // ctrlRenderer
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Name = "ctrlRenderer";
+            this.Size = new System.Drawing.Size(150, 138);
+            this.MouseLeave += new System.EventHandler(this.ctrlRenderer_MouseLeave);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ctrlRenderer_MouseMove);
+            this.ResumeLayout(false);
 
 		}
 

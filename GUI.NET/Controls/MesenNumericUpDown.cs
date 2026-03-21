@@ -227,80 +227,79 @@ namespace Mesen.GUI.Controls
 
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.txtValue = new System.Windows.Forms.TextBox();
-			this.btnUp = new System.Windows.Forms.Button();
-			this.btnDown = new System.Windows.Forms.Button();
-			this.pnlButtons = new System.Windows.Forms.Panel();
-			this.pnlButtons.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// txtValue
-			// 
-			this.txtValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-			this.txtValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.txtValue.Location = new System.Drawing.Point(1, 3);
-			this.txtValue.Margin = new System.Windows.Forms.Padding(0);
-			this.txtValue.Name = "txtValue";
-			this.txtValue.Size = new System.Drawing.Size(44, 13);
-			this.txtValue.TabIndex = 0;
-			this.txtValue.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
-			this.txtValue.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtValue_KeyDown);
-			this.txtValue.Validated += new System.EventHandler(this.txtValue_Validated);
-			// 
-			// btnUp
-			// 
-			this.btnUp.Location = new System.Drawing.Point(1, -1);
-			this.btnUp.Margin = new System.Windows.Forms.Padding(0);
-			this.btnUp.Name = "btnUp";
-			this.btnUp.Size = new System.Drawing.Size(15, 11);
-			this.btnUp.TabIndex = 2;
-			this.btnUp.TabStop = false;
-			this.btnUp.UseVisualStyleBackColor = true;
-			this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
-			this.btnUp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_MouseDown);
-			this.btnUp.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_MouseUp);
-			// 
-			// btnDown
-			// 
-			this.btnDown.Location = new System.Drawing.Point(1, 9);
-			this.btnDown.Margin = new System.Windows.Forms.Padding(0);
-			this.btnDown.Name = "btnDown";
-			this.btnDown.Size = new System.Drawing.Size(15, 11);
-			this.btnDown.TabIndex = 3;
-			this.btnDown.TabStop = false;
-			this.btnDown.UseVisualStyleBackColor = true;
-			this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
-			this.btnDown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_MouseDown);
-			this.btnDown.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_MouseUp);
-			// 
-			// pnlButtons
-			// 
-			this.pnlButtons.Controls.Add(this.btnDown);
-			this.pnlButtons.Controls.Add(this.btnUp);
-			this.pnlButtons.Dock = System.Windows.Forms.DockStyle.Right;
-			this.pnlButtons.Location = new System.Drawing.Point(47, 0);
-			this.pnlButtons.Margin = new System.Windows.Forms.Padding(0);
-			this.pnlButtons.Name = "pnlButtons";
-			this.pnlButtons.Size = new System.Drawing.Size(15, 21);
-			this.pnlButtons.TabIndex = 1;
-			//
-			// tmrRepeat
-			//
-			this.tmrRepeat = new Timer(components);
-			this.tmrRepeat.Tick += tmrRepeat_Tick;
-			// 
-			// MesenNumericUpDown
-			// 
-			this.Controls.Add(this.txtValue);
-			this.Controls.Add(this.pnlButtons);
-			this.MaximumSize = new System.Drawing.Size(10000, 21);
-			this.MinimumSize = new System.Drawing.Size(0, 21);
-			this.Name = "MesenNumericUpDown";
-			this.Size = new System.Drawing.Size(62, 21);
-			this.pnlButtons.ResumeLayout(false);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.components = new System.ComponentModel.Container();
+            this.txtValue = new System.Windows.Forms.TextBox();
+            this.btnUp = new System.Windows.Forms.Button();
+            this.btnDown = new System.Windows.Forms.Button();
+            this.pnlButtons = new System.Windows.Forms.Panel();
+            this.tmrRepeat = new System.Windows.Forms.Timer(this.components);
+            this.pnlButtons.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // txtValue
+            // 
+            this.txtValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtValue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtValue.Location = new System.Drawing.Point(1, 3);
+            this.txtValue.Margin = new System.Windows.Forms.Padding(0);
+            this.txtValue.Name = "txtValue";
+            this.txtValue.Size = new System.Drawing.Size(44, 14);
+            this.txtValue.TabIndex = 0;
+            this.txtValue.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            this.txtValue.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtValue_KeyDown);
+            this.txtValue.Validated += new System.EventHandler(this.txtValue_Validated);
+            // 
+            // btnUp
+            // 
+            this.btnUp.Location = new System.Drawing.Point(1, -1);
+            this.btnUp.Margin = new System.Windows.Forms.Padding(0);
+            this.btnUp.Name = "btnUp";
+            this.btnUp.Size = new System.Drawing.Size(15, 11);
+            this.btnUp.TabIndex = 2;
+            this.btnUp.TabStop = false;
+            this.btnUp.UseVisualStyleBackColor = true;
+            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
+            this.btnUp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_MouseDown);
+            this.btnUp.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_MouseUp);
+            // 
+            // btnDown
+            // 
+            this.btnDown.Location = new System.Drawing.Point(1, 9);
+            this.btnDown.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDown.Name = "btnDown";
+            this.btnDown.Size = new System.Drawing.Size(15, 11);
+            this.btnDown.TabIndex = 3;
+            this.btnDown.TabStop = false;
+            this.btnDown.UseVisualStyleBackColor = true;
+            this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
+            this.btnDown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_MouseDown);
+            this.btnDown.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_MouseUp);
+            // 
+            // pnlButtons
+            // 
+            this.pnlButtons.Controls.Add(this.btnDown);
+            this.pnlButtons.Controls.Add(this.btnUp);
+            this.pnlButtons.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlButtons.Location = new System.Drawing.Point(47, 0);
+            this.pnlButtons.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlButtons.Name = "pnlButtons";
+            this.pnlButtons.Size = new System.Drawing.Size(15, 21);
+            this.pnlButtons.TabIndex = 1;
+            // 
+            // MesenNumericUpDown
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.txtValue);
+            this.Controls.Add(this.pnlButtons);
+            this.MaximumSize = new System.Drawing.Size(10000, 21);
+            this.MinimumSize = new System.Drawing.Size(0, 21);
+            this.Name = "MesenNumericUpDown";
+            this.Size = new System.Drawing.Size(62, 21);
+            this.pnlButtons.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
 
 		/// <summary> 
