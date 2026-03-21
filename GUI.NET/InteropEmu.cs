@@ -1641,8 +1641,8 @@ namespace Mesen.GUI
 
 		ShowLagCounter = 0x80000,
 
-		SilenceTriangleHighFreq = 0x100000,
-		ReduceDmcPopping = 0x200000,
+		DisableSquarePhaseReset = 0x100000,
+		UseLinearSquareMixer = 0x200000,
 
 		DisableBackground = 0x400000,
 		DisableSprites = 0x800000,
@@ -1932,6 +1932,7 @@ namespace Mesen.GUI
 
 		IncreaseSpeed,
 		DecreaseSpeed,
+		NormalSpeed,
 		MaxSpeed,
 
 		Pause,
@@ -1947,6 +1948,8 @@ namespace Mesen.GUI
 		SetScale4x,
 		SetScale5x,
 		SetScale6x,
+		SetScale7x,
+		SetScale8x,
 		ToggleFullscreen,
 		ToggleFps,
 		ToggleGameTimer,
