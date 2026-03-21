@@ -176,9 +176,22 @@ namespace FastColoredTextBoxNS
             get { return Items.toolTip; }
             set { Items.toolTip = value; }
         }
-    }
 
-    [System.ComponentModel.ToolboxItem(false)]
+	  private void InitializeComponent()
+	  {
+            this.SuspendLayout();
+            // 
+            // AutocompleteMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Name = "AutocompleteMenu";
+            this.ResumeLayout(false);
+
+	  }
+   }
+
+   [System.ComponentModel.ToolboxItem(false)]
     public class AutocompleteListView : UserControl
     {
         public event EventHandler FocussedItemIndexChanged;

@@ -7109,12 +7109,15 @@ namespace FastColoredTextBoxNS
 
         private void InitializeComponent()
         {
-            SuspendLayout();
+            this.SuspendLayout();
             // 
             // FastColoredTextBox
             // 
-            Name = "FastColoredTextBox";
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Name = "FastColoredTextBox";
+            this.ResumeLayout(false);
+
         }
 
         /// <summary>

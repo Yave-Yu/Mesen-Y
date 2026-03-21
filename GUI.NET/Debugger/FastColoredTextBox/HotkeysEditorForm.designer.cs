@@ -66,13 +66,13 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgv.GridColor = System.Drawing.SystemColors.Control;
-            this.dgv.Location = new System.Drawing.Point(12, 28);
+            this.dgv.Location = new System.Drawing.Point(12, 26);
             this.dgv.Name = "dgv";
             this.dgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgv.RowHeadersVisible = false;
             this.dgv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(525, 278);
+            this.dgv.Size = new System.Drawing.Size(525, 257);
             this.dgv.TabIndex = 0;
             this.dgv.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgv_RowsAdded);
             // 
@@ -106,9 +106,9 @@
             // btAdd
             // 
             this.btAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btAdd.Location = new System.Drawing.Point(13, 322);
+            this.btAdd.Location = new System.Drawing.Point(13, 297);
             this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(75, 23);
+            this.btAdd.Size = new System.Drawing.Size(75, 21);
             this.btAdd.TabIndex = 1;
             this.btAdd.Text = "Add";
             this.btAdd.UseVisualStyleBackColor = true;
@@ -117,9 +117,9 @@
             // btRemove
             // 
             this.btRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btRemove.Location = new System.Drawing.Point(103, 322);
+            this.btRemove.Location = new System.Drawing.Point(103, 297);
             this.btRemove.Name = "btRemove";
-            this.btRemove.Size = new System.Drawing.Size(75, 23);
+            this.btRemove.Size = new System.Drawing.Size(75, 21);
             this.btRemove.TabIndex = 2;
             this.btRemove.Text = "Remove";
             this.btRemove.UseVisualStyleBackColor = true;
@@ -129,9 +129,9 @@
             // 
             this.btCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btCancel.Location = new System.Drawing.Point(460, 322);
+            this.btCancel.Location = new System.Drawing.Point(460, 297);
             this.btCancel.Name = "btCancel";
-            this.btCancel.Size = new System.Drawing.Size(75, 23);
+            this.btCancel.Size = new System.Drawing.Size(75, 21);
             this.btCancel.TabIndex = 4;
             this.btCancel.Text = "Cancel";
             this.btCancel.UseVisualStyleBackColor = true;
@@ -140,9 +140,9 @@
             // 
             this.btOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btOk.Location = new System.Drawing.Point(379, 322);
+            this.btOk.Location = new System.Drawing.Point(379, 297);
             this.btOk.Name = "btOk";
-            this.btOk.Size = new System.Drawing.Size(75, 23);
+            this.btOk.Size = new System.Drawing.Size(75, 21);
             this.btOk.TabIndex = 3;
             this.btOk.Text = "OK";
             this.btOk.UseVisualStyleBackColor = true;
@@ -151,7 +151,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 16);
             this.label1.TabIndex = 5;
@@ -160,9 +160,9 @@
             // btResore
             // 
             this.btResore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btResore.Location = new System.Drawing.Point(194, 322);
+            this.btResore.Location = new System.Drawing.Point(194, 297);
             this.btResore.Name = "btResore";
-            this.btResore.Size = new System.Drawing.Size(105, 23);
+            this.btResore.Size = new System.Drawing.Size(105, 21);
             this.btResore.TabIndex = 6;
             this.btResore.Text = "Restore default";
             this.btResore.UseVisualStyleBackColor = true;
@@ -171,10 +171,10 @@
             // HotkeysEditorForm
             // 
             this.AcceptButton = this.btOk;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.btCancel;
-            this.ClientSize = new System.Drawing.Size(549, 357);
+            this.ClientSize = new System.Drawing.Size(549, 330);
             this.Controls.Add(this.btResore);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btCancel);
@@ -182,8 +182,8 @@
             this.Controls.Add(this.btRemove);
             this.Controls.Add(this.btAdd);
             this.Controls.Add(this.dgv);
-            this.MaximumSize = new System.Drawing.Size(565, 700);
-            this.MinimumSize = new System.Drawing.Size(565, 395);
+            this.MaximumSize = new System.Drawing.Size(565, 649);
+            this.MinimumSize = new System.Drawing.Size(565, 368);
             this.Name = "HotkeysEditorForm";
             this.ShowIcon = false;
             this.Text = "Hotkeys Editor";

@@ -37,5 +37,18 @@ namespace FastColoredTextBoxNS
                     e.Graphics.DrawString(Text, Font, brush, new RectangleF(1, 1, ClientSize.Width - 2, ClientSize.Height - 2), sf);
             }
         }
-    }
+
+	  private void InitializeComponent()
+	  {
+            this.SuspendLayout();
+            // 
+            // UnfocusablePanel
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Name = "UnfocusablePanel";
+            this.ResumeLayout(false);
+
+	  }
+   }
 }
