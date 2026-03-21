@@ -30,6 +30,7 @@ protected:
 	uint8_t _sweepDivider = 0;
 	uint32_t _sweepTargetPeriod = 0;
 	uint16_t _realPeriod = 0;
+	EmulationSettings* _settings = _console->GetSettings();
 	
 	bool IsMuted()
 	{
@@ -158,7 +159,7 @@ public:
 				SetPeriod((_realPeriod & 0xFF) | ((value & 0x07) << 8));
 
 				//The sequencer is restarted at the first value of the current sequence.
-				_dutyPos = 0;
+				if(!_settings->CheckFlag(EmulationFlags::DisableSquarePhaseReset)) _dutyPos = 0;
 
 				//The envelope is also restarted.
 				ResetEnvelope();
