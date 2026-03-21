@@ -25,8 +25,8 @@
 			<Control ID="mnuInsertCoin4">投币4（双系统）</Control>
 			<Control ID="mnuInputBarcode">输入条码</Control>
 			<Control ID="mnuTapeRecorder">磁带录音</Control>
-			<Control ID="mnuLoadTapeFile">从文件载入..。</Control>
-			<Control ID="mnuStartRecordTapeFile">记录到文件..。</Control>
+			<Control ID="mnuLoadTapeFile">从文件载入...</Control>
+			<Control ID="mnuStartRecordTapeFile">记录到文件...</Control>
 			<Control ID="mnuStopRecordTapeFile">停止录音</Control>
 			<Control ID="mnuOptions">设置</Control>
 			<Control ID="mnuEmulationSpeed">速度</Control>
@@ -101,19 +101,19 @@
 			<Control ID="mnuFindServer">查找公共服务器</Control>
 			<Control ID="mnuProfile">配置文件</Control>
 			<Control ID="mnuMovies">影片</Control>
-			<Control ID="mnuPlayMovie">播放..。</Control>
-			<Control ID="mnuRecordMovie">录制..。</Control>
+			<Control ID="mnuPlayMovie">播放...</Control>
+			<Control ID="mnuRecordMovie">录制...</Control>
 			<Control ID="mnuStopMovie">停止</Control>
 			<Control ID="mnuSoundRecorder">录音</Control>
-			<Control ID="mnuWaveRecord">录音..。</Control>
+			<Control ID="mnuWaveRecord">录音...</Control>
 			<Control ID="mnuWaveStop">停止录音</Control>
 			<Control ID="mnuVideoRecorder">录像</Control>
-			<Control ID="mnuAviRecord">录像..。</Control>
+			<Control ID="mnuAviRecord">录像...</Control>
 			<Control ID="mnuAviStop">停止录像</Control>
 			<Control ID="mnuCheats">作弊</Control>
 			<Control ID="mnuTests">测试</Control>
-			<Control ID="mnuTestRun">运行..。</Control>
-			<Control ID="mnuTestRecordFrom">记录来自..。</Control>
+			<Control ID="mnuTestRun">运行...</Control>
+			<Control ID="mnuTestRecordFrom">记录来自...</Control>
 			<Control ID="mnuTestRecordStart">开始</Control>
 			<Control ID="mnuTestRecordNow">现在</Control>
 			<Control ID="mnuTestRecordMovie">影片</Control>
@@ -286,12 +286,12 @@
 			<Control ID="tpgPalette">调色板</Control>
 			<Control ID="chkShowColorIndexes">显示颜色色码</Control>
 			<Control ID="mnuDefaultPalette">默认NTSC</Control>
-			<Control ID="btnSelectPalette">加载预设调色板..。</Control>
+			<Control ID="btnSelectPalette">加载预设调色板...</Control>
 			<Control ID="btnExportPalette">导出调色板</Control>
 			<Control ID="btnLoadPalFile">加载调色板文件</Control>
 			<Control ID="chkUseCustomVsPalette">将此调色板用于VS系统游戏</Control>
 			<Control ID="tpgPicture">画面</Control>
-			<Control ID="btnSelectPreset">选择预设..。</Control>
+			<Control ID="btnSelectPreset">选择预设...</Control>
 			<Control ID="grpCommon">通用设置</Control>
 			<Control ID="trkBrightness">亮度</Control>
 			<Control ID="trkContrast">对比</Control>
@@ -509,8 +509,8 @@
 			<Control ID="grpImportOptions">导入选项</Control>
 			<Control ID="lblCheatFile">作弊文件：</Control>
 			<Control ID="lblGame">游戏：</Control>
-			<Control ID="btnBrowseCheat">浏览..。</Control>
-			<Control ID="btnBrowseGame">浏览..。</Control>
+			<Control ID="btnBrowseCheat">浏览...</Control>
+			<Control ID="btnBrowseGame">浏览...</Control>
 			<Control ID="btnImport">导入</Control>
 			<Control ID="btnCancel">取消</Control>
 		</Form>
@@ -525,7 +525,7 @@
 			<Control ID="btnDelete">删除</Control>
 			<Control ID="btnDeleteCheat">删除所选作弊</Control>
 			<Control ID="btnDeleteGameCheats">删除该游戏所有作弊</Control>
-			<Control ID="mnuAddCheat">添加作弊..。</Control>
+			<Control ID="mnuAddCheat">添加作弊...</Control>
 			<Control ID="mnuDeleteGameCheats">删除</Control>
 			<Control ID="mnuDeleteCheat">删除</Control>
 			<Control ID="colGameName">游戏</Control>
@@ -570,7 +570,7 @@
 			<Control ID="radRelativeAddress">相对地址</Control>
 			<Control ID="radAbsoluteAddress">绝对地址</Control>
 			<Control ID="chkCompareValue">比较</Control>
-			<Control ID="btnBrowse">浏览..。</Control>
+			<Control ID="btnBrowse">浏览...</Control>
 			<Control ID="chkEnabled">启用作弊</Control>
 			<Control ID="btnOK">确定</Control>
 			<Control ID="btnCancel">取消</Control>
@@ -626,7 +626,7 @@
 			<Control ID="lblCompressionLevel">压缩级别：</Control>
 			<Control ID="lblLowCompression">低&#13;（快）</Control>
 			<Control ID="lblHighCompression">高&#13;（慢）</Control>
-			<Control ID="btnBrowse">浏览..。</Control>
+			<Control ID="btnBrowse">浏览...</Control>
 			<Control ID="btnOK">确定</Control>
 			<Control ID="btnCancel">取消</Control>
 		</Form>
@@ -641,7 +641,7 @@
 			<Control ID="chkGroupBlankTiles">空块分组</Control>
 			<Control ID="chkIgnoreOverscan">忽略屏幕外（过扫描区）块</Control>
 			<Control ID="lblFolder">保存文件夹：</Control>
-			<Control ID="btnSelectFolder">浏览..。</Control>
+			<Control ID="btnSelectFolder">浏览...</Control>
 			<Control ID="btnStartRecording">开始录制</Control>
 			<Control ID="btnStopRecording">停止录制</Control>
 			<Control ID="btnOpenFolder">打开保存文件夹</Control>
@@ -705,7 +705,7 @@
 			<Control ID="lblMovieInformation">影片信息（可选）</Control>
 			<Control ID="lblAuthor">作者：</Control>
 			<Control ID="lblDescription">说明：</Control>
-			<Control ID="btnBrowse">浏览..。</Control>
+			<Control ID="btnBrowse">浏览...</Control>
 			<Control ID="btnOK">确定</Control>
 			<Control ID="btnCancel">取消</Control>
 		</Form>
@@ -730,7 +730,7 @@
 			<Control ID="lblTurboFast">快</Control>
 			<Control ID="lblSlow">慢</Control>
 
-			<Control ID="btnSelectPreset">选择预设..。</Control>
+			<Control ID="btnSelectPreset">选择预设...</Control>
 			<Control ID="mnuKeyboard">键盘</Control>
 			<Control ID="mnuWasdLayout">WASD布局</Control>
 			<Control ID="mnuArrowLayout">箭头键布局</Control>
@@ -824,12 +824,12 @@
 		<Message ID="LoadStateDialog">Load State Menu</Message>
 		<Message ID="SaveStateDialog">Save State Menu</Message>
 		
-		<Message ID="LoadFromFile">从文件载入..。</Message>
-		<Message ID="SaveToFile">保存到文件..。</Message>
+		<Message ID="LoadFromFile">从文件载入...</Message>
+		<Message ID="SaveToFile">保存到文件...</Message>
 		
 		<Message ID="MovieSegment">第#{0}段</Message>
 		<Message ID="MovieExportEntireSegment">导出整段</Message>
-		<Message ID="MovieExportSpecificRange">导出范围..。</Message>
+		<Message ID="MovieExportSpecificRange">导出范围...</Message>
 		<Message ID="MovieSaveError">导出电影失败。</Message>
 		<Message ID="FileSaveError">保存文件失败。</Message>
 		
@@ -863,7 +863,7 @@
 		<Message ID="RandomGameNoGameFound">Mesen 找不到任何可以加载的游戏。</Message>
 		<Message ID="CannotWriteToFolder">无法写入所选文件夹 - 请选择其他文件夹然后重试。&#xA;&#xA;详细信息：&#xA; {0}</Message>
 		<Message ID="InvalidPaths">以下路径覆盖无效：&#xA;&#xA;{0}&#xA;&#xA;请使用有效和可写的文件夹，然后重试。</Message>
-		<Message ID="CopyMesenDataPrompt">所有文件都将从：&#xA;&#xA;{0}&#xA;复制到&#xA;{1}&#xA;&#xA;复制完成后，Mesen 将重新启动.&#xA;继续？</Message>
+		<Message ID="CopyMesenDataPrompt">所有文件都将从：&#xA;&#xA;{0}&#xA;复制到&#xA;{1}&#xA;&#xA;复制完成后，Mesen 将重新启动。&#xA;继续？</Message>
 
 		<Message ID="CheatsFound">数据库中有{0}个游戏和{1}条作弊</Message>
 		<Message ID="CheatsImported">已给{1}导入{0}条作弊。</Message>
@@ -900,8 +900,8 @@
 		<Message ID="SelectRomIps">请选择补丁对应ROM。</Message>
 		<Message ID="UnableToDownload">无法载入文件，请检查您的网络连接后再试。&#xA;&#xA;详情：&#xA;{0}</Message>
 		<Message ID="UnableToStartMissingDependencies">Mesen因无法加载依赖项MesenCore.dll而无法启动。</Message>
-		<Message ID="UnableToStartMissingFiles">Mesen因缺少文件而无法启动.&#xA;&#xA;错误：缺少MesenCore.dll。</Message>
-		<Message ID="UnexpectedError">发生意外错误.&#xA;&#xA;详情：&#xA;{0}</Message>
+		<Message ID="UnableToStartMissingFiles">Mesen因缺少文件而无法启动。&#xA;&#xA;错误：缺少MesenCore.dll。</Message>
+		<Message ID="UnexpectedError">发生意外错误。&#xA;&#xA;详情：&#xA;{0}</Message>
 		<Message ID="UpdateDownloadFailed">下载失败 - 文件损坏，请自行访问Mesen官网下载最近版本。</Message>
 		<Message ID="UpdaterNotFound">因文件丢失无法升级。</Message>
 		<Message ID="UpgradeSuccess">升级成功。</Message>
