@@ -25,7 +25,6 @@ namespace Mesen.GUI.Forms.Config
 
 			AddBinding("DisplayLanguage", cboDisplayLanguage);
 
-			AddBinding("AutomaticallyCheckForUpdates", chkAutomaticallyCheckForUpdates);
 			AddBinding("SingleInstance", chkSingleInstance);
 			AddBinding("AutoLoadIpsPatches", chkAutoLoadIps);
 			

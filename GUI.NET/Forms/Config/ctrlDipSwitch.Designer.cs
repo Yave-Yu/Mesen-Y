@@ -27,57 +27,57 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.lblName = new System.Windows.Forms.Label();
-			this.cboDipSwitch = new System.Windows.Forms.ComboBox();
-			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.tableLayoutPanel1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// lblName
-			// 
-			this.lblName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-			this.lblName.AutoSize = true;
-			this.lblName.Location = new System.Drawing.Point(3, 7);
-			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(55, 13);
-			this.lblName.TabIndex = 1;
-			this.lblName.Text = "DipSwitch";
-			// 
-			// cboDipSwitch
-			// 
-			this.cboDipSwitch.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.cboDipSwitch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cboDipSwitch.FormattingEnabled = true;
-			this.cboDipSwitch.Location = new System.Drawing.Point(64, 3);
-			this.cboDipSwitch.Name = "cboDipSwitch";
-			this.cboDipSwitch.Size = new System.Drawing.Size(182, 21);
-			this.cboDipSwitch.TabIndex = 2;
-			// 
-			// tableLayoutPanel1
-			// 
-			this.tableLayoutPanel1.ColumnCount = 2;
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.Controls.Add(this.cboDipSwitch, 1, 0);
-			this.tableLayoutPanel1.Controls.Add(this.lblName, 0, 0);
-			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			this.tableLayoutPanel1.RowCount = 1;
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(249, 27);
-			this.tableLayoutPanel1.TabIndex = 1;
-			// 
-			// ctrlDipSwitch
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.tableLayoutPanel1);
-			this.Name = "ctrlDipSwitch";
-			this.Size = new System.Drawing.Size(249, 27);
-			this.tableLayoutPanel1.ResumeLayout(false);
-			this.tableLayoutPanel1.PerformLayout();
-			this.ResumeLayout(false);
+            this.lblName = new System.Windows.Forms.Label();
+            this.cboDipSwitch = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // lblName
+            // 
+            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(3, 6);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(59, 12);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "DipSwitch";
+            // 
+            // cboDipSwitch
+            // 
+            this.cboDipSwitch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboDipSwitch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboDipSwitch.FormattingEnabled = true;
+            this.cboDipSwitch.Location = new System.Drawing.Point(68, 3);
+            this.cboDipSwitch.Name = "cboDipSwitch";
+            this.cboDipSwitch.Size = new System.Drawing.Size(178, 20);
+            this.cboDipSwitch.TabIndex = 2;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.cboDipSwitch, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblName, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(249, 25);
+            this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // ctrlDipSwitch
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Name = "ctrlDipSwitch";
+            this.Size = new System.Drawing.Size(249, 25);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.ResumeLayout(false);
 
 		}
 

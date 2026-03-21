@@ -75,5 +75,18 @@ namespace Mesen.GUI.Forms.Config
 			}
 			this.OnChange();
 		}
-	}
+
+	  private void InitializeComponent()
+	  {
+            this.SuspendLayout();
+            // 
+            // BaseInputConfigControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Name = "BaseInputConfigControl";
+            this.ResumeLayout(false);
+
+	  }
+   }
 }

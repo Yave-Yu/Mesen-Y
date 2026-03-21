@@ -71,6 +71,8 @@ namespace Mesen.GUI.Forms.Config
 				EmulatorShortcut.SetScale4x,
 				EmulatorShortcut.SetScale5x,
 				EmulatorShortcut.SetScale6x,
+				EmulatorShortcut.SetScale7x,
+				EmulatorShortcut.SetScale8x,
 				EmulatorShortcut.ToggleFullscreen,
 
 				EmulatorShortcut.ToggleDebugInfo,
@@ -92,6 +94,7 @@ namespace Mesen.GUI.Forms.Config
 				EmulatorShortcut.MaxSpeed,
 				EmulatorShortcut.IncreaseSpeed,
 				EmulatorShortcut.DecreaseSpeed,
+				EmulatorShortcut.NormalSpeed,
 
 				EmulatorShortcut.OpenFile,
 								

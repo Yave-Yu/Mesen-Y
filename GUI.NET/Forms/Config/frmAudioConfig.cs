@@ -101,8 +101,8 @@ namespace Mesen.GUI.Forms.Config
 			AddBinding("VolumeReduction", trkVolumeReduction);
 
 			AddBinding("SwapDutyCycles", chkSwapDutyCycles);
-			AddBinding("SilenceTriangleHighFreq", chkSilenceTriangleHighFreq);
-			AddBinding("ReduceDmcPopping", chkReduceDmcPopping);
+			AddBinding("DisableSquarePhaseReset", chkDisableSquarePhaseReset);
+			AddBinding("UseLinearSquareMixer", chkUseLinearSquareMixer);
 			AddBinding("DisableNoiseModeFlag", chkDisableNoiseModeFlag);
 			
 			radStereoDisabled.Tag = InteropEmu.StereoFilter.None;

@@ -27,79 +27,79 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.pbProgress = new System.Windows.Forms.ProgressBar();
-			this.lblCopying = new System.Windows.Forms.Label();
-			this.lblTarget = new System.Windows.Forms.Label();
-			this.tmrProgress = new System.Windows.Forms.Timer(this.components);
-			this.tableLayoutPanel1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// tableLayoutPanel1
-			// 
-			this.tableLayoutPanel1.ColumnCount = 2;
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.Controls.Add(this.lblTarget, 1, 0);
-			this.tableLayoutPanel1.Controls.Add(this.pbProgress, 0, 1);
-			this.tableLayoutPanel1.Controls.Add(this.lblCopying, 0, 0);
-			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-			this.tableLayoutPanel1.RowCount = 2;
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-			this.tableLayoutPanel1.Size = new System.Drawing.Size(268, 64);
-			this.tableLayoutPanel1.TabIndex = 0;
-			// 
-			// pbProgress
-			// 
-			this.tableLayoutPanel1.SetColumnSpan(this.pbProgress, 2);
-			this.pbProgress.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pbProgress.Location = new System.Drawing.Point(3, 38);
-			this.pbProgress.Name = "pbProgress";
-			this.pbProgress.Size = new System.Drawing.Size(262, 23);
-			this.pbProgress.TabIndex = 0;
-			// 
-			// lblCopying
-			// 
-			this.lblCopying.Anchor = System.Windows.Forms.AnchorStyles.Left;
-			this.lblCopying.AutoSize = true;
-			this.lblCopying.Location = new System.Drawing.Point(3, 11);
-			this.lblCopying.Name = "lblCopying";
-			this.lblCopying.Size = new System.Drawing.Size(48, 13);
-			this.lblCopying.TabIndex = 1;
-			this.lblCopying.Text = "Copying:";
-			// 
-			// lblTarget
-			// 
-			this.lblTarget.Anchor = System.Windows.Forms.AnchorStyles.Left;
-			this.lblTarget.AutoSize = true;
-			this.lblTarget.Location = new System.Drawing.Point(57, 11);
-			this.lblTarget.Name = "lblTarget";
-			this.lblTarget.Size = new System.Drawing.Size(19, 13);
-			this.lblTarget.TabIndex = 2;
-			this.lblTarget.Text = "....";
-			// 
-			// tmrProgress
-			// 
-			this.tmrProgress.Tick += new System.EventHandler(this.tmrProgress_Tick);
-			// 
-			// frmCopyFiles
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(268, 64);
-			this.ControlBox = false;
-			this.Controls.Add(this.tableLayoutPanel1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-			this.Name = "frmCopyFiles";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Please wait...";
-			this.tableLayoutPanel1.ResumeLayout(false);
-			this.tableLayoutPanel1.PerformLayout();
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTarget = new System.Windows.Forms.Label();
+            this.pbProgress = new System.Windows.Forms.ProgressBar();
+            this.lblCopying = new System.Windows.Forms.Label();
+            this.tmrProgress = new System.Windows.Forms.Timer(this.components);
+            this.tableLayoutPanel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.lblTarget, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pbProgress, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblCopying, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(268, 59);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // lblTarget
+            // 
+            this.lblTarget.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblTarget.AutoSize = true;
+            this.lblTarget.Location = new System.Drawing.Point(62, 10);
+            this.lblTarget.Name = "lblTarget";
+            this.lblTarget.Size = new System.Drawing.Size(29, 12);
+            this.lblTarget.TabIndex = 2;
+            this.lblTarget.Text = "....";
+            // 
+            // pbProgress
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.pbProgress, 2);
+            this.pbProgress.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbProgress.Location = new System.Drawing.Point(3, 35);
+            this.pbProgress.Name = "pbProgress";
+            this.pbProgress.Size = new System.Drawing.Size(262, 21);
+            this.pbProgress.TabIndex = 0;
+            // 
+            // lblCopying
+            // 
+            this.lblCopying.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lblCopying.AutoSize = true;
+            this.lblCopying.Location = new System.Drawing.Point(3, 10);
+            this.lblCopying.Name = "lblCopying";
+            this.lblCopying.Size = new System.Drawing.Size(53, 12);
+            this.lblCopying.TabIndex = 1;
+            this.lblCopying.Text = "Copying:";
+            // 
+            // tmrProgress
+            // 
+            this.tmrProgress.Tick += new System.EventHandler(this.tmrProgress_Tick);
+            // 
+            // frmCopyFiles
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(268, 59);
+            this.ControlBox = false;
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "frmCopyFiles";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Please wait...";
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.ResumeLayout(false);
 
 		}
 
