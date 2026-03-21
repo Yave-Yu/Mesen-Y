@@ -46,6 +46,8 @@
 			<Control ID="mnuScale4x">4x</Control>
 			<Control ID="mnuScale5x">5x</Control>
 			<Control ID="mnuScale6x">6x</Control>
+			<Control ID="mnuScale7x">7x</Control>
+			<Control ID="mnuScale8x">8x</Control>
 			<Control ID="mnuFullscreen">Plein écran</Control>
 			<Control ID="mnuVideoFilter">Filtre vidéo</Control>
 			<Control ID="mnuNoneFilter">Aucun</Control>
@@ -128,9 +130,9 @@
 			<Control ID="tpgGeneral">Général</Control>
 			<Control ID="tpgAdvanced">Avancé</Control>
 			<Control ID="chkDisableDynamicSampleRate">Désactiver le taux d'échantillonnage dynamique</Control>
-			<Control ID="chkSwapDutyCycles">Inverser le rapport cyclique des canaux Square 1 et Square 2</Control>
-			<Control ID="chkSilenceTriangleHighFreq">Couper le canal triangle lors de fréquences ultrasoniques (réduit les "pops")</Control>
-			<Control ID="chkReduceDmcPopping">Réduire l'intensité des "pops" du canal DMC</Control>
+			<Control ID="chkSwapDutyCycles">Inverser le rapport cyclique des canaux Square 1 et Square 2 (imite de vieux clones)</Control>
+			<Control ID="chkDisableSquarePhaseReset">Canaux carrés non réinitialisés de phase (imite de vieux clones)</Control>
+			<Control ID="chkUseLinearSquareMixer">Utiliser un mélangeur de canal carré linéaire</Control>
 			<Control ID="chkDisableNoiseModeFlag">Désactiver le mode alternatif du canal Noise</Control>
 			<Control ID="tpgEffects">Effets</Control>
 			<Control ID="grpStereo">Stéréo</Control>
@@ -577,7 +579,7 @@
 			<Control ID="lblCheats">Codes:</Control>
 			<Control ID="lblSpecialThanks">Et merci à tous ceux qui ont contribué au développement! (donations, tests, partage d'information, etc.)</Control>
 
-			<Control ID="lblDonate">Pour supporter le développement de Mesen, vous pouvez faire une donation.&#xA;Merci de votre support!</Control>
+			<Control ID="lblDonate">Vous utilisez un fork, Mesen-Y par Yave Yu.&#xA;Ce fork est basé sur Mesen-X, par NovaSquirrel.</Control>
 			<Control ID="okButton">&amp;OK</Control>
 		</Form>
 		<Form ID="frmGameConfig" Title="Configuration du jeu">
@@ -587,7 +589,7 @@
 			<Control ID="lblLatestVersion">Dernière version : </Control>
 			<Control ID="lblCurrentVersion">Version courante : </Control>
 			<Control ID="lblChangeLog">Changelog</Control>
-			<Control ID="lblDonate">Si vous voulez supporter Mesen, vous pouvez faire une donation. Merci!</Control>
+			<Control ID="lblDonate">Vous utilisez un fork, Mesen-Y par Yave Yu.</Control>
 			<Control ID="btnUpdate">Mettre à jour</Control>
 			<Control ID="btnCancel">Annuler</Control>
 		</Form>
@@ -647,6 +649,8 @@
 			<Control ID="mnuScale4x">4x</Control>
 			<Control ID="mnuScale5x">5x</Control>
 			<Control ID="mnuScale6x">6x</Control>
+			<Control ID="mnuScale7x">7x</Control>
+			<Control ID="mnuScale8x">8x</Control>
 		</Form>
 		<Form ID="frmSelectExportRange" Title="Exporter une portion...">
 			<Control ID="lblStartTime">Début:</Control>
@@ -938,6 +942,8 @@
 		<Message ID="EmulatorShortcutMappings_SetScale4x">Taille de l'image 4x</Message>
 		<Message ID="EmulatorShortcutMappings_SetScale5x">Taille de l'image 5x</Message>
 		<Message ID="EmulatorShortcutMappings_SetScale6x">Taille de l'image 6x</Message>
+		<Message ID="EmulatorShortcutMappings_SetScale7x">Taille de l'image 7x</Message>
+		<Message ID="EmulatorShortcutMappings_SetScale8x">Taille de l'image 8x</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleFullscreen">Activer/désactiver le mode plein écran</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleFps">Activer/désactiver le compteur FPS</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleDebugInfo">Activer/désactiver l'info de debug</Message>

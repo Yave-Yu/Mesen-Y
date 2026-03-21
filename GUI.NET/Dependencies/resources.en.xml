@@ -46,6 +46,8 @@
 			<Control ID="mnuScale4x">4x</Control>
 			<Control ID="mnuScale5x">5x</Control>
 			<Control ID="mnuScale6x">6x</Control>
+			<Control ID="mnuScale7x">7x</Control>
+			<Control ID="mnuScale8x">8x</Control>
 			<Control ID="mnuFullscreen">Fullscreen</Control>
 			<Control ID="mnuVideoFilter">Video Filter</Control>
 			<Control ID="mnuNoneFilter">None</Control>
@@ -129,8 +131,8 @@
 			<Control ID="tpgAdvanced">Advanced</Control>
 			<Control ID="chkDisableDynamicSampleRate">Disable dynamic sample rate</Control>
 			<Control ID="chkSwapDutyCycles">Swap square channels duty cycles (Mimics old clones)</Control>
-			<Control ID="chkSilenceTriangleHighFreq">Mute ultrasonic frequencies on triangle channel (reduces popping)</Control>
-			<Control ID="chkReduceDmcPopping">Reduce popping sounds on the DMC channel</Control>
+			<Control ID="chkDisableSquarePhaseReset">Square channels not reset phase (Mimics old clones)</Control>
+			<Control ID="chkUseLinearSquareMixer">Use linear square channel mixer</Control>
 			<Control ID="chkDisableNoiseModeFlag">Disable noise channel mode flag</Control>
 			<Control ID="tpgEffects">Effects</Control>
 			<Control ID="grpStereo">Stereo</Control>
@@ -578,7 +580,7 @@
 			<Control ID="lblCheats">Cheats:</Control>
 			<Control ID="lblSpecialThanks">And thank you to everybody who has contributed in any way! (donations, bug reports, testing, sharing information, etc.)</Control>
 
-			<Control ID="lblDonate">If you want to support Mesen, please consider donating.&#13;Thank you for your support!</Control>
+			<Control ID="lblDonate">You are using a fork, Mesen-Y by Yave Yu.&#13;Based on Mesen-X, by NovaSquirrel.</Control>
 			<Control ID="okButton">&amp;OK</Control>
 		</Form>
 		<Form ID="frmGameConfig" Title="Game Configuration">
@@ -588,7 +590,7 @@
 			<Control ID="lblLatestVersion">Latest Version:</Control>
 			<Control ID="lblCurrentVersion">Current Version:</Control>
 			<Control ID="lblChangeLog">Changelog:</Control>
-			<Control ID="lblDonate">If you want to support Mesen, please consider donating.  Thank you!</Control>
+			<Control ID="lblDonate">You are using a fork, Mesen-Y by Yave Yu.</Control>
 			<Control ID="btnUpdate">Update</Control>
 			<Control ID="btnCancel">Cancel</Control>
 		</Form>
@@ -650,6 +652,8 @@
 			<Control ID="mnuScale4x">4x</Control>
 			<Control ID="mnuScale5x">5x</Control>
 			<Control ID="mnuScale6x">6x</Control>
+			<Control ID="mnuScale7x">7x</Control>
+			<Control ID="mnuScale8x">8x</Control>
 		</Form>
 		<Form ID="frmSelectExportRange" Title="Export specific range...">
 			<Control ID="lblStartTime">Start time:</Control>
@@ -979,6 +983,7 @@
 		<Message ID="EmulatorShortcutMappings_RewindOneMin">Rewind 1 minute</Message>
 		<Message ID="EmulatorShortcutMappings_IncreaseSpeed">Increase Speed</Message>
 		<Message ID="EmulatorShortcutMappings_DecreaseSpeed">Decrease Speed</Message>
+		<Message ID="EmulatorShortcutMappings_NormalSpeed">Normal Speed</Message>
 		<Message ID="EmulatorShortcutMappings_Pause">Pause</Message>
 		<Message ID="EmulatorShortcutMappings_Reset">Reset</Message>
 		<Message ID="EmulatorShortcutMappings_PowerCycle">Power Cycle</Message>
@@ -1012,6 +1017,8 @@
 		<Message ID="EmulatorShortcutMappings_SetScale4x">Set Scale 4x</Message>
 		<Message ID="EmulatorShortcutMappings_SetScale5x">Set Scale 5x</Message>
 		<Message ID="EmulatorShortcutMappings_SetScale6x">Set Scale 6x</Message>
+		<Message ID="EmulatorShortcutMappings_SetScale7x">Set Scale 7x</Message>
+		<Message ID="EmulatorShortcutMappings_SetScale8x">Set Scale 8x</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleFullscreen">Toggle Fullscreen Mode</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleFps">Toggle FPS Counter</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleDebugInfo">Toggle Debug Information</Message>

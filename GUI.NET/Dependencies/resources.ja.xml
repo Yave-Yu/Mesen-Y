@@ -46,6 +46,8 @@
 			<Control ID="mnuScale4x">４倍</Control>
 			<Control ID="mnuScale5x">５倍</Control>
 			<Control ID="mnuScale6x">６倍</Control>
+			<Control ID="mnuScale7x">７倍</Control>
+			<Control ID="mnuScale8x">８倍</Control>
 			<Control ID="mnuFullscreen">全画面表示</Control>
 			<Control ID="mnuVideoFilter">画面エフェクト</Control>
 			<Control ID="mnuNoneFilter">なし</Control>
@@ -128,8 +130,8 @@
 			<Control ID="tpgAdvanced">詳細設定</Control>
 			<Control ID="chkDisableDynamicSampleRate">サンプルレートの自動調整を無効にする</Control>
 			<Control ID="chkSwapDutyCycles">Squareチャンネルのデューティサイクルをスワップする</Control>
-			<Control ID="chkSilenceTriangleHighFreq">Triangleチャンネルが超音波を出す場合、ミュートする　（ポップノイズを軽減する）</Control>
-			<Control ID="chkReduceDmcPopping">DMCチャンネルのポップノイズを軽減する</Control>
+			<Control ID="chkDisableSquarePhaseReset">Squareチャンネルは位相をリセットしない</Control>
+			<Control ID="chkUseLinearSquareMixer">線形Squareチャンネルミキサーを使用する</Control>
 			<Control ID="chkDisableNoiseModeFlag">Noiseチャンネルのモードフラッグを無効にする</Control>
 			<Control ID="tpgEffects">エフェクト</Control>
 			<Control ID="grpStereo">ステレオ</Control>
@@ -565,7 +567,7 @@
 			<Control ID="lblCheats">チートコード:</Control>
 			<Control ID="lblSpecialThanks">バグ報告とかで手伝ってくれた皆様にも感謝しています。</Control>
 
-			<Control ID="lblDonate">応援ありがとうございます！</Control>
+			<Control ID="lblDonate">あなたはYave YuによるMesen-YというForkを使用しています。&#13;このForkはNovaSquirrelによるMesen-Xに基づいています。</Control>
 			<Control ID="okButton">&amp;OK</Control>
 		</Form>
 		<Form ID="frmGameConfig" Title="ゲーム設定">
@@ -575,7 +577,7 @@
 			<Control ID="lblLatestVersion">最新バージョン： </Control>
 			<Control ID="lblCurrentVersion">現在のバージョン： </Control>
 			<Control ID="lblChangeLog">更新歴</Control>
-			<Control ID="lblDonate">応援ありがとうございます！</Control>
+			<Control ID="lblDonate">あなたはYave YuによるMesen-Yというフォークを使用しています。</Control>
 			<Control ID="btnUpdate">更新</Control>
 			<Control ID="btnCancel">キャンセル</Control>
 		</Form>
@@ -635,6 +637,8 @@
 			<Control ID="mnuScale4x">４倍</Control>
 			<Control ID="mnuScale5x">５倍</Control>
 			<Control ID="mnuScale6x">６倍</Control>
+			<Control ID="mnuScale7x">７倍</Control>
+			<Control ID="mnuScale8x">８倍</Control>
 		</Form>
 		<Form ID="frmSelectExportRange" Title="エクスポート範囲を指定する...">
 			<Control ID="lblStartTime">開始時点:</Control>
@@ -926,6 +930,8 @@
 		<Message ID="EmulatorShortcutMappings_SetScale4x">映像サイズ ４倍</Message>
 		<Message ID="EmulatorShortcutMappings_SetScale5x">映像サイズ ５倍</Message>
 		<Message ID="EmulatorShortcutMappings_SetScale6x">映像サイズ ６倍</Message>
+		<Message ID="EmulatorShortcutMappings_SetScale7x">映像サイズ ７倍</Message>
+		<Message ID="EmulatorShortcutMappings_SetScale8x">映像サイズ ８倍</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleFullscreen">全画面表示</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleFps">フレームレート表示</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleDebugInfo">デバッグ情報表示</Message>

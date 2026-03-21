@@ -46,6 +46,8 @@
 			<Control ID="mnuScale4x">4x</Control>
 			<Control ID="mnuScale5x">5x</Control>
 			<Control ID="mnuScale6x">6x</Control>
+			<Control ID="mnuScale7x">7x</Control>
+			<Control ID="mnuScale8x">8x</Control>
 			<Control ID="mnuFullscreen">Pełny ekran</Control>
 			<Control ID="mnuVideoFilter">Filtr wideo</Control>
 			<Control ID="mnuNoneFilter">Żaden</Control>
@@ -129,8 +131,8 @@
 			<Control ID="tpgAdvanced">Zaawansowane</Control>
 			<Control ID="chkDisableDynamicSampleRate">Wyłącz dynamiczną częstotliwość próbkowania</Control>
 			<Control ID="chkSwapDutyCycles">Zamień cykle pracy kanałów kwadratowych (naśladuje stare klony)</Control>
-			<Control ID="chkSilenceTriangleHighFreq">Wycisz częstotliwości ultradźwiękowe na kanale trójkątnym (redukuje trzaski)</Control>
-			<Control ID="chkReduceDmcPopping">Zmniejsz trzaski na kanale DMC</Control>
+			<Control ID="chkDisableSquarePhaseReset">Kwadratowe kanały nie resetują fazy (naśladuje stare klony)</Control>
+			<Control ID="chkUseLinearSquareMixer">Użyj liniowego miksera kanałowego kwadratowego</Control>
 			<Control ID="chkDisableNoiseModeFlag">Wyłącz flagę trybu kanału szumu</Control>
 			<Control ID="tpgEffects">Efekty</Control>
 			<Control ID="grpStereo">Stereofoniczny</Control>
@@ -577,7 +579,7 @@
 			<Control ID="lblCheats">Kody:</Control>
 			<Control ID="lblSpecialThanks">Dziękuję wszystkim, którzy przyczynili się do tego w jakikolwiek sposób! (darowizny, raporty o błędach, testy, udostępnianie informacji itp.)</Control>
 
-			<Control ID="lblDonate">Jeśli chcesz wesprzeć Mesen, rozważ datek.&#13;Dziękuję za Twoje wsparcie!</Control>
+			<Control ID="lblDonate">Używasz forka Mesen-Y autorstwa Yave Yu.&#13;Ten fork oparty jest na Mesen-X, autorstwa NovaSquirrel.</Control>
 			<Control ID="okButton">&amp;OK</Control>
 		</Form>
 		<Form ID="frmGameConfig" Title="Konfiguracja gry">
@@ -587,7 +589,7 @@
 			<Control ID="lblLatestVersion">Najnowsza wersja:</Control>
 			<Control ID="lblCurrentVersion">Obecna wersja:</Control>
 			<Control ID="lblChangeLog">Dziennik zmian:</Control>
-			<Control ID="lblDonate">Jeśli chcesz wesprzeć Mesen, rozważ datek. Dziękuję Ci!</Control>
+			<Control ID="lblDonate">Używasz forka Mesen-Y autorstwa Yave Yu.</Control>
 			<Control ID="btnUpdate">Aktualizuj</Control>
 			<Control ID="btnCancel">Anuluj</Control>
 		</Form>
@@ -647,6 +649,8 @@
 			<Control ID="mnuScale4x">4x</Control>
 			<Control ID="mnuScale5x">5x</Control>
 			<Control ID="mnuScale6x">6x</Control>
+			<Control ID="mnuScale7x">7x</Control>
+			<Control ID="mnuScale8x">8x</Control>
 		</Form>
 		<Form ID="frmSelectExportRange" Title="Eksportuj określony zakres ...">
 			<Control ID="lblStartTime">Czas rozpoczęcia:</Control>
@@ -940,6 +944,8 @@
 		<Message ID="EmulatorShortcutMappings_SetScale4x">Ustaw skalę 4x</Message>
 		<Message ID="EmulatorShortcutMappings_SetScale5x">Ustaw skalę 5x</Message>
 		<Message ID="EmulatorShortcutMappings_SetScale6x">Ustaw skalę 6x</Message>
+		<Message ID="EmulatorShortcutMappings_SetScale7x">Ustaw skalę 7x</Message>
+		<Message ID="EmulatorShortcutMappings_SetScale8x">Ustaw skalę 8x</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleFullscreen">Przełącz tryb pełnoekranowy</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleFps">Przełącz licznik FPS</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleDebugInfo">Przełącz informacje debugowania</Message>

@@ -46,6 +46,8 @@
 			<Control ID="mnuScale4x">4x</Control>
 			<Control ID="mnuScale5x">5x</Control>
 			<Control ID="mnuScale6x">6x</Control>
+			<Control ID="mnuScale7x">7x</Control>
+			<Control ID="mnuScale8x">8x</Control>
 			<Control ID="mnuFullscreen">Pantalla completa</Control>
 			<Control ID="mnuVideoFilter">Filtre de vídeo</Control>
 			<Control ID="mnuNoneFilter">Cap</Control>
@@ -128,9 +130,9 @@
 			<Control ID="tpgGeneral">General</Control>
 			<Control ID="tpgAdvanced">Avançat</Control>
 			<Control ID="chkDisableDynamicSampleRate">Disable dynamic sample rate</Control>
-			<Control ID="chkSwapDutyCycles">Inverteix els cicles dels canals quadrats (imita clons antics)</Control>
-			<Control ID="chkSilenceTriangleHighFreq">Silencia les freqüències ultrasòniques al canal de triangle (redueix els "esclafits")</Control>
-			<Control ID="chkReduceDmcPopping">Redueix els "esclafits" al canal DMC</Control>
+			<Control ID="chkSwapDutyCycles">Els canals quadrats no reinicien la fase (imita clons antics)</Control>
+			<Control ID="chkDisableSquarePhaseReset">Désactiver la réinitialisation de phase en onde carrée (imita clons antics)</Control>
+			<Control ID="chkUseLinearSquareMixer">Utilitzeu mesclador de canal quadrat lineal</Control>
 			<Control ID="chkDisableNoiseModeFlag">Desactiva el mode alternatiu del canal de soroll</Control>
 			<Control ID="tpgEffects">Efectes</Control>
 			<Control ID="grpStereo">Estèreo</Control>
@@ -568,7 +570,7 @@
 			<Control ID="lblCheats">Cheats:</Control>
 			<Control ID="lblSpecialThanks">And thank you to everybody who has contributed in any way! (donations, bug reports, testing, sharing information, etc.)</Control>
 
-			<Control ID="lblDonate">Si desitgeu col·laborar amb Mesen, si us plau, considereu fer un donatiu.&#xA;Gràcies pel vostre suport.</Control>
+			<Control ID="lblDonate">Estàs utilitzant un fork, Mesen-Y de Yave Yu.&#xA;Aquest fork està basat en Mesen-X, de NovaSquirrel.</Control>
 			<Control ID="okButton">&amp;D'acord</Control>
 		</Form>
 		<Form ID="frmGameConfig" Title="Configuració de joc">
@@ -578,7 +580,7 @@
 			<Control ID="lblLatestVersion">Darrera versió: </Control>
 			<Control ID="lblCurrentVersion">Versió actual: </Control>
 			<Control ID="lblChangeLog">Llista de canvis</Control>
-			<Control ID="lblDonate">Si desitgeu col·laborar amb Mesen, si us plau, considereu fer un donatiu. Gràcies!</Control>
+			<Control ID="lblDonate">Estàs utilitzant un fork, Mesen-Y de Yave Yu.</Control>
 			<Control ID="btnUpdate">Actualitza</Control>
 			<Control ID="btnCancel">Cancel·la</Control>
 		</Form>
@@ -638,6 +640,8 @@
 			<Control ID="mnuScale4x">4x</Control>
 			<Control ID="mnuScale5x">5x</Control>
 			<Control ID="mnuScale6x">6x</Control>
+			<Control ID="mnuScale7x">7x</Control>
+			<Control ID="mnuScale8x">8x</Control>
 		</Form>
 		<Form ID="frmSelectExportRange" Title="Export specific range...">
 			<Control ID="lblStartTime">Start time:</Control>
@@ -908,6 +912,8 @@
 		<Message ID="EmulatorShortcutMappings_SetScale4x">Mida de vídeo 4x</Message>
 		<Message ID="EmulatorShortcutMappings_SetScale5x">Mida de vídeo 5x</Message>
 		<Message ID="EmulatorShortcutMappings_SetScale6x">Mida de vídeo 6x</Message>
+		<Message ID="EmulatorShortcutMappings_SetScale7x">Mida de vídeo 7x</Message>
+		<Message ID="EmulatorShortcutMappings_SetScale8x">Mida de vídeo 8x</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleFullscreen">Activa/Desactiva el mode de pantalla completa</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleFps">Mostra/Amaga els FPS</Message>
 		<Message ID="EmulatorShortcutMappings_ToggleDebugInfo">Toggle Debug Information</Message>
