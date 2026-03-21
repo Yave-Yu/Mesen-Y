@@ -227,21 +227,24 @@ namespace Mesen.GUI.Forms
 
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-			this.SuspendLayout();
-			// 
-			// toolTip
-			// 
-			this.toolTip.AutomaticDelay = 0;
-			this.toolTip.AutoPopDelay = 32700;
-			this.toolTip.InitialDelay = 10;
-			this.toolTip.ReshowDelay = 10;
-			// 
-			// BaseForm
-			// 
-			this.Name = "BaseForm";
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.SuspendLayout();
+            // 
+            // toolTip
+            // 
+            this.toolTip.AutomaticDelay = 0;
+            this.toolTip.AutoPopDelay = 32700;
+            this.toolTip.InitialDelay = 10;
+            this.toolTip.ReshowDelay = 10;
+            // 
+            // BaseForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "BaseForm";
+            this.ResumeLayout(false);
 
 		}
 	}

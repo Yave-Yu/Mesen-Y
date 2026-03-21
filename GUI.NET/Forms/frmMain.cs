@@ -842,6 +842,7 @@ namespace Mesen.GUI.Forms
 			BindShortcut(mnuExit, EmulatorShortcut.Exit);
 			BindShortcut(mnuIncreaseSpeed, EmulatorShortcut.IncreaseSpeed, notClient);
 			BindShortcut(mnuDecreaseSpeed, EmulatorShortcut.DecreaseSpeed, notClient);
+			BindShortcut(mnuEmuSpeedNormal, EmulatorShortcut.NormalSpeed, notClient);
 			BindShortcut(mnuEmuSpeedMaximumSpeed, EmulatorShortcut.MaxSpeed, notClient);
 
 			BindShortcut(mnuPause, EmulatorShortcut.Pause, runningNotClient);
@@ -868,6 +869,8 @@ namespace Mesen.GUI.Forms
 			BindShortcut(mnuScale4x, EmulatorShortcut.SetScale4x);
 			BindShortcut(mnuScale5x, EmulatorShortcut.SetScale5x);
 			BindShortcut(mnuScale6x, EmulatorShortcut.SetScale6x);
+			BindShortcut(mnuScale7x, EmulatorShortcut.SetScale7x);
+			BindShortcut(mnuScale8x, EmulatorShortcut.SetScale8x);
 
 			BindShortcut(mnuFullscreen, EmulatorShortcut.ToggleFullscreen);
 
@@ -968,6 +971,7 @@ namespace Mesen.GUI.Forms
 				case EmulatorShortcut.OpenFile: OpenFile(); break;
 				case EmulatorShortcut.IncreaseSpeed: InteropEmu.IncreaseEmulationSpeed(); break;
 				case EmulatorShortcut.DecreaseSpeed: InteropEmu.DecreaseEmulationSpeed(); break;
+				case EmulatorShortcut.NormalSpeed: InteropEmu.SetEmulationSpeed(100); break;
 				case EmulatorShortcut.SwitchDiskSide: InteropEmu.FdsSwitchDiskSide(); break;
 				case EmulatorShortcut.EjectDisk: InteropEmu.FdsEjectDisk(); break;
 
@@ -977,7 +981,9 @@ namespace Mesen.GUI.Forms
 				case EmulatorShortcut.SetScale4x: SetScale(4); break;
 				case EmulatorShortcut.SetScale5x: SetScale(5); break;
 				case EmulatorShortcut.SetScale6x: SetScale(6); break;
-					
+				case EmulatorShortcut.SetScale7x: SetScale(7); break;
+				case EmulatorShortcut.SetScale8x: SetScale(8); break;
+
 				case EmulatorShortcut.InsertCoin1: InteropEmu.VsInsertCoin(0); break;
 				case EmulatorShortcut.InsertCoin2: InteropEmu.VsInsertCoin(1); break;
 				case EmulatorShortcut.InsertCoin3: InteropEmu.VsInsertCoin(2); break;

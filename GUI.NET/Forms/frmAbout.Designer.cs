@@ -26,7 +26,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAbout));
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.grpAcknowledgements = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -71,7 +70,6 @@
             this.lblWebsite = new System.Windows.Forms.Label();
             this.lblLink = new System.Windows.Forms.Label();
             this.okButton = new System.Windows.Forms.Button();
-            this.picDonate = new System.Windows.Forms.PictureBox();
             this.lblDonate = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelVersion = new System.Windows.Forms.Label();
@@ -86,7 +84,6 @@
             this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDonate)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,7 +101,6 @@
             this.tableLayoutPanel.Controls.Add(this.labelCopyright, 1, 3);
             this.tableLayoutPanel.Controls.Add(this.flowLayoutPanel1, 1, 4);
             this.tableLayoutPanel.Controls.Add(this.okButton, 1, 7);
-            this.tableLayoutPanel.Controls.Add(this.picDonate, 0, 7);
             this.tableLayoutPanel.Controls.Add(this.lblDonate, 0, 6);
             this.tableLayoutPanel.Controls.Add(this.flowLayoutPanel2, 1, 1);
             this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -633,7 +629,7 @@
             this.lblWebsite.Location = new System.Drawing.Point(6, 0);
             this.lblWebsite.Margin = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.lblWebsite.Name = "lblWebsite";
-            this.lblWebsite.Size = new System.Drawing.Size(61, 16);
+            this.lblWebsite.Size = new System.Drawing.Size(60, 16);
             this.lblWebsite.TabIndex = 25;
             this.lblWebsite.Text = "Website:";
             this.lblWebsite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -644,7 +640,7 @@
             this.lblLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLink.ForeColor = System.Drawing.Color.Blue;
-            this.lblLink.Location = new System.Drawing.Point(67, 2);
+            this.lblLink.Location = new System.Drawing.Point(66, 2);
             this.lblLink.Margin = new System.Windows.Forms.Padding(0, 2, 3, 0);
             this.lblLink.Name = "lblLink";
             this.lblLink.Size = new System.Drawing.Size(80, 13);
@@ -662,19 +658,6 @@
             this.okButton.TabIndex = 24;
             this.okButton.Text = "&OK";
             // 
-            // picDonate
-            // 
-            this.picDonate.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.picDonate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picDonate.Image = ((System.Drawing.Image)(resources.GetObject("picDonate.Image")));
-            this.picDonate.Location = new System.Drawing.Point(3, 327);
-            this.picDonate.Name = "picDonate";
-            this.picDonate.Size = new System.Drawing.Size(78, 22);
-            this.picDonate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picDonate.TabIndex = 29;
-            this.picDonate.TabStop = false;
-            this.picDonate.Click += new System.EventHandler(this.picDonate_Click);
-            // 
             // lblDonate
             // 
             this.lblDonate.AutoSize = true;
@@ -682,10 +665,9 @@
             this.lblDonate.Location = new System.Drawing.Point(0, 298);
             this.lblDonate.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
             this.lblDonate.Name = "lblDonate";
-            this.lblDonate.Size = new System.Drawing.Size(271, 26);
+            this.lblDonate.Size = new System.Drawing.Size(211, 26);
             this.lblDonate.TabIndex = 30;
-            this.lblDonate.Text = "If you want to support Mesen, please consider donating.\r\nThank you for your suppo" +
-    "rt!";
+            this.lblDonate.Text = "You are using a fork, Mesen-Y by Yave Yu.\r\nBased on Mesen-X, by NovaSquirrel.";
             // 
             // flowLayoutPanel2
             // 
@@ -722,8 +704,8 @@
             // frmAbout
             // 
             this.AcceptButton = this.okButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.CancelButton = this.okButton;
@@ -756,7 +738,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDonate)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -775,7 +756,6 @@
 		private System.Windows.Forms.Label lblWebsite;
 		private System.Windows.Forms.Label lblLink;
 		private System.Windows.Forms.Button okButton;
-		private System.Windows.Forms.PictureBox picDonate;
 		private System.Windows.Forms.Label lblDonate;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
 		private System.Windows.Forms.Label lblMesenVersion;

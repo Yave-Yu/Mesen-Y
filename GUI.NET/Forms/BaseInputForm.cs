@@ -87,5 +87,19 @@ namespace Mesen.GUI.Forms
 			base.OnActivated(e);
 			InteropEmu.ResetKeyState();
 		}
-	}
+
+	  private void InitializeComponent()
+	  {
+            this.SuspendLayout();
+            // 
+            // BaseInputForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "BaseInputForm";
+            this.ResumeLayout(false);
+
+	  }
+   }
 }

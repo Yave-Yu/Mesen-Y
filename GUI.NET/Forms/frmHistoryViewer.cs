@@ -288,5 +288,15 @@ namespace Mesen.GUI.Forms
 		{
 			SetScale(6);
 		}
+
+		private void mnuScale7x_Click(object sender, EventArgs e)
+		{
+			SetScale(7);
+		}
+
+		private void mnuScale8x_Click(object sender, EventArgs e)
+		{
+			SetScale(8);
+		}
 	}
 }
