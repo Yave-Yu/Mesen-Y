@@ -90,7 +90,7 @@
             this.btnClear.AutoSize = true;
             this.btnClear.Location = new System.Drawing.Point(3, 3);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(105, 23);
+            this.btnClear.Size = new System.Drawing.Size(123, 23);
             this.btnClear.TabIndex = 3;
             this.btnClear.Text = "Clear Key Bindings";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -110,9 +110,9 @@
             // btnSetDefault
             // 
             this.btnSetDefault.AutoSize = true;
-            this.btnSetDefault.Location = new System.Drawing.Point(114, 3);
+            this.btnSetDefault.Location = new System.Drawing.Point(3, 32);
             this.btnSetDefault.Name = "btnSetDefault";
-            this.btnSetDefault.Size = new System.Drawing.Size(113, 23);
+            this.btnSetDefault.Size = new System.Drawing.Size(135, 23);
             this.btnSetDefault.TabIndex = 4;
             this.btnSetDefault.Text = "Set Default Bindings";
             this.btnSetDefault.UseVisualStyleBackColor = true;
@@ -346,8 +346,8 @@
             // 
             // frmVirtualBoyConfig
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(496, 434);
             this.Controls.Add(this.tlpMain);
             this.Controls.Add(this.ctrlKeyBindingHint1);

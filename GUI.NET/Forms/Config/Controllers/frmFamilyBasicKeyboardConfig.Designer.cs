@@ -27,352 +27,352 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFamilyBasicKeyboardConfig));
-			this.imageList = new System.Windows.Forms.ImageList(this.components);
-			this.btnClear = new System.Windows.Forms.Button();
-			this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-			this.btnSetDefault = new System.Windows.Forms.Button();
-			this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
-			this.tabMain = new System.Windows.Forms.TabControl();
-			this.tpgSet1 = new System.Windows.Forms.TabPage();
-			this.ctrlFamilyBasicKeyboardConfig1 = new Mesen.GUI.Forms.Config.ctrlFamilyBasicKeyboardConfig();
-			this.tpgSet2 = new System.Windows.Forms.TabPage();
-			this.ctrlFamilyBasicKeyboardConfig2 = new Mesen.GUI.Forms.Config.ctrlFamilyBasicKeyboardConfig();
-			this.tpgSet3 = new System.Windows.Forms.TabPage();
-			this.ctrlFamilyBasicKeyboardConfig3 = new Mesen.GUI.Forms.Config.ctrlFamilyBasicKeyboardConfig();
-			this.tpgSet4 = new System.Windows.Forms.TabPage();
-			this.ctrlFamilyBasicKeyboardConfig4 = new Mesen.GUI.Forms.Config.ctrlFamilyBasicKeyboardConfig();
-			this.mnuStripPreset = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this.mnuKeyboard = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuWasdLayout = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuArrowLayout = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuFceuxLayout = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuNestopiaLayout = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-			this.mnuXboxController = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuXboxLayout1 = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuXboxLayout2 = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuPs4Controller = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuPs4Layout1 = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuPs4Layout2 = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuSnes30Controller = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuSnes30Layout1 = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuSnes30Layout2 = new System.Windows.Forms.ToolStripMenuItem();
-			this.ctrlKeyBindingHint1 = new Mesen.GUI.Forms.Config.ctrlKeyBindingHint();
-			this.baseConfigPanel.SuspendLayout();
-			this.flowLayoutPanel2.SuspendLayout();
-			this.tlpMain.SuspendLayout();
-			this.tabMain.SuspendLayout();
-			this.tpgSet1.SuspendLayout();
-			this.tpgSet2.SuspendLayout();
-			this.tpgSet3.SuspendLayout();
-			this.tpgSet4.SuspendLayout();
-			this.mnuStripPreset.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// baseConfigPanel
-			// 
-			this.baseConfigPanel.Controls.Add(this.flowLayoutPanel2);
-			this.baseConfigPanel.Location = new System.Drawing.Point(0, 469);
-			this.baseConfigPanel.Size = new System.Drawing.Size(825, 29);
-			this.baseConfigPanel.Controls.SetChildIndex(this.flowLayoutPanel2, 0);
-			// 
-			// imageList
-			// 
-			this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
-			this.imageList.TransparentColor = System.Drawing.Color.Transparent;
-			this.imageList.Images.SetKeyName(0, "Keyboard");
-			this.imageList.Images.SetKeyName(1, "Controller");
-			// 
-			// btnClear
-			// 
-			this.btnClear.AutoSize = true;
-			this.btnClear.Location = new System.Drawing.Point(3, 3);
-			this.btnClear.Name = "btnClear";
-			this.btnClear.Size = new System.Drawing.Size(105, 23);
-			this.btnClear.TabIndex = 3;
-			this.btnClear.Text = "Clear Key Bindings";
-			this.btnClear.UseVisualStyleBackColor = true;
-			this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-			// 
-			// flowLayoutPanel2
-			// 
-			this.flowLayoutPanel2.Controls.Add(this.btnClear);
-			this.flowLayoutPanel2.Controls.Add(this.btnSetDefault);
-			this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-			this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-			this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-			this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-			this.flowLayoutPanel2.Size = new System.Drawing.Size(264, 29);
-			this.flowLayoutPanel2.TabIndex = 5;
-			// 
-			// btnSetDefault
-			// 
-			this.btnSetDefault.AutoSize = true;
-			this.btnSetDefault.Location = new System.Drawing.Point(114, 3);
-			this.btnSetDefault.Name = "btnSetDefault";
-			this.btnSetDefault.Size = new System.Drawing.Size(113, 23);
-			this.btnSetDefault.TabIndex = 4;
-			this.btnSetDefault.Text = "Set Default Bindings";
-			this.btnSetDefault.UseVisualStyleBackColor = true;
-			this.btnSetDefault.Click += new System.EventHandler(this.btnSetDefault_Click);
-			// 
-			// tlpMain
-			// 
-			this.tlpMain.ColumnCount = 3;
-			this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-			this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-			this.tlpMain.Controls.Add(this.tabMain, 0, 1);
-			this.tlpMain.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tlpMain.Location = new System.Drawing.Point(0, 31);
-			this.tlpMain.Margin = new System.Windows.Forms.Padding(0);
-			this.tlpMain.Name = "tlpMain";
-			this.tlpMain.RowCount = 3;
-			this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
-			this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
-			this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tlpMain.Size = new System.Drawing.Size(825, 438);
-			this.tlpMain.TabIndex = 23;
-			// 
-			// tabMain
-			// 
-			this.tabMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFamilyBasicKeyboardConfig));
+            this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.btnClear = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnSetDefault = new System.Windows.Forms.Button();
+            this.tlpMain = new System.Windows.Forms.TableLayoutPanel();
+            this.tabMain = new System.Windows.Forms.TabControl();
+            this.tpgSet1 = new System.Windows.Forms.TabPage();
+            this.ctrlFamilyBasicKeyboardConfig1 = new Mesen.GUI.Forms.Config.ctrlFamilyBasicKeyboardConfig();
+            this.tpgSet2 = new System.Windows.Forms.TabPage();
+            this.ctrlFamilyBasicKeyboardConfig2 = new Mesen.GUI.Forms.Config.ctrlFamilyBasicKeyboardConfig();
+            this.tpgSet3 = new System.Windows.Forms.TabPage();
+            this.ctrlFamilyBasicKeyboardConfig3 = new Mesen.GUI.Forms.Config.ctrlFamilyBasicKeyboardConfig();
+            this.tpgSet4 = new System.Windows.Forms.TabPage();
+            this.ctrlFamilyBasicKeyboardConfig4 = new Mesen.GUI.Forms.Config.ctrlFamilyBasicKeyboardConfig();
+            this.mnuStripPreset = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.mnuKeyboard = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuWasdLayout = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuArrowLayout = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuFceuxLayout = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuNestopiaLayout = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuXboxController = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuXboxLayout1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuXboxLayout2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPs4Controller = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPs4Layout1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPs4Layout2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSnes30Controller = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSnes30Layout1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSnes30Layout2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ctrlKeyBindingHint1 = new Mesen.GUI.Forms.Config.ctrlKeyBindingHint();
+            this.baseConfigPanel.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.tlpMain.SuspendLayout();
+            this.tabMain.SuspendLayout();
+            this.tpgSet1.SuspendLayout();
+            this.tpgSet2.SuspendLayout();
+            this.tpgSet3.SuspendLayout();
+            this.tpgSet4.SuspendLayout();
+            this.mnuStripPreset.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // baseConfigPanel
+            // 
+            this.baseConfigPanel.Controls.Add(this.flowLayoutPanel2);
+            this.baseConfigPanel.Location = new System.Drawing.Point(0, 469);
+            this.baseConfigPanel.Size = new System.Drawing.Size(825, 29);
+            this.baseConfigPanel.Controls.SetChildIndex(this.flowLayoutPanel2, 0);
+            // 
+            // imageList
+            // 
+            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
+            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList.Images.SetKeyName(0, "Keyboard");
+            this.imageList.Images.SetKeyName(1, "Controller");
+            // 
+            // btnClear
+            // 
+            this.btnClear.AutoSize = true;
+            this.btnClear.Location = new System.Drawing.Point(3, 3);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(123, 23);
+            this.btnClear.TabIndex = 3;
+            this.btnClear.Text = "Clear Key Bindings";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.btnClear);
+            this.flowLayoutPanel2.Controls.Add(this.btnSetDefault);
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(264, 29);
+            this.flowLayoutPanel2.TabIndex = 5;
+            // 
+            // btnSetDefault
+            // 
+            this.btnSetDefault.AutoSize = true;
+            this.btnSetDefault.Location = new System.Drawing.Point(3, 32);
+            this.btnSetDefault.Name = "btnSetDefault";
+            this.btnSetDefault.Size = new System.Drawing.Size(135, 23);
+            this.btnSetDefault.TabIndex = 4;
+            this.btnSetDefault.Text = "Set Default Bindings";
+            this.btnSetDefault.UseVisualStyleBackColor = true;
+            this.btnSetDefault.Click += new System.EventHandler(this.btnSetDefault_Click);
+            // 
+            // tlpMain
+            // 
+            this.tlpMain.ColumnCount = 3;
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tlpMain.Controls.Add(this.tabMain, 0, 1);
+            this.tlpMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpMain.Location = new System.Drawing.Point(0, 31);
+            this.tlpMain.Margin = new System.Windows.Forms.Padding(0);
+            this.tlpMain.Name = "tlpMain";
+            this.tlpMain.RowCount = 3;
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tlpMain.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpMain.Size = new System.Drawing.Size(825, 438);
+            this.tlpMain.TabIndex = 23;
+            // 
+            // tabMain
+            // 
+            this.tabMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.tlpMain.SetColumnSpan(this.tabMain, 3);
-			this.tabMain.Controls.Add(this.tpgSet1);
-			this.tabMain.Controls.Add(this.tpgSet2);
-			this.tabMain.Controls.Add(this.tpgSet3);
-			this.tabMain.Controls.Add(this.tpgSet4);
-			this.tabMain.ImageList = this.imageList;
-			this.tabMain.Location = new System.Drawing.Point(3, 3);
-			this.tabMain.Name = "tabMain";
-			this.tabMain.SelectedIndex = 0;
-			this.tabMain.Size = new System.Drawing.Size(819, 432);
-			this.tabMain.TabIndex = 3;
-			// 
-			// tpgSet1
-			// 
-			this.tpgSet1.Controls.Add(this.ctrlFamilyBasicKeyboardConfig1);
-			this.tpgSet1.Location = new System.Drawing.Point(4, 23);
-			this.tpgSet1.Name = "tpgSet1";
-			this.tpgSet1.Size = new System.Drawing.Size(811, 405);
-			this.tpgSet1.TabIndex = 0;
-			this.tpgSet1.Text = "Key Set #1";
-			this.tpgSet1.UseVisualStyleBackColor = true;
-			// 
-			// ctrlFamilyBasicKeyboardConfig1
-			// 
-			this.ctrlFamilyBasicKeyboardConfig1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.ctrlFamilyBasicKeyboardConfig1.Location = new System.Drawing.Point(0, 0);
-			this.ctrlFamilyBasicKeyboardConfig1.Name = "ctrlFamilyBasicKeyboardConfig1";
-			this.ctrlFamilyBasicKeyboardConfig1.Size = new System.Drawing.Size(811, 405);
-			this.ctrlFamilyBasicKeyboardConfig1.TabIndex = 0;
-			// 
-			// tpgSet2
-			// 
-			this.tpgSet2.Controls.Add(this.ctrlFamilyBasicKeyboardConfig2);
-			this.tpgSet2.Location = new System.Drawing.Point(4, 23);
-			this.tpgSet2.Name = "tpgSet2";
-			this.tpgSet2.Size = new System.Drawing.Size(811, 392);
-			this.tpgSet2.TabIndex = 1;
-			this.tpgSet2.Text = "Key Set #2";
-			this.tpgSet2.UseVisualStyleBackColor = true;
-			// 
-			// ctrlFamilyBasicKeyboardConfig2
-			// 
-			this.ctrlFamilyBasicKeyboardConfig2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.ctrlFamilyBasicKeyboardConfig2.Location = new System.Drawing.Point(0, 0);
-			this.ctrlFamilyBasicKeyboardConfig2.Name = "ctrlFamilyBasicKeyboardConfig2";
-			this.ctrlFamilyBasicKeyboardConfig2.Size = new System.Drawing.Size(811, 392);
-			this.ctrlFamilyBasicKeyboardConfig2.TabIndex = 1;
-			// 
-			// tpgSet3
-			// 
-			this.tpgSet3.Controls.Add(this.ctrlFamilyBasicKeyboardConfig3);
-			this.tpgSet3.Location = new System.Drawing.Point(4, 23);
-			this.tpgSet3.Name = "tpgSet3";
-			this.tpgSet3.Size = new System.Drawing.Size(811, 392);
-			this.tpgSet3.TabIndex = 2;
-			this.tpgSet3.Text = "Key Set #3";
-			this.tpgSet3.UseVisualStyleBackColor = true;
-			// 
-			// ctrlFamilyBasicKeyboardConfig3
-			// 
-			this.ctrlFamilyBasicKeyboardConfig3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.ctrlFamilyBasicKeyboardConfig3.Location = new System.Drawing.Point(0, 0);
-			this.ctrlFamilyBasicKeyboardConfig3.Name = "ctrlFamilyBasicKeyboardConfig3";
-			this.ctrlFamilyBasicKeyboardConfig3.Size = new System.Drawing.Size(811, 392);
-			this.ctrlFamilyBasicKeyboardConfig3.TabIndex = 1;
-			// 
-			// tpgSet4
-			// 
-			this.tpgSet4.Controls.Add(this.ctrlFamilyBasicKeyboardConfig4);
-			this.tpgSet4.Location = new System.Drawing.Point(4, 23);
-			this.tpgSet4.Name = "tpgSet4";
-			this.tpgSet4.Size = new System.Drawing.Size(811, 392);
-			this.tpgSet4.TabIndex = 3;
-			this.tpgSet4.Text = "Key Set #4";
-			this.tpgSet4.UseVisualStyleBackColor = true;
-			// 
-			// ctrlFamilyBasicKeyboardConfig4
-			// 
-			this.ctrlFamilyBasicKeyboardConfig4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.ctrlFamilyBasicKeyboardConfig4.Location = new System.Drawing.Point(0, 0);
-			this.ctrlFamilyBasicKeyboardConfig4.Name = "ctrlFamilyBasicKeyboardConfig4";
-			this.ctrlFamilyBasicKeyboardConfig4.Size = new System.Drawing.Size(811, 392);
-			this.ctrlFamilyBasicKeyboardConfig4.TabIndex = 1;
-			// 
-			// mnuStripPreset
-			// 
-			this.mnuStripPreset.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tlpMain.SetColumnSpan(this.tabMain, 3);
+            this.tabMain.Controls.Add(this.tpgSet1);
+            this.tabMain.Controls.Add(this.tpgSet2);
+            this.tabMain.Controls.Add(this.tpgSet3);
+            this.tabMain.Controls.Add(this.tpgSet4);
+            this.tabMain.ImageList = this.imageList;
+            this.tabMain.Location = new System.Drawing.Point(3, 3);
+            this.tabMain.Name = "tabMain";
+            this.tabMain.SelectedIndex = 0;
+            this.tabMain.Size = new System.Drawing.Size(819, 432);
+            this.tabMain.TabIndex = 3;
+            // 
+            // tpgSet1
+            // 
+            this.tpgSet1.Controls.Add(this.ctrlFamilyBasicKeyboardConfig1);
+            this.tpgSet1.Location = new System.Drawing.Point(4, 23);
+            this.tpgSet1.Name = "tpgSet1";
+            this.tpgSet1.Size = new System.Drawing.Size(811, 405);
+            this.tpgSet1.TabIndex = 0;
+            this.tpgSet1.Text = "Key Set #1";
+            this.tpgSet1.UseVisualStyleBackColor = true;
+            // 
+            // ctrlFamilyBasicKeyboardConfig1
+            // 
+            this.ctrlFamilyBasicKeyboardConfig1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctrlFamilyBasicKeyboardConfig1.Location = new System.Drawing.Point(0, 0);
+            this.ctrlFamilyBasicKeyboardConfig1.Name = "ctrlFamilyBasicKeyboardConfig1";
+            this.ctrlFamilyBasicKeyboardConfig1.Size = new System.Drawing.Size(811, 405);
+            this.ctrlFamilyBasicKeyboardConfig1.TabIndex = 0;
+            // 
+            // tpgSet2
+            // 
+            this.tpgSet2.Controls.Add(this.ctrlFamilyBasicKeyboardConfig2);
+            this.tpgSet2.Location = new System.Drawing.Point(4, 23);
+            this.tpgSet2.Name = "tpgSet2";
+            this.tpgSet2.Size = new System.Drawing.Size(811, 405);
+            this.tpgSet2.TabIndex = 1;
+            this.tpgSet2.Text = "Key Set #2";
+            this.tpgSet2.UseVisualStyleBackColor = true;
+            // 
+            // ctrlFamilyBasicKeyboardConfig2
+            // 
+            this.ctrlFamilyBasicKeyboardConfig2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctrlFamilyBasicKeyboardConfig2.Location = new System.Drawing.Point(0, 0);
+            this.ctrlFamilyBasicKeyboardConfig2.Name = "ctrlFamilyBasicKeyboardConfig2";
+            this.ctrlFamilyBasicKeyboardConfig2.Size = new System.Drawing.Size(811, 405);
+            this.ctrlFamilyBasicKeyboardConfig2.TabIndex = 1;
+            // 
+            // tpgSet3
+            // 
+            this.tpgSet3.Controls.Add(this.ctrlFamilyBasicKeyboardConfig3);
+            this.tpgSet3.Location = new System.Drawing.Point(4, 23);
+            this.tpgSet3.Name = "tpgSet3";
+            this.tpgSet3.Size = new System.Drawing.Size(811, 405);
+            this.tpgSet3.TabIndex = 2;
+            this.tpgSet3.Text = "Key Set #3";
+            this.tpgSet3.UseVisualStyleBackColor = true;
+            // 
+            // ctrlFamilyBasicKeyboardConfig3
+            // 
+            this.ctrlFamilyBasicKeyboardConfig3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctrlFamilyBasicKeyboardConfig3.Location = new System.Drawing.Point(0, 0);
+            this.ctrlFamilyBasicKeyboardConfig3.Name = "ctrlFamilyBasicKeyboardConfig3";
+            this.ctrlFamilyBasicKeyboardConfig3.Size = new System.Drawing.Size(811, 405);
+            this.ctrlFamilyBasicKeyboardConfig3.TabIndex = 1;
+            // 
+            // tpgSet4
+            // 
+            this.tpgSet4.Controls.Add(this.ctrlFamilyBasicKeyboardConfig4);
+            this.tpgSet4.Location = new System.Drawing.Point(4, 23);
+            this.tpgSet4.Name = "tpgSet4";
+            this.tpgSet4.Size = new System.Drawing.Size(811, 405);
+            this.tpgSet4.TabIndex = 3;
+            this.tpgSet4.Text = "Key Set #4";
+            this.tpgSet4.UseVisualStyleBackColor = true;
+            // 
+            // ctrlFamilyBasicKeyboardConfig4
+            // 
+            this.ctrlFamilyBasicKeyboardConfig4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctrlFamilyBasicKeyboardConfig4.Location = new System.Drawing.Point(0, 0);
+            this.ctrlFamilyBasicKeyboardConfig4.Name = "ctrlFamilyBasicKeyboardConfig4";
+            this.ctrlFamilyBasicKeyboardConfig4.Size = new System.Drawing.Size(811, 405);
+            this.ctrlFamilyBasicKeyboardConfig4.TabIndex = 1;
+            // 
+            // mnuStripPreset
+            // 
+            this.mnuStripPreset.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuKeyboard,
             this.toolStripMenuItem1,
             this.mnuXboxController,
             this.mnuPs4Controller,
             this.mnuSnes30Controller});
-			this.mnuStripPreset.Name = "mnuStripPreset";
-			this.mnuStripPreset.Size = new System.Drawing.Size(170, 98);
-			// 
-			// mnuKeyboard
-			// 
-			this.mnuKeyboard.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuStripPreset.Name = "mnuStripPreset";
+            this.mnuStripPreset.Size = new System.Drawing.Size(170, 98);
+            // 
+            // mnuKeyboard
+            // 
+            this.mnuKeyboard.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuWasdLayout,
             this.mnuArrowLayout,
             this.mnuFceuxLayout,
             this.mnuNestopiaLayout});
-			this.mnuKeyboard.Name = "mnuKeyboard";
-			this.mnuKeyboard.Size = new System.Drawing.Size(169, 22);
-			this.mnuKeyboard.Text = "Keyboard";
-			// 
-			// mnuWasdLayout
-			// 
-			this.mnuWasdLayout.Name = "mnuWasdLayout";
-			this.mnuWasdLayout.Size = new System.Drawing.Size(172, 22);
-			this.mnuWasdLayout.Text = "WASD Layout";
-			// 
-			// mnuArrowLayout
-			// 
-			this.mnuArrowLayout.Name = "mnuArrowLayout";
-			this.mnuArrowLayout.Size = new System.Drawing.Size(172, 22);
-			this.mnuArrowLayout.Text = "Arrow Keys Layout";
-			// 
-			// mnuFceuxLayout
-			// 
-			this.mnuFceuxLayout.Name = "mnuFceuxLayout";
-			this.mnuFceuxLayout.Size = new System.Drawing.Size(172, 22);
-			this.mnuFceuxLayout.Text = "FCEUX Default";
-			// 
-			// mnuNestopiaLayout
-			// 
-			this.mnuNestopiaLayout.Name = "mnuNestopiaLayout";
-			this.mnuNestopiaLayout.Size = new System.Drawing.Size(172, 22);
-			this.mnuNestopiaLayout.Text = "Nestopia Default";
-			// 
-			// toolStripMenuItem1
-			// 
-			this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-			this.toolStripMenuItem1.Size = new System.Drawing.Size(166, 6);
-			// 
-			// mnuXboxController
-			// 
-			this.mnuXboxController.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuKeyboard.Name = "mnuKeyboard";
+            this.mnuKeyboard.Size = new System.Drawing.Size(169, 22);
+            this.mnuKeyboard.Text = "Keyboard";
+            // 
+            // mnuWasdLayout
+            // 
+            this.mnuWasdLayout.Name = "mnuWasdLayout";
+            this.mnuWasdLayout.Size = new System.Drawing.Size(172, 22);
+            this.mnuWasdLayout.Text = "WASD Layout";
+            // 
+            // mnuArrowLayout
+            // 
+            this.mnuArrowLayout.Name = "mnuArrowLayout";
+            this.mnuArrowLayout.Size = new System.Drawing.Size(172, 22);
+            this.mnuArrowLayout.Text = "Arrow Keys Layout";
+            // 
+            // mnuFceuxLayout
+            // 
+            this.mnuFceuxLayout.Name = "mnuFceuxLayout";
+            this.mnuFceuxLayout.Size = new System.Drawing.Size(172, 22);
+            this.mnuFceuxLayout.Text = "FCEUX Default";
+            // 
+            // mnuNestopiaLayout
+            // 
+            this.mnuNestopiaLayout.Name = "mnuNestopiaLayout";
+            this.mnuNestopiaLayout.Size = new System.Drawing.Size(172, 22);
+            this.mnuNestopiaLayout.Text = "Nestopia Default";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(166, 6);
+            // 
+            // mnuXboxController
+            // 
+            this.mnuXboxController.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuXboxLayout1,
             this.mnuXboxLayout2});
-			this.mnuXboxController.Name = "mnuXboxController";
-			this.mnuXboxController.Size = new System.Drawing.Size(169, 22);
-			this.mnuXboxController.Text = "Xbox Controller";
-			// 
-			// mnuXboxLayout1
-			// 
-			this.mnuXboxLayout1.Name = "mnuXboxLayout1";
-			this.mnuXboxLayout1.Size = new System.Drawing.Size(143, 22);
-			this.mnuXboxLayout1.Text = "Controller #1";
-			// 
-			// mnuXboxLayout2
-			// 
-			this.mnuXboxLayout2.Name = "mnuXboxLayout2";
-			this.mnuXboxLayout2.Size = new System.Drawing.Size(143, 22);
-			this.mnuXboxLayout2.Text = "Controller #2";
-			// 
-			// mnuPs4Controller
-			// 
-			this.mnuPs4Controller.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuXboxController.Name = "mnuXboxController";
+            this.mnuXboxController.Size = new System.Drawing.Size(169, 22);
+            this.mnuXboxController.Text = "Xbox Controller";
+            // 
+            // mnuXboxLayout1
+            // 
+            this.mnuXboxLayout1.Name = "mnuXboxLayout1";
+            this.mnuXboxLayout1.Size = new System.Drawing.Size(143, 22);
+            this.mnuXboxLayout1.Text = "Controller #1";
+            // 
+            // mnuXboxLayout2
+            // 
+            this.mnuXboxLayout2.Name = "mnuXboxLayout2";
+            this.mnuXboxLayout2.Size = new System.Drawing.Size(143, 22);
+            this.mnuXboxLayout2.Text = "Controller #2";
+            // 
+            // mnuPs4Controller
+            // 
+            this.mnuPs4Controller.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuPs4Layout1,
             this.mnuPs4Layout2});
-			this.mnuPs4Controller.Name = "mnuPs4Controller";
-			this.mnuPs4Controller.Size = new System.Drawing.Size(169, 22);
-			this.mnuPs4Controller.Text = "PS4 Controller";
-			// 
-			// mnuPs4Layout1
-			// 
-			this.mnuPs4Layout1.Name = "mnuPs4Layout1";
-			this.mnuPs4Layout1.Size = new System.Drawing.Size(143, 22);
-			this.mnuPs4Layout1.Text = "Controller #1";
-			// 
-			// mnuPs4Layout2
-			// 
-			this.mnuPs4Layout2.Name = "mnuPs4Layout2";
-			this.mnuPs4Layout2.Size = new System.Drawing.Size(143, 22);
-			this.mnuPs4Layout2.Text = "Controller #2";
-			// 
-			// mnuSnes30Controller
-			// 
-			this.mnuSnes30Controller.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuPs4Controller.Name = "mnuPs4Controller";
+            this.mnuPs4Controller.Size = new System.Drawing.Size(169, 22);
+            this.mnuPs4Controller.Text = "PS4 Controller";
+            // 
+            // mnuPs4Layout1
+            // 
+            this.mnuPs4Layout1.Name = "mnuPs4Layout1";
+            this.mnuPs4Layout1.Size = new System.Drawing.Size(143, 22);
+            this.mnuPs4Layout1.Text = "Controller #1";
+            // 
+            // mnuPs4Layout2
+            // 
+            this.mnuPs4Layout2.Name = "mnuPs4Layout2";
+            this.mnuPs4Layout2.Size = new System.Drawing.Size(143, 22);
+            this.mnuPs4Layout2.Text = "Controller #2";
+            // 
+            // mnuSnes30Controller
+            // 
+            this.mnuSnes30Controller.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuSnes30Layout1,
             this.mnuSnes30Layout2});
-			this.mnuSnes30Controller.Name = "mnuSnes30Controller";
-			this.mnuSnes30Controller.Size = new System.Drawing.Size(169, 22);
-			this.mnuSnes30Controller.Text = "SNES30 Controller";
-			// 
-			// mnuSnes30Layout1
-			// 
-			this.mnuSnes30Layout1.Name = "mnuSnes30Layout1";
-			this.mnuSnes30Layout1.Size = new System.Drawing.Size(143, 22);
-			this.mnuSnes30Layout1.Text = "Controller #1";
-			// 
-			// mnuSnes30Layout2
-			// 
-			this.mnuSnes30Layout2.Name = "mnuSnes30Layout2";
-			this.mnuSnes30Layout2.Size = new System.Drawing.Size(143, 22);
-			this.mnuSnes30Layout2.Text = "Controller #2";
-			// 
-			// ctrlKeyBindingHint1
-			// 
-			this.ctrlKeyBindingHint1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.ctrlKeyBindingHint1.Location = new System.Drawing.Point(0, 0);
-			this.ctrlKeyBindingHint1.Name = "ctrlKeyBindingHint1";
-			this.ctrlKeyBindingHint1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-			this.ctrlKeyBindingHint1.Size = new System.Drawing.Size(825, 31);
-			this.ctrlKeyBindingHint1.TabIndex = 24;
-			// 
-			// frmFamilyBasicKeyboardConfig
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(825, 498);
-			this.Controls.Add(this.tlpMain);
-			this.Controls.Add(this.ctrlKeyBindingHint1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-			this.Name = "frmFamilyBasicKeyboardConfig";
-			this.Text = "Family Basic Keyboard";
-			this.Controls.SetChildIndex(this.ctrlKeyBindingHint1, 0);
-			this.Controls.SetChildIndex(this.baseConfigPanel, 0);
-			this.Controls.SetChildIndex(this.tlpMain, 0);
-			this.baseConfigPanel.ResumeLayout(false);
-			this.flowLayoutPanel2.ResumeLayout(false);
-			this.flowLayoutPanel2.PerformLayout();
-			this.tlpMain.ResumeLayout(false);
-			this.tabMain.ResumeLayout(false);
-			this.tpgSet1.ResumeLayout(false);
-			this.tpgSet2.ResumeLayout(false);
-			this.tpgSet3.ResumeLayout(false);
-			this.tpgSet4.ResumeLayout(false);
-			this.mnuStripPreset.ResumeLayout(false);
-			this.ResumeLayout(false);
+            this.mnuSnes30Controller.Name = "mnuSnes30Controller";
+            this.mnuSnes30Controller.Size = new System.Drawing.Size(169, 22);
+            this.mnuSnes30Controller.Text = "SNES30 Controller";
+            // 
+            // mnuSnes30Layout1
+            // 
+            this.mnuSnes30Layout1.Name = "mnuSnes30Layout1";
+            this.mnuSnes30Layout1.Size = new System.Drawing.Size(143, 22);
+            this.mnuSnes30Layout1.Text = "Controller #1";
+            // 
+            // mnuSnes30Layout2
+            // 
+            this.mnuSnes30Layout2.Name = "mnuSnes30Layout2";
+            this.mnuSnes30Layout2.Size = new System.Drawing.Size(143, 22);
+            this.mnuSnes30Layout2.Text = "Controller #2";
+            // 
+            // ctrlKeyBindingHint1
+            // 
+            this.ctrlKeyBindingHint1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ctrlKeyBindingHint1.Location = new System.Drawing.Point(0, 0);
+            this.ctrlKeyBindingHint1.Name = "ctrlKeyBindingHint1";
+            this.ctrlKeyBindingHint1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.ctrlKeyBindingHint1.Size = new System.Drawing.Size(825, 31);
+            this.ctrlKeyBindingHint1.TabIndex = 24;
+            // 
+            // frmFamilyBasicKeyboardConfig
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(825, 498);
+            this.Controls.Add(this.tlpMain);
+            this.Controls.Add(this.ctrlKeyBindingHint1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "frmFamilyBasicKeyboardConfig";
+            this.Text = "Family Basic Keyboard";
+            this.Controls.SetChildIndex(this.ctrlKeyBindingHint1, 0);
+            this.Controls.SetChildIndex(this.baseConfigPanel, 0);
+            this.Controls.SetChildIndex(this.tlpMain, 0);
+            this.baseConfigPanel.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            this.tlpMain.ResumeLayout(false);
+            this.tabMain.ResumeLayout(false);
+            this.tpgSet1.ResumeLayout(false);
+            this.tpgSet2.ResumeLayout(false);
+            this.tpgSet3.ResumeLayout(false);
+            this.tpgSet4.ResumeLayout(false);
+            this.mnuStripPreset.ResumeLayout(false);
+            this.ResumeLayout(false);
 
 		}
 
