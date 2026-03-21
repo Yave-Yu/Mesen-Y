@@ -97,6 +97,7 @@
 			<Control ID="mnuTestRecordTest">Test</Control>
 			<Control ID="mnuTestStopRecording">Stop recording</Control>
 			<Control ID="mnuRunAllTests">Run all tests</Control>
+			<Control ID="mnuDebug">Debug</Control>
 			<Control ID="mnuDebugger">Debugger</Control>
 			<Control ID="mnuLogWindow">Log Window</Control>
 			<Control ID="mnuInstallHdPack">Install HD Pack</Control>

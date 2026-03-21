@@ -592,7 +592,7 @@
 			<Control ID="lblCheats">作弊：</Control>
 			<Control ID="lblSpecialThanks">衷心感谢每一个捐赠、反馈、测试、分享或对本模拟器做出贡献的人！</Control>
 
-			<Control ID="lblDonate">你正在使用Mesen-Y分支，作者Yave Yu。&#13;基于NovaSquirrel的Mesen-X分支修改而来。&#13;&#13;汉化：Licardo（albert.abdilim@foxmail.com） owomomo（ikyokyo@163.com）&#13;</Control>
+			<Control ID="lblDonate">你正在使用Mesen-Y分支，作者Yave Yu。&#13;基于NovaSquirrel的Mesen-X分支修改而来。&#13;汉化：Licardo、ikyokyo&#13;</Control>
 			<Control ID="okButton">确定</Control>
 		</Form>
 		<Form ID="frmGameConfig" Title="游戏配置">
