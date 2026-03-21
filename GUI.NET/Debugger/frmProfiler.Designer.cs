@@ -27,34 +27,34 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.ctrlProfiler = new Mesen.GUI.Debugger.Controls.ctrlProfiler();
-			this.tmrRefresh = new System.Windows.Forms.Timer(this.components);
-			this.SuspendLayout();
-			// 
-			// ctrlProfiler
-			// 
-			this.ctrlProfiler.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.ctrlProfiler.Location = new System.Drawing.Point(0, 0);
-			this.ctrlProfiler.Margin = new System.Windows.Forms.Padding(0);
-			this.ctrlProfiler.Name = "ctrlProfiler";
-			this.ctrlProfiler.Size = new System.Drawing.Size(665, 385);
-			this.ctrlProfiler.TabIndex = 1;
-			// 
-			// tmrRefresh
-			// 
-			this.tmrRefresh.Interval = 300;
-			this.tmrRefresh.Tick += new System.EventHandler(this.tmrRefresh_Tick);
-			// 
-			// frmProfiler
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(665, 385);
-			this.Controls.Add(this.ctrlProfiler);
-			this.Name = "frmProfiler";
-			this.Text = "Performance Profiler";
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.ctrlProfiler = new Mesen.GUI.Debugger.Controls.ctrlProfiler();
+            this.tmrRefresh = new System.Windows.Forms.Timer(this.components);
+            this.SuspendLayout();
+            // 
+            // ctrlProfiler
+            // 
+            this.ctrlProfiler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctrlProfiler.Location = new System.Drawing.Point(0, 0);
+            this.ctrlProfiler.Margin = new System.Windows.Forms.Padding(0);
+            this.ctrlProfiler.Name = "ctrlProfiler";
+            this.ctrlProfiler.Size = new System.Drawing.Size(665, 385);
+            this.ctrlProfiler.TabIndex = 1;
+            // 
+            // tmrRefresh
+            // 
+            this.tmrRefresh.Interval = 300;
+            this.tmrRefresh.Tick += new System.EventHandler(this.tmrRefresh_Tick);
+            // 
+            // frmProfiler
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(665, 385);
+            this.Controls.Add(this.ctrlProfiler);
+            this.Name = "frmProfiler";
+            this.Text = "Performance Profiler";
+            this.ResumeLayout(false);
 
 		}
 
