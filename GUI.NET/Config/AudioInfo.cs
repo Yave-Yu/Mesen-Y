@@ -12,7 +12,7 @@ namespace Mesen.GUI.Config
 
 		[MinMax(15, 300)] public UInt32 AudioLatency = 60;
 
-		[MinMax(0, 100)] public UInt32 MasterVolume = 25;
+		[MinMax(0, 100)] public UInt32 MasterVolume = 75;
 		[MinMax(0, 100)] public UInt32 Square1Volume = 100;
 		[MinMax(0, 100)] public UInt32 Square2Volume = 100;
 		[MinMax(0, 100)] public UInt32 TriangleVolume = 100;
@@ -49,9 +49,9 @@ namespace Mesen.GUI.Config
 		[MinMax(0, 100)] public int VolumeReduction = 75;
 		
 		public bool MuteSoundInBackground = false;
+		public bool DisableSquarePhaseReset = false;
+		public bool UseLinearSquareMixer = false;
 		public bool SwapDutyCycles = false;
-		public bool SilenceTriangleHighFreq = false;
-		public bool ReduceDmcPopping = false;
 		public bool DisableNoiseModeFlag = false;
 		public InteropEmu.StereoFilter StereoFilter;
 		[MinMax(0, 100)] public Int32 StereoDelay = 15;
@@ -192,10 +192,10 @@ namespace Mesen.GUI.Config
 			InteropEmu.SetFlag(EmulationFlags.ReduceSoundInBackground, audioInfo.ReduceSoundInBackground);
 			InteropEmu.SetFlag(EmulationFlags.ReduceSoundInFastForward, audioInfo.ReduceSoundInFastForward);
 
+			InteropEmu.SetFlag(EmulationFlags.DisableSquarePhaseReset, audioInfo.DisableSquarePhaseReset);
+			InteropEmu.SetFlag(EmulationFlags.UseLinearSquareMixer, audioInfo.UseLinearSquareMixer);
 			InteropEmu.SetFlag(EmulationFlags.DisableDynamicSampleRate, audioInfo.DisableDynamicSampleRate);
 			InteropEmu.SetFlag(EmulationFlags.SwapDutyCycles, audioInfo.SwapDutyCycles);
-			InteropEmu.SetFlag(EmulationFlags.SilenceTriangleHighFreq, audioInfo.SilenceTriangleHighFreq);
-			InteropEmu.SetFlag(EmulationFlags.ReduceDmcPopping, audioInfo.ReduceDmcPopping);
 			InteropEmu.SetFlag(EmulationFlags.DisableNoiseModeFlag, audioInfo.DisableNoiseModeFlag);
 
 			InteropEmu.SetAudioFilterSettings(new InteropEmu.AudioFilterSettings() {
