@@ -70,5 +70,18 @@ namespace Mesen.GUI.Debugger.Controls
 		{
 			return this.ScrollableTextbox.GetWordUnderLocation(position);
 		}
-	}
+
+	  private void InitializeComponent()
+	  {
+            this.SuspendLayout();
+            // 
+            // BaseScrollableTextboxUserControl
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Name = "BaseScrollableTextboxUserControl";
+            this.ResumeLayout(false);
+
+	  }
+   }
 }

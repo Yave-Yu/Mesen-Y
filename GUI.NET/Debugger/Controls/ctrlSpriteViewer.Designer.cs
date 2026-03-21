@@ -158,7 +158,7 @@ namespace Mesen.GUI.Debugger.Controls
             this.tlpInfo.Controls.Add(this.txtPaletteAddress, 3, 1);
             this.tlpInfo.Controls.Add(this.label2, 4, 3);
             this.tlpInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpInfo.Location = new System.Drawing.Point(3, 18);
+            this.tlpInfo.Location = new System.Drawing.Point(3, 17);
             this.tlpInfo.Name = "tlpInfo";
             this.tlpInfo.RowCount = 7;
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -169,25 +169,25 @@ namespace Mesen.GUI.Debugger.Controls
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpInfo.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tlpInfo.Size = new System.Drawing.Size(404, 437);
+            this.tlpInfo.Size = new System.Drawing.Size(404, 438);
             this.tlpInfo.TabIndex = 0;
             // 
             // txtSpriteIndex
             // 
             this.txtSpriteIndex.BackColor = System.Drawing.SystemColors.Window;
-            this.txtSpriteIndex.Location = new System.Drawing.Point(74, 3);
+            this.txtSpriteIndex.Location = new System.Drawing.Point(92, 3);
             this.txtSpriteIndex.Name = "txtSpriteIndex";
             this.txtSpriteIndex.ReadOnly = true;
-            this.txtSpriteIndex.Size = new System.Drawing.Size(26, 22);
+            this.txtSpriteIndex.Size = new System.Drawing.Size(26, 21);
             this.txtSpriteIndex.TabIndex = 23;
             // 
             // lblSpriteIndex
             // 
             this.lblSpriteIndex.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblSpriteIndex.AutoSize = true;
-            this.lblSpriteIndex.Location = new System.Drawing.Point(3, 8);
+            this.lblSpriteIndex.Location = new System.Drawing.Point(3, 7);
             this.lblSpriteIndex.Name = "lblSpriteIndex";
-            this.lblSpriteIndex.Size = new System.Drawing.Size(65, 12);
+            this.lblSpriteIndex.Size = new System.Drawing.Size(83, 12);
             this.lblSpriteIndex.TabIndex = 22;
             this.lblSpriteIndex.Text = "Sprite Index:";
             // 
@@ -198,7 +198,7 @@ namespace Mesen.GUI.Debugger.Controls
             this.tlpInfo.SetColumnSpan(this.picPreview, 4);
             this.picPreview.ContextMenuStrip = this.ctxMenu;
             this.picPreview.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.Default;
-            this.picPreview.Location = new System.Drawing.Point(75, 186);
+            this.picPreview.Location = new System.Drawing.Point(93, 185);
             this.picPreview.Margin = new System.Windows.Forms.Padding(4);
             this.picPreview.Name = "picPreview";
             this.picPreview.Size = new System.Drawing.Size(258, 224);
@@ -222,14 +222,14 @@ namespace Mesen.GUI.Debugger.Controls
             this.mnuCopyToClipboard,
             this.mnuExportToPng});
             this.ctxMenu.Name = "ctxMenu";
-            this.ctxMenu.Size = new System.Drawing.Size(264, 148);
+            this.ctxMenu.Size = new System.Drawing.Size(255, 148);
             this.ctxMenu.Opening += new System.ComponentModel.CancelEventHandler(this.ctxMenu_Opening);
             // 
             // mnuEditInMemoryViewer
             // 
             this.mnuEditInMemoryViewer.Image = global::Mesen.GUI.Properties.Resources.CheatCode;
             this.mnuEditInMemoryViewer.Name = "mnuEditInMemoryViewer";
-            this.mnuEditInMemoryViewer.Size = new System.Drawing.Size(263, 22);
+            this.mnuEditInMemoryViewer.Size = new System.Drawing.Size(254, 22);
             this.mnuEditInMemoryViewer.Text = "Edit in Memory Viewer";
             this.mnuEditInMemoryViewer.Click += new System.EventHandler(this.mnuEditInMemoryViewer_Click);
             // 
@@ -238,39 +238,39 @@ namespace Mesen.GUI.Debugger.Controls
             this.mnuShowInChrViewer.Image = global::Mesen.GUI.Properties.Resources.NextArrow;
             this.mnuShowInChrViewer.Name = "mnuShowInChrViewer";
             this.mnuShowInChrViewer.ShortcutKeyDisplayString = "Dbl-Click";
-            this.mnuShowInChrViewer.Size = new System.Drawing.Size(263, 22);
+            this.mnuShowInChrViewer.Size = new System.Drawing.Size(254, 22);
             this.mnuShowInChrViewer.Text = "View in CHR viewer";
             this.mnuShowInChrViewer.Click += new System.EventHandler(this.mnuShowInChrViewer_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(260, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(251, 6);
             // 
             // mnuCopyHdPack
             // 
             this.mnuCopyHdPack.Name = "mnuCopyHdPack";
-            this.mnuCopyHdPack.Size = new System.Drawing.Size(263, 22);
+            this.mnuCopyHdPack.Size = new System.Drawing.Size(254, 22);
             this.mnuCopyHdPack.Text = "Copy Tile (HD Pack Format)";
             this.mnuCopyHdPack.Click += new System.EventHandler(this.mnuCopyHdPack_Click);
             // 
             // mnuCopyAllSpritesHdPack
             // 
             this.mnuCopyAllSpritesHdPack.Name = "mnuCopyAllSpritesHdPack";
-            this.mnuCopyAllSpritesHdPack.Size = new System.Drawing.Size(263, 22);
+            this.mnuCopyAllSpritesHdPack.Size = new System.Drawing.Size(254, 22);
             this.mnuCopyAllSpritesHdPack.Text = "Copy All Sprites (HD Pack Format)";
             this.mnuCopyAllSpritesHdPack.Click += new System.EventHandler(this.mnuCopyAllSpritesHdPack_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(260, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(251, 6);
             // 
             // mnuCopyToClipboard
             // 
             this.mnuCopyToClipboard.Image = global::Mesen.GUI.Properties.Resources.Copy;
             this.mnuCopyToClipboard.Name = "mnuCopyToClipboard";
-            this.mnuCopyToClipboard.Size = new System.Drawing.Size(263, 22);
+            this.mnuCopyToClipboard.Size = new System.Drawing.Size(254, 22);
             this.mnuCopyToClipboard.Text = "Copy image to clipboard";
             this.mnuCopyToClipboard.Click += new System.EventHandler(this.mnuCopyToClipboard_Click);
             // 
@@ -278,17 +278,17 @@ namespace Mesen.GUI.Debugger.Controls
             // 
             this.mnuExportToPng.Image = global::Mesen.GUI.Properties.Resources.Export;
             this.mnuExportToPng.Name = "mnuExportToPng";
-            this.mnuExportToPng.Size = new System.Drawing.Size(263, 22);
+            this.mnuExportToPng.Size = new System.Drawing.Size(254, 22);
             this.mnuExportToPng.Text = "Export image to PNG";
             this.mnuExportToPng.Click += new System.EventHandler(this.mnuExportToPng_Click);
             // 
             // lblScreenPreview
             // 
             this.lblScreenPreview.AutoSize = true;
-            this.lblScreenPreview.Location = new System.Drawing.Point(3, 187);
+            this.lblScreenPreview.Location = new System.Drawing.Point(3, 186);
             this.lblScreenPreview.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.lblScreenPreview.Name = "lblScreenPreview";
-            this.lblScreenPreview.Size = new System.Drawing.Size(45, 12);
+            this.lblScreenPreview.Size = new System.Drawing.Size(53, 12);
             this.lblScreenPreview.TabIndex = 20;
             this.lblScreenPreview.Text = "Preview:";
             // 
@@ -296,28 +296,28 @@ namespace Mesen.GUI.Debugger.Controls
             // 
             this.lblTileIndex.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblTileIndex.AutoSize = true;
-            this.lblTileIndex.Location = new System.Drawing.Point(3, 36);
+            this.lblTileIndex.Location = new System.Drawing.Point(3, 34);
             this.lblTileIndex.Name = "lblTileIndex";
-            this.lblTileIndex.Size = new System.Drawing.Size(56, 12);
+            this.lblTileIndex.Size = new System.Drawing.Size(71, 12);
             this.lblTileIndex.TabIndex = 0;
             this.lblTileIndex.Text = "Tile Index:";
             // 
             // txtTileIndex
             // 
             this.txtTileIndex.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTileIndex.Location = new System.Drawing.Point(74, 31);
+            this.txtTileIndex.Location = new System.Drawing.Point(92, 30);
             this.txtTileIndex.Name = "txtTileIndex";
             this.txtTileIndex.ReadOnly = true;
-            this.txtTileIndex.Size = new System.Drawing.Size(26, 22);
+            this.txtTileIndex.Size = new System.Drawing.Size(26, 21);
             this.txtTileIndex.TabIndex = 7;
             // 
             // lblTile
             // 
             this.lblTile.AutoSize = true;
-            this.lblTile.Location = new System.Drawing.Point(3, 61);
+            this.lblTile.Location = new System.Drawing.Point(3, 59);
             this.lblTile.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.lblTile.Name = "lblTile";
-            this.lblTile.Size = new System.Drawing.Size(26, 12);
+            this.lblTile.Size = new System.Drawing.Size(35, 12);
             this.lblTile.TabIndex = 6;
             this.lblTile.Text = "Tile:";
             // 
@@ -325,7 +325,7 @@ namespace Mesen.GUI.Debugger.Controls
             // 
             this.picTile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picTile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picTile.Location = new System.Drawing.Point(74, 59);
+            this.picTile.Location = new System.Drawing.Point(92, 57);
             this.picTile.Name = "picTile";
             this.tlpInfo.SetRowSpan(this.picTile, 3);
             this.picTile.Size = new System.Drawing.Size(66, 120);
@@ -337,9 +337,9 @@ namespace Mesen.GUI.Debugger.Controls
             // 
             this.chkDisplaySpriteOutlines.AutoSize = true;
             this.tlpInfo.SetColumnSpan(this.chkDisplaySpriteOutlines, 4);
-            this.chkDisplaySpriteOutlines.Location = new System.Drawing.Point(3, 417);
+            this.chkDisplaySpriteOutlines.Location = new System.Drawing.Point(3, 416);
             this.chkDisplaySpriteOutlines.Name = "chkDisplaySpriteOutlines";
-            this.chkDisplaySpriteOutlines.Size = new System.Drawing.Size(228, 16);
+            this.chkDisplaySpriteOutlines.Size = new System.Drawing.Size(294, 16);
             this.chkDisplaySpriteOutlines.TabIndex = 27;
             this.chkDisplaySpriteOutlines.Text = "Display outline around all sprites in preview";
             this.chkDisplaySpriteOutlines.UseVisualStyleBackColor = true;
@@ -355,7 +355,7 @@ namespace Mesen.GUI.Debugger.Controls
             this.tableLayoutPanel1.Controls.Add(this.chkHorizontalMirroring, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.chkVerticalMirroring, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.chkBackgroundPriority, 0, 2);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(143, 121);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(161, 127);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(3);
@@ -363,7 +363,7 @@ namespace Mesen.GUI.Debugger.Controls
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(132, 54);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(150, 54);
             this.tableLayoutPanel1.TabIndex = 24;
             // 
             // chkHorizontalMirroring
@@ -373,7 +373,7 @@ namespace Mesen.GUI.Debugger.Controls
             this.chkHorizontalMirroring.Location = new System.Drawing.Point(6, 3);
             this.chkHorizontalMirroring.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.chkHorizontalMirroring.Name = "chkHorizontalMirroring";
-            this.chkHorizontalMirroring.Size = new System.Drawing.Size(92, 16);
+            this.chkHorizontalMirroring.Size = new System.Drawing.Size(114, 16);
             this.chkHorizontalMirroring.TabIndex = 13;
             this.chkHorizontalMirroring.Text = "Horizontal flip";
             this.chkHorizontalMirroring.UseVisualStyleBackColor = true;
@@ -385,7 +385,7 @@ namespace Mesen.GUI.Debugger.Controls
             this.chkVerticalMirroring.Location = new System.Drawing.Point(6, 19);
             this.chkVerticalMirroring.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.chkVerticalMirroring.Name = "chkVerticalMirroring";
-            this.chkVerticalMirroring.Size = new System.Drawing.Size(79, 16);
+            this.chkVerticalMirroring.Size = new System.Drawing.Size(102, 16);
             this.chkVerticalMirroring.TabIndex = 14;
             this.chkVerticalMirroring.Text = "Vertical flip";
             this.chkVerticalMirroring.UseVisualStyleBackColor = true;
@@ -397,7 +397,7 @@ namespace Mesen.GUI.Debugger.Controls
             this.chkBackgroundPriority.Location = new System.Drawing.Point(6, 35);
             this.chkBackgroundPriority.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.chkBackgroundPriority.Name = "chkBackgroundPriority";
-            this.chkBackgroundPriority.Size = new System.Drawing.Size(120, 16);
+            this.chkBackgroundPriority.Size = new System.Drawing.Size(138, 16);
             this.chkBackgroundPriority.TabIndex = 19;
             this.chkBackgroundPriority.Text = "Background Priority";
             this.chkBackgroundPriority.UseVisualStyleBackColor = true;
@@ -406,9 +406,9 @@ namespace Mesen.GUI.Debugger.Controls
             // 
             this.lblPosition.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblPosition.AutoSize = true;
-            this.lblPosition.Location = new System.Drawing.Point(146, 101);
+            this.lblPosition.Location = new System.Drawing.Point(164, 103);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(75, 12);
+            this.lblPosition.Size = new System.Drawing.Size(95, 12);
             this.lblPosition.TabIndex = 16;
             this.lblPosition.Text = "Position (X,Y):";
             // 
@@ -416,20 +416,20 @@ namespace Mesen.GUI.Debugger.Controls
             // 
             this.lblPalette.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblPalette.AutoSize = true;
-            this.lblPalette.Location = new System.Drawing.Point(146, 71);
+            this.lblPalette.Location = new System.Drawing.Point(164, 69);
             this.lblPalette.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.lblPalette.Name = "lblPalette";
-            this.lblPalette.Size = new System.Drawing.Size(38, 12);
+            this.lblPalette.Size = new System.Drawing.Size(53, 12);
             this.lblPalette.TabIndex = 26;
             this.lblPalette.Text = "Palette:";
             // 
             // txtPosition
             // 
             this.txtPosition.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPosition.Location = new System.Drawing.Point(230, 96);
+            this.txtPosition.Location = new System.Drawing.Point(271, 94);
             this.txtPosition.Name = "txtPosition";
             this.txtPosition.ReadOnly = true;
-            this.txtPosition.Size = new System.Drawing.Size(66, 22);
+            this.txtPosition.Size = new System.Drawing.Size(66, 21);
             this.txtPosition.TabIndex = 18;
             // 
             // ctrlTilePalette
@@ -438,7 +438,7 @@ namespace Mesen.GUI.Debugger.Controls
             this.tlpInfo.SetColumnSpan(this.ctrlTilePalette, 2);
             this.ctrlTilePalette.DisplayIndexes = false;
             this.ctrlTilePalette.HighlightMouseOver = false;
-            this.ctrlTilePalette.Location = new System.Drawing.Point(230, 59);
+            this.ctrlTilePalette.Location = new System.Drawing.Point(271, 57);
             this.ctrlTilePalette.Name = "ctrlTilePalette";
             this.ctrlTilePalette.Size = new System.Drawing.Size(130, 31);
             this.ctrlTilePalette.TabIndex = 25;
@@ -447,9 +447,9 @@ namespace Mesen.GUI.Debugger.Controls
             // 
             this.lblTileAddress.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblTileAddress.AutoSize = true;
-            this.lblTileAddress.Location = new System.Drawing.Point(146, 8);
+            this.lblTileAddress.Location = new System.Drawing.Point(164, 7);
             this.lblTileAddress.Name = "lblTileAddress";
-            this.lblTileAddress.Size = new System.Drawing.Size(66, 12);
+            this.lblTileAddress.Size = new System.Drawing.Size(83, 12);
             this.lblTileAddress.TabIndex = 1;
             this.lblTileAddress.Text = "Tile Address:";
             // 
@@ -457,37 +457,37 @@ namespace Mesen.GUI.Debugger.Controls
             // 
             this.lblPaletteAddr.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblPaletteAddr.AutoSize = true;
-            this.lblPaletteAddr.Location = new System.Drawing.Point(146, 36);
+            this.lblPaletteAddr.Location = new System.Drawing.Point(164, 34);
             this.lblPaletteAddr.Name = "lblPaletteAddr";
-            this.lblPaletteAddr.Size = new System.Drawing.Size(78, 12);
+            this.lblPaletteAddr.Size = new System.Drawing.Size(101, 12);
             this.lblPaletteAddr.TabIndex = 15;
             this.lblPaletteAddr.Text = "Palette Address:";
             // 
             // txtTileAddress
             // 
             this.txtTileAddress.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTileAddress.Location = new System.Drawing.Point(230, 3);
+            this.txtTileAddress.Location = new System.Drawing.Point(271, 3);
             this.txtTileAddress.Name = "txtTileAddress";
             this.txtTileAddress.ReadOnly = true;
-            this.txtTileAddress.Size = new System.Drawing.Size(42, 22);
+            this.txtTileAddress.Size = new System.Drawing.Size(42, 21);
             this.txtTileAddress.TabIndex = 8;
             // 
             // txtPaletteAddress
             // 
             this.txtPaletteAddress.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPaletteAddress.Location = new System.Drawing.Point(230, 31);
+            this.txtPaletteAddress.Location = new System.Drawing.Point(271, 30);
             this.txtPaletteAddress.Name = "txtPaletteAddress";
             this.txtPaletteAddress.ReadOnly = true;
-            this.txtPaletteAddress.Size = new System.Drawing.Size(42, 22);
+            this.txtPaletteAddress.Size = new System.Drawing.Size(42, 21);
             this.txtPaletteAddress.TabIndex = 17;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(302, 101);
+            this.label2.Location = new System.Drawing.Point(343, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 12);
+            this.label2.Size = new System.Drawing.Size(47, 36);
             this.label2.TabIndex = 28;
             this.label2.Text = "(Y = OAM[0] +1)";
             // 
@@ -515,9 +515,9 @@ namespace Mesen.GUI.Debugger.Controls
             // radCpuPage
             // 
             this.radCpuPage.AutoSize = true;
-            this.radCpuPage.Location = new System.Drawing.Point(158, 3);
+            this.radCpuPage.Location = new System.Drawing.Point(175, 3);
             this.radCpuPage.Name = "radCpuPage";
-            this.radCpuPage.Size = new System.Drawing.Size(79, 16);
+            this.radCpuPage.Size = new System.Drawing.Size(83, 16);
             this.radCpuPage.TabIndex = 2;
             this.radCpuPage.Text = "CPU Page #";
             this.radCpuPage.UseVisualStyleBackColor = true;
@@ -528,7 +528,7 @@ namespace Mesen.GUI.Debugger.Controls
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 12);
+            this.label1.Size = new System.Drawing.Size(77, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "Data Source:";
             // 
@@ -536,9 +536,9 @@ namespace Mesen.GUI.Debugger.Controls
             // 
             this.radSpriteRam.AutoSize = true;
             this.radSpriteRam.Checked = true;
-            this.radSpriteRam.Location = new System.Drawing.Point(73, 3);
+            this.radSpriteRam.Location = new System.Drawing.Point(86, 3);
             this.radSpriteRam.Name = "radSpriteRam";
-            this.radSpriteRam.Size = new System.Drawing.Size(79, 16);
+            this.radSpriteRam.Size = new System.Drawing.Size(83, 16);
             this.radSpriteRam.TabIndex = 1;
             this.radSpriteRam.TabStop = true;
             this.radSpriteRam.Text = "Sprite RAM";
@@ -547,14 +547,14 @@ namespace Mesen.GUI.Debugger.Controls
             // nudCpuPage
             // 
             this.nudCpuPage.Hexadecimal = true;
-            this.nudCpuPage.Location = new System.Drawing.Point(243, 3);
+            this.nudCpuPage.Location = new System.Drawing.Point(264, 3);
             this.nudCpuPage.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.nudCpuPage.Name = "nudCpuPage";
-            this.nudCpuPage.Size = new System.Drawing.Size(42, 22);
+            this.nudCpuPage.Size = new System.Drawing.Size(42, 21);
             this.nudCpuPage.TabIndex = 3;
             this.nudCpuPage.Click += new System.EventHandler(this.nudCpuPage_Click);
             // 
@@ -578,8 +578,8 @@ namespace Mesen.GUI.Debugger.Controls
             // 
             // ctrlSpriteViewer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.tlpMain);
             this.Name = "ctrlSpriteViewer";
             this.Size = new System.Drawing.Size(682, 486);
