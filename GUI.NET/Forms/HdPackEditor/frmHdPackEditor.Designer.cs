@@ -125,9 +125,9 @@
             this.btnStopRecording.AutoSize = true;
             this.btnStopRecording.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnStopRecording.Image = global::Mesen.GUI.Properties.Resources.Stop;
-            this.btnStopRecording.Location = new System.Drawing.Point(395, 322);
+            this.btnStopRecording.Location = new System.Drawing.Point(367, 322);
             this.btnStopRecording.Name = "btnStopRecording";
-            this.btnStopRecording.Size = new System.Drawing.Size(104, 20);
+            this.btnStopRecording.Size = new System.Drawing.Size(115, 20);
             this.btnStopRecording.TabIndex = 12;
             this.btnStopRecording.Text = "Stop Recording";
             this.btnStopRecording.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -140,9 +140,9 @@
             this.btnStartRecording.AutoSize = true;
             this.btnStartRecording.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnStartRecording.Image = global::Mesen.GUI.Properties.Resources.Record;
-            this.btnStartRecording.Location = new System.Drawing.Point(505, 322);
+            this.btnStartRecording.Location = new System.Drawing.Point(488, 322);
             this.btnStartRecording.Name = "btnStartRecording";
-            this.btnStartRecording.Size = new System.Drawing.Size(104, 20);
+            this.btnStartRecording.Size = new System.Drawing.Size(121, 20);
             this.btnStartRecording.TabIndex = 13;
             this.btnStartRecording.Text = "Start Recording";
             this.btnStartRecording.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -155,7 +155,7 @@
             this.btnOpenFolder.Image = global::Mesen.GUI.Properties.Resources.FolderOpen;
             this.btnOpenFolder.Location = new System.Drawing.Point(3, 322);
             this.btnOpenFolder.Name = "btnOpenFolder";
-            this.btnOpenFolder.Size = new System.Drawing.Size(119, 20);
+            this.btnOpenFolder.Size = new System.Drawing.Size(127, 20);
             this.btnOpenFolder.TabIndex = 11;
             this.btnOpenFolder.Text = "Open Save Folder";
             this.btnOpenFolder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -183,13 +183,13 @@
             this.tableLayoutPanel3.Controls.Add(this.cboBank, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.lblChrBank, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 17);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(263, 265);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(263, 266);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // picBankPreview
@@ -198,7 +198,7 @@
             this.picBankPreview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picBankPreview.Location = new System.Drawing.Point(3, 29);
             this.picBankPreview.Name = "picBankPreview";
-            this.picBankPreview.Size = new System.Drawing.Size(257, 233);
+            this.picBankPreview.Size = new System.Drawing.Size(257, 234);
             this.picBankPreview.TabIndex = 0;
             this.picBankPreview.TabStop = false;
             // 
@@ -206,7 +206,7 @@
             // 
             this.cboBank.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBank.FormattingEnabled = true;
-            this.cboBank.Location = new System.Drawing.Point(69, 3);
+            this.cboBank.Location = new System.Drawing.Point(68, 3);
             this.cboBank.Name = "cboBank";
             this.cboBank.Size = new System.Drawing.Size(121, 20);
             this.cboBank.TabIndex = 10;
@@ -217,7 +217,7 @@
             this.lblChrBank.AutoSize = true;
             this.lblChrBank.Location = new System.Drawing.Point(3, 7);
             this.lblChrBank.Name = "lblChrBank";
-            this.lblChrBank.Size = new System.Drawing.Size(60, 12);
+            this.lblChrBank.Size = new System.Drawing.Size(59, 12);
             this.lblChrBank.TabIndex = 3;
             this.lblChrBank.Text = "CHR Bank:";
             // 
@@ -249,7 +249,7 @@
             this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel7, 1, 8);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 8);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 18);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 17);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 10;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -262,7 +262,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(325, 265);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(325, 266);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -282,7 +282,7 @@
             this.chkIgnoreOverscan.AutoSize = true;
             this.chkIgnoreOverscan.Location = new System.Drawing.Point(3, 3);
             this.chkIgnoreOverscan.Name = "chkIgnoreOverscan";
-            this.chkIgnoreOverscan.Size = new System.Drawing.Size(247, 16);
+            this.chkIgnoreOverscan.Size = new System.Drawing.Size(324, 16);
             this.chkIgnoreOverscan.TabIndex = 8;
             this.chkIgnoreOverscan.Text = "Ignore tiles at the edges of the screen (overscan)";
             this.chkIgnoreOverscan.UseVisualStyleBackColor = true;
@@ -292,7 +292,7 @@
             this.picIgnoreOverscanHelp.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.picIgnoreOverscanHelp.BackgroundImage = global::Mesen.GUI.Properties.Resources.Help;
             this.picIgnoreOverscanHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picIgnoreOverscanHelp.Location = new System.Drawing.Point(256, 3);
+            this.picIgnoreOverscanHelp.Location = new System.Drawing.Point(3, 25);
             this.picIgnoreOverscanHelp.Name = "picIgnoreOverscanHelp";
             this.picIgnoreOverscanHelp.Size = new System.Drawing.Size(16, 16);
             this.picIgnoreOverscanHelp.TabIndex = 18;
@@ -304,7 +304,7 @@
             this.lblBankSize.AutoSize = true;
             this.lblBankSize.Location = new System.Drawing.Point(3, 27);
             this.lblBankSize.Name = "lblBankSize";
-            this.lblBankSize.Size = new System.Drawing.Size(82, 12);
+            this.lblBankSize.Size = new System.Drawing.Size(89, 12);
             this.lblBankSize.TabIndex = 9;
             this.lblBankSize.Text = "CHR Bank Size:";
             // 
@@ -314,7 +314,7 @@
             this.lblScale.AutoSize = true;
             this.lblScale.Location = new System.Drawing.Point(3, 5);
             this.lblScale.Name = "lblScale";
-            this.lblScale.Size = new System.Drawing.Size(59, 12);
+            this.lblScale.Size = new System.Drawing.Size(83, 12);
             this.lblScale.TabIndex = 4;
             this.lblScale.Text = "Scale/Filter:";
             // 
@@ -337,7 +337,7 @@
             this.chkGroupBlankTiles.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkGroupBlankTiles.Location = new System.Drawing.Point(3, 3);
             this.chkGroupBlankTiles.Name = "chkGroupBlankTiles";
-            this.chkGroupBlankTiles.Size = new System.Drawing.Size(104, 16);
+            this.chkGroupBlankTiles.Size = new System.Drawing.Size(126, 16);
             this.chkGroupBlankTiles.TabIndex = 5;
             this.chkGroupBlankTiles.Text = "Group blank tiles";
             this.chkGroupBlankTiles.UseVisualStyleBackColor = true;
@@ -347,7 +347,7 @@
             this.picGroupBlankHelp.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.picGroupBlankHelp.BackgroundImage = global::Mesen.GUI.Properties.Resources.Help;
             this.picGroupBlankHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picGroupBlankHelp.Location = new System.Drawing.Point(113, 3);
+            this.picGroupBlankHelp.Location = new System.Drawing.Point(135, 3);
             this.picGroupBlankHelp.Name = "picGroupBlankHelp";
             this.picGroupBlankHelp.Size = new System.Drawing.Size(16, 16);
             this.picGroupBlankHelp.TabIndex = 12;
@@ -372,7 +372,7 @@
             this.chkSortByFrequency.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkSortByFrequency.Location = new System.Drawing.Point(3, 3);
             this.chkSortByFrequency.Name = "chkSortByFrequency";
-            this.chkSortByFrequency.Size = new System.Drawing.Size(166, 16);
+            this.chkSortByFrequency.Size = new System.Drawing.Size(198, 16);
             this.chkSortByFrequency.TabIndex = 6;
             this.chkSortByFrequency.Text = "Sort pages by usage frequency";
             this.chkSortByFrequency.UseVisualStyleBackColor = true;
@@ -382,7 +382,7 @@
             this.picFrequencyHelp.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.picFrequencyHelp.BackgroundImage = global::Mesen.GUI.Properties.Resources.Help;
             this.picFrequencyHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picFrequencyHelp.Location = new System.Drawing.Point(175, 3);
+            this.picFrequencyHelp.Location = new System.Drawing.Point(207, 3);
             this.picFrequencyHelp.Name = "picFrequencyHelp";
             this.picFrequencyHelp.Size = new System.Drawing.Size(16, 16);
             this.picFrequencyHelp.TabIndex = 12;
@@ -405,7 +405,7 @@
             this.chkLargeSprites.AutoSize = true;
             this.chkLargeSprites.Location = new System.Drawing.Point(3, 3);
             this.chkLargeSprites.Name = "chkLargeSprites";
-            this.chkLargeSprites.Size = new System.Drawing.Size(161, 16);
+            this.chkLargeSprites.Size = new System.Drawing.Size(192, 16);
             this.chkLargeSprites.TabIndex = 7;
             this.chkLargeSprites.Text = "Use 8x16 sprite display mode";
             this.chkLargeSprites.UseVisualStyleBackColor = true;
@@ -415,7 +415,7 @@
             this.picLargeSpritesHelp.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.picLargeSpritesHelp.BackgroundImage = global::Mesen.GUI.Properties.Resources.Help;
             this.picLargeSpritesHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picLargeSpritesHelp.Location = new System.Drawing.Point(170, 3);
+            this.picLargeSpritesHelp.Location = new System.Drawing.Point(201, 3);
             this.picLargeSpritesHelp.Name = "picLargeSpritesHelp";
             this.picLargeSpritesHelp.Size = new System.Drawing.Size(16, 16);
             this.picLargeSpritesHelp.TabIndex = 12;
@@ -426,10 +426,10 @@
             this.flpBankSize.Controls.Add(this.cboChrBankSize);
             this.flpBankSize.Controls.Add(this.picBankSizeHelp);
             this.flpBankSize.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpBankSize.Location = new System.Drawing.Point(88, 22);
+            this.flpBankSize.Location = new System.Drawing.Point(95, 22);
             this.flpBankSize.Margin = new System.Windows.Forms.Padding(0);
             this.flpBankSize.Name = "flpBankSize";
-            this.flpBankSize.Size = new System.Drawing.Size(237, 22);
+            this.flpBankSize.Size = new System.Drawing.Size(230, 22);
             this.flpBankSize.TabIndex = 15;
             // 
             // cboChrBankSize
@@ -462,10 +462,10 @@
             this.flowLayoutPanel6.Controls.Add(this.cboScale);
             this.flowLayoutPanel6.Controls.Add(this.picScaleHelp);
             this.flowLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(88, 0);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(95, 0);
             this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(237, 22);
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(230, 22);
             this.flowLayoutPanel6.TabIndex = 16;
             // 
             // cboScale
@@ -506,7 +506,7 @@
             this.chkSaveFrame.AutoSize = true;
             this.chkSaveFrame.Location = new System.Drawing.Point(3, 3);
             this.chkSaveFrame.Name = "chkSaveFrame";
-            this.chkSaveFrame.Size = new System.Drawing.Size(220, 16);
+            this.chkSaveFrame.Size = new System.Drawing.Size(282, 16);
             this.chkSaveFrame.TabIndex = 9;
             this.chkSaveFrame.Text = "Save frames which the tiles are first shown";
             this.chkSaveFrame.UseVisualStyleBackColor = true;
@@ -516,7 +516,7 @@
             this.picSaveFrameHelp.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.picSaveFrameHelp.BackgroundImage = global::Mesen.GUI.Properties.Resources.Help;
             this.picSaveFrameHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picSaveFrameHelp.Location = new System.Drawing.Point(229, 3);
+            this.picSaveFrameHelp.Location = new System.Drawing.Point(291, 3);
             this.picSaveFrameHelp.Name = "picSaveFrameHelp";
             this.picSaveFrameHelp.Size = new System.Drawing.Size(16, 16);
             this.picSaveFrameHelp.TabIndex = 19;
@@ -527,10 +527,10 @@
             this.flowLayoutPanel7.Controls.Add(this.cboTileType);
             this.flowLayoutPanel7.Controls.Add(this.picTileTypeHelp);
             this.flowLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(88, 140);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(95, 140);
             this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            this.flowLayoutPanel7.Size = new System.Drawing.Size(237, 22);
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(230, 22);
             this.flowLayoutPanel7.TabIndex = 22;
             // 
             // cboTileType
@@ -560,7 +560,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 145);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 21;
             this.label1.Text = "Tile Type:";
             // 
@@ -580,15 +580,15 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(502, 27);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(485, 27);
             this.tableLayoutPanel4.TabIndex = 9;
             // 
             // btnSelectFolder
             // 
             this.btnSelectFolder.AutoSize = true;
-            this.btnSelectFolder.Location = new System.Drawing.Point(437, 3);
+            this.btnSelectFolder.Location = new System.Drawing.Point(413, 3);
             this.btnSelectFolder.Name = "btnSelectFolder";
-            this.btnSelectFolder.Size = new System.Drawing.Size(62, 21);
+            this.btnSelectFolder.Size = new System.Drawing.Size(69, 21);
             this.btnSelectFolder.TabIndex = 2;
             this.btnSelectFolder.Text = "Browse...";
             this.btnSelectFolder.UseVisualStyleBackColor = true;
@@ -597,10 +597,10 @@
             // txtSaveFolder
             // 
             this.txtSaveFolder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSaveFolder.Location = new System.Drawing.Point(72, 3);
+            this.txtSaveFolder.Location = new System.Drawing.Point(86, 3);
             this.txtSaveFolder.Name = "txtSaveFolder";
             this.txtSaveFolder.ReadOnly = true;
-            this.txtSaveFolder.Size = new System.Drawing.Size(359, 22);
+            this.txtSaveFolder.Size = new System.Drawing.Size(321, 21);
             this.txtSaveFolder.TabIndex = 1;
             this.txtSaveFolder.TabStop = false;
             // 
@@ -610,7 +610,7 @@
             this.lblFolder.AutoSize = true;
             this.lblFolder.Location = new System.Drawing.Point(3, 7);
             this.lblFolder.Name = "lblFolder";
-            this.lblFolder.Size = new System.Drawing.Size(63, 12);
+            this.lblFolder.Size = new System.Drawing.Size(77, 12);
             this.lblFolder.TabIndex = 0;
             this.lblFolder.Text = "Save Folder:";
             // 
@@ -621,8 +621,8 @@
             // 
             // frmHdPackEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(612, 345);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
