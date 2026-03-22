@@ -132,7 +132,7 @@
 			<Control ID="tpgAdvanced">Advanced</Control>
 			<Control ID="chkDisableDynamicSampleRate">Disable dynamic sample rate</Control>
 			<Control ID="chkSwapDutyCycles">Swap square channels duty cycles (Mimics old clones)</Control>
-			<Control ID="chkDisableSquarePhaseReset">Square channels not reset phase (Mimics old clones)</Control>
+			<Control ID="chkDisableSquarePhaseReset">Not reset square channels phase (Mimics old clones)</Control>
 			<Control ID="chkUseLinearSquareMixer">Use linear square channel mixer</Control>
 			<Control ID="chkDisableNoiseModeFlag">Disable noise channel mode flag</Control>
 			<Control ID="tpgEffects">Effects</Control>
