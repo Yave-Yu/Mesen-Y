@@ -21,7 +21,7 @@ SoundMixer::SoundMixer(shared_ptr<Console> console)
 	_outputBuffer = new int16_t[SoundMixer::MaxSamplesPerFrame];
 	_blipBufLeft = blip_new(SoundMixer::MaxSamplesPerFrame);
 	_blipBufRight = blip_new(SoundMixer::MaxSamplesPerFrame);
-	_sampleRate = 96000; //_settings->GetSampleRate();
+	_sampleRate = _settings->GetSampleRate();
 	_model = NesModel::NTSC;
 }
 
@@ -72,7 +72,7 @@ void SoundMixer::StopAudio(bool clearBuffer)
 void SoundMixer::Reset()
 {
 	if(_oggMixer) {
-		_oggMixer->Reset(96000); //_settings->GetSampleRate());
+		_oggMixer->Reset(_settings->GetSampleRate());
 	}
 	_fadeRatio = 1.0;
 	_muteFrameCount = 0;
@@ -191,8 +191,8 @@ void SoundMixer::PlayAudioBuffer(uint32_t time)
 			UpdateRates(true);
 			UpdateEqualizers(true);
 		} else {
-			UpdateEqualizers(false);
 			UpdateRates(false);
+			UpdateEqualizers(false);
 		}
 	}
 }
@@ -256,16 +256,15 @@ int16_t SoundMixer::GetOutputVolume(bool forRightChannel)
 {
 	double squareOutput = GetChannelOutput(AudioChannel::Square1, forRightChannel) + GetChannelOutput(AudioChannel::Square2, forRightChannel);
 	double tndOutput = 2.7516713261213079 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.8493587125234866 * GetChannelOutput(AudioChannel::Noise, forRightChannel) + GetChannelOutput(AudioChannel::DMC, forRightChannel);
+	//This formula below for linear APU2 mixer flag
+	//double tndOutput = (!_settings->CheckFlag(EmulationFlags::UseLinearSquareMixer) ? 2.7516713261213079 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.8493587125234866 * GetChannelOutput(AudioChannel::Noise, forRightChannel) : 2.5402985074626866 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.4746268656716418 * GetChannelOutput(AudioChannel::Noise, forRightChannel)) + GetChannelOutput(AudioChannel::DMC, forRightChannel);
 	
-	/*Pulse =(square0.Pos +square1.Pos)/30.0 *squareSumFactor[square0.Vol +square1.Vol] *0.258483;
-	  TND   =(triangle.Pos  |noise.Pos  |dpcm->Pos)? 159.79 /(1.0/(triangle.Pos  /8227.0 +noise.Pos /12241.0 +dpcm->Pos/22638.0) +100.0): 0.0;*/
-
-	/*Try to apply NewRisingSun's linear mixer solution¡­ failed
-	double squareVolume = (s1p + s2p) / 30.0 * squareSumFactor[s1v + s2v] * 0.258483;
-	double tndVolume = (tri | noi | dmc) ? 159.79 / (1.0 / (tri / 8227.0 + noi / 12241.0 + dmc / 22638.0) + 100.0) : 0.0;*/
-
-	double squareVolume = !_settings->CheckFlag(EmulationFlags::UseLinearSquareMixer) ? 479400.0 / (8128.0 / squareOutput + 100.0) : 37.6 * squareOutput;
+	//I feeling tired of implementing squareSumFactor well, because it still couldn't make volume exactly same as non-linear mixer, low volume still a little quiet, high volume are a bit loud, so I just give up.
+	//APU1 non-linear: 95.88 * 5000.0, linear: 0.00752 * 6000.0
+	double squareVolume = !_settings->CheckFlag(EmulationFlags::UseLinearSquareMixer) ? 479400.0 / (8128.0 / squareOutput + 100.0) : 45.12 * squareOutput; //* squareSumFactor[(int)(_volumes[(int)AudioChannel::Square1] + _volumes[(int)AudioChannel::Square2])];
 	double tndVolume = 798950.0 / (1.0 / (tndOutput / 22638.0) + 100.0);
+	//APU2 non-linear: 159.79 * 5000.0, linear: 0.00335 * 5000.0
+	//double tndVolume = !_settings->CheckFlag(EmulationFlags::UseLinearSquareMixer) ? 798950.0 / (1.0 / (tndOutput / 22638.0) + 100.0) : 16.75 * tndOutput;
 	
 	return (int16_t)(squareVolume + tndVolume +
 		GetChannelOutput(AudioChannel::FDS, forRightChannel) * 20 +
