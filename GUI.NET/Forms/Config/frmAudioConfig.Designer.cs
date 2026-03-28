@@ -2040,12 +2040,12 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.chkDisableDynamicSampleRate, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.chkDisableNoiseModeFlag, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.chkDisableDynamicSampleRate, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.chkDisableNoiseModeFlag, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.nudEPSMClockFrequency, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.lblEPSMClockFrequency, 0, 5);
-            this.tableLayoutPanel3.Controls.Add(this.chkSwapDutyCycles, 0, 3);
-            this.tableLayoutPanel3.Controls.Add(this.chkDisableSquarePhaseReset, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.chkSwapDutyCycles, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.chkDisableSquarePhaseReset, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.chkUseLinearSquareMixer, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
@@ -2067,7 +2067,7 @@ namespace Mesen.GUI.Forms.Config
             this.chkDisableDynamicSampleRate.AutoSize = true;
             this.chkDisableDynamicSampleRate.Checked = false;
             this.chkDisableDynamicSampleRate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chkDisableDynamicSampleRate.Location = new System.Drawing.Point(0, 24);
+            this.chkDisableDynamicSampleRate.Location = new System.Drawing.Point(0, 96);
             this.chkDisableDynamicSampleRate.Name = "chkDisableDynamicSampleRate";
             this.chkDisableDynamicSampleRate.Size = new System.Drawing.Size(463, 24);
             this.chkDisableDynamicSampleRate.TabIndex = 4;
@@ -2078,7 +2078,7 @@ namespace Mesen.GUI.Forms.Config
             this.chkDisableNoiseModeFlag.AutoSize = true;
             this.chkDisableNoiseModeFlag.Checked = false;
             this.chkDisableNoiseModeFlag.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chkDisableNoiseModeFlag.Location = new System.Drawing.Point(0, 96);
+            this.chkDisableNoiseModeFlag.Location = new System.Drawing.Point(0, 72);
             this.chkDisableNoiseModeFlag.Name = "chkDisableNoiseModeFlag";
             this.chkDisableNoiseModeFlag.Size = new System.Drawing.Size(463, 24);
             this.chkDisableNoiseModeFlag.TabIndex = 3;
@@ -2132,7 +2132,7 @@ namespace Mesen.GUI.Forms.Config
             this.chkSwapDutyCycles.AutoSize = true;
             this.chkSwapDutyCycles.Checked = false;
             this.chkSwapDutyCycles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chkSwapDutyCycles.Location = new System.Drawing.Point(0, 72);
+            this.chkSwapDutyCycles.Location = new System.Drawing.Point(0, 48);
             this.chkSwapDutyCycles.Name = "chkSwapDutyCycles";
             this.chkSwapDutyCycles.Size = new System.Drawing.Size(463, 24);
             this.chkSwapDutyCycles.TabIndex = 0;
@@ -2143,11 +2143,11 @@ namespace Mesen.GUI.Forms.Config
             this.chkDisableSquarePhaseReset.AutoSize = true;
             this.chkDisableSquarePhaseReset.Checked = false;
             this.chkDisableSquarePhaseReset.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chkDisableSquarePhaseReset.Location = new System.Drawing.Point(0, 48);
+            this.chkDisableSquarePhaseReset.Location = new System.Drawing.Point(0, 24);
             this.chkDisableSquarePhaseReset.Name = "chkDisableSquarePhaseReset";
             this.chkDisableSquarePhaseReset.Size = new System.Drawing.Size(463, 24);
             this.chkDisableSquarePhaseReset.TabIndex = 5;
-            this.chkDisableSquarePhaseReset.Text = "Square channels not reset phase (Mimics old clones)";
+            this.chkDisableSquarePhaseReset.Text = "Not reset square channels phase (Mimics old clones)";
             // 
             // chkUseLinearSquareMixer
             // 
