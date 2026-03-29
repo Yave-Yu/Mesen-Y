@@ -2071,54 +2071,54 @@ namespace Mesen.GUI.Forms.Config
             // mnuDefaultPalette
             // 
             this.mnuDefaultPalette.Name = "mnuDefaultPalette";
-            this.mnuDefaultPalette.Size = new System.Drawing.Size(254, 22);
+            this.mnuDefaultPalette.Size = new System.Drawing.Size(226, 22);
             this.mnuDefaultPalette.Text = "Default NTSC";
             this.mnuDefaultPalette.Click += new System.EventHandler(this.mnuDefaultPalette_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(251, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(223, 6);
             // 
             // mnuPaletteCompositeDirect
             // 
             this.mnuPaletteCompositeDirect.Name = "mnuPaletteCompositeDirect";
-            this.mnuPaletteCompositeDirect.Size = new System.Drawing.Size(254, 22);
-            this.mnuPaletteCompositeDirect.Text = "Alternate PAL";
+            this.mnuPaletteCompositeDirect.Size = new System.Drawing.Size(226, 22);
+            this.mnuPaletteCompositeDirect.Text = "15-Bit NTSC";
             this.mnuPaletteCompositeDirect.Click += new System.EventHandler(this.mnuPaletteCompositeDirect_Click);
             // 
             // mnuPaletteNesClassic
             // 
             this.mnuPaletteNesClassic.Name = "mnuPaletteNesClassic";
-            this.mnuPaletteNesClassic.Size = new System.Drawing.Size(254, 22);
+            this.mnuPaletteNesClassic.Size = new System.Drawing.Size(226, 22);
             this.mnuPaletteNesClassic.Text = "Nestopia YUV";
             this.mnuPaletteNesClassic.Click += new System.EventHandler(this.mnuPaletteNesClassic_Click);
             // 
             // mnuPaletteNestopiaRgb
             // 
             this.mnuPaletteNestopiaRgb.Name = "mnuPaletteNestopiaRgb";
-            this.mnuPaletteNestopiaRgb.Size = new System.Drawing.Size(254, 22);
+            this.mnuPaletteNestopiaRgb.Size = new System.Drawing.Size(226, 22);
             this.mnuPaletteNestopiaRgb.Text = "Nintendulator NTSC";
             this.mnuPaletteNestopiaRgb.Click += new System.EventHandler(this.mnuPaletteNestopiaRgb_Click);
             // 
             // mnuPaletteOriginalHardware
             // 
             this.mnuPaletteOriginalHardware.Name = "mnuPaletteOriginalHardware";
-            this.mnuPaletteOriginalHardware.Size = new System.Drawing.Size(237, 22);
+            this.mnuPaletteOriginalHardware.Size = new System.Drawing.Size(226, 22);
             this.mnuPaletteOriginalHardware.Text = "Sony CXA2025AS";
             this.mnuPaletteOriginalHardware.Click += new System.EventHandler(this.mnuPaletteOriginalHardware_Click);
             // 
             // mnuPalettePvmStyle
             // 
             this.mnuPalettePvmStyle.Name = "mnuPalettePvmStyle";
-            this.mnuPalettePvmStyle.Size = new System.Drawing.Size(237, 22);
+            this.mnuPalettePvmStyle.Size = new System.Drawing.Size(226, 22);
             this.mnuPalettePvmStyle.Text = "Digital Prime (by FirebrandX)";
             this.mnuPalettePvmStyle.Click += new System.EventHandler(this.mnuPalettePvmStyle_Click);
             // 
             // mnuPaletteSonyCxa2025As
             // 
             this.mnuPaletteSonyCxa2025As.Name = "mnuPaletteSonyCxa2025As";
-            this.mnuPaletteSonyCxa2025As.Size = new System.Drawing.Size(237, 22);
+            this.mnuPaletteSonyCxa2025As.Size = new System.Drawing.Size(226, 22);
             this.mnuPaletteSonyCxa2025As.Text = "Wavebeam (by nakedarthur)";
             this.mnuPaletteSonyCxa2025As.Click += new System.EventHandler(this.mnuPaletteSonyCxa2025As_Click);
             // 
