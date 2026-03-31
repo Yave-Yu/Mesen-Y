@@ -256,12 +256,10 @@ int16_t SoundMixer::GetOutputVolume(bool forRightChannel)
 {
 	double squareOutput = GetChannelOutput(AudioChannel::Square1, forRightChannel) + GetChannelOutput(AudioChannel::Square2, forRightChannel);
 	double tndOutput = 2.751671 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.849359 * GetChannelOutput(AudioChannel::Noise, forRightChannel) + GetChannelOutput(AudioChannel::DMC, forRightChannel);
-	//This formula below for linear APU2 mixer flag
-	//double tndOutput = (!_settings->CheckFlag(EmulationFlags::UseLinearSquareMixer) ? 2.751671 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.849359 * GetChannelOutput(AudioChannel::Noise, forRightChannel) : 2.540299 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.474627 * GetChannelOutput(AudioChannel::Noise, forRightChannel)) + GetChannelOutput(AudioChannel::DMC, forRightChannel);
 	
-	double squareVolume = !_settings->CheckFlag(EmulationFlags::UseLinearSquareMixer) ? 95.88 / (8128.0 / squareOutput + 100.0) * 5000.0 : squareOutput / 33.333333 * squareSumFactor[(int)(_volumes[(int)AudioChannel::Square1] + _volumes[(int)AudioChannel::Square2])] * 0.258483 * 5000.0;
-	double tndVolume = 159.79 / (1.0 / (tndOutput / 22638.0) + 100.0) * 5000.0;
-	//double tndVolume = !_settings->CheckFlag(EmulationFlags::UseLinearSquareMixer) ? 798950.0 / (1.0 / (tndOutput / 22638.0) + 100.0) : 16.75 * tndOutput;
+	//Added linear square channel mixer flag
+	double squareVolume = !_settings->CheckFlag(EmulationFlags::UseLinearSquareMixer) ? 479400.0 / (8128.0 / squareOutput + 100.0) : 48.88 * squareOutput;
+	double tndVolume = !_settings->CheckFlag(EmulationFlags::UseLinearSquareMixer) ? 798950.0 / (1.0 / (tndOutput / 22638.0) + 100.0) : 21.775 * tndOutput;
 	
 	return (int16_t)(squareVolume + tndVolume +
 		GetChannelOutput(AudioChannel::FDS, forRightChannel) * 20 +
@@ -278,8 +276,8 @@ int16_t SoundMixer::GetOutputVolume(bool forRightChannel)
 #else
 		GetChannelOutput(AudioChannel::VRC7, forRightChannel) +
 #endif
-		GetChannelOutput(AudioChannel::EPSM_L, forRightChannel) * 2 +
-		GetChannelOutput(AudioChannel::EPSM_R, forRightChannel) * 2
+		GetChannelOutput(AudioChannel::EPSM_L, forRightChannel) * 2.4 +
+		GetChannelOutput(AudioChannel::EPSM_R, forRightChannel) * 2.4
 	);
 }
 
