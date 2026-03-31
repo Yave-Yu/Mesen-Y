@@ -22,7 +22,7 @@ namespace Mesen.GUI.Config
 		public VideoAspectRatio AspectRatio = VideoAspectRatio.NoStretching;
 		public ScreenRotation ScreenRotation = ScreenRotation.None;
 		[MinMax(0.1, 5.0)] public double CustomAspectRatio = 1.0;
-		public bool VerticalSync = false;
+		public bool VerticalSync = true;
 		public bool UseHdPacks = true;
 		public bool IntegerFpsMode = false;
 		public string PaletteData;
@@ -150,7 +150,7 @@ namespace Mesen.GUI.Config
 				}
 			}
 
-			if(this.SavedPalettes.Count >= 5) {
+			if(this.SavedPalettes.Count > 4) {
 				//Remove oldest palette
 				this.SavedPalettes.RemoveAt(0);
 			}
