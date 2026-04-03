@@ -102,6 +102,11 @@ public:
 		}
 	}
 
+	void SendVolume(uint8_t volume)
+	{
+		_mixer->RawVolume(_channel, volume);
+	}
+
 	void EndFrame()
 	{
 		_previousCycle = 0;

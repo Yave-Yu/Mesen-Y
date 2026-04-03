@@ -258,8 +258,8 @@ int16_t SoundMixer::GetOutputVolume(bool forRightChannel)
 	double tndOutput = 2.751671 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.849359 * GetChannelOutput(AudioChannel::Noise, forRightChannel) + GetChannelOutput(AudioChannel::DMC, forRightChannel);
 	
 	//Added linear square channel mixer flag
-	double squareVolume = !_settings->CheckFlag(EmulationFlags::UseLinearSquareMixer) ? 479400.0 / (8128.0 / squareOutput + 100.0) : 48.88 * squareOutput;
-	double tndVolume = !_settings->CheckFlag(EmulationFlags::UseLinearSquareMixer) ? 798950.0 / (1.0 / (tndOutput / 22638.0) + 100.0) : 21.775 * tndOutput;
+	double squareVolume = _settings->CheckFlag(EmulationFlags::NonLinearSquareMixer) ? 479400.0 / (8128.0 / squareOutput + 100.0) : 20.833333 * squareOutput * squareSumFactor[_squareVolume[(int)AudioChannel::Square1] + _squareVolume[(int)AudioChannel::Square2]] * 0.258483;
+	double tndVolume = 798950.0 / (1.0 / (tndOutput / 22638.0) + 100.0);
 	
 	return (int16_t)(squareVolume + tndVolume +
 		GetChannelOutput(AudioChannel::FDS, forRightChannel) * 20 +
@@ -287,6 +287,11 @@ void SoundMixer::AddDelta(AudioChannel channel, uint32_t time, int16_t delta)
 		_timestamps.push_back(time);
 		_channelOutput[(int)channel][time] += delta;
 	}
+}
+
+void SoundMixer::RawVolume(AudioChannel channel, uint8_t volume)
+{
+	_squareVolume[(int)channel] = volume;
 }
 
 void SoundMixer::EndFrame(uint32_t time)

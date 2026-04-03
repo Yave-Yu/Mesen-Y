@@ -16,6 +16,13 @@ protected:
 		{ 1, 1, 1, 1, 1, 1, 0, 0 }
 	};
 
+	const int8_t _dutySequencesUnbiased[4][8] = {
+		{-1,-1,-1,-1,-1,-1,-1, 7 },
+		{-2,-2,-2,-2,-2,-2, 6, 6 },
+		{-4,-4,-4,-4, 4, 4, 4, 4 },
+		{ 2, 2, 2, 2, 2, 2,-6,-6 },
+	};
+
 	bool _isChannel1 = false;
 	bool _isMmc5Square = false;
 
@@ -78,8 +85,10 @@ protected:
 	{
 		if(IsMuted()) {
 			AddOutput(0);
+			SendVolume(0);
 		} else {
-			AddOutput(_dutySequences[_duty][_dutyPos] * GetVolume());
+			AddOutput(_settings->CheckFlag(EmulationFlags::NonLinearSquareMixer) ? _dutySequences[_duty][_dutyPos] * GetVolume() : _dutySequencesUnbiased[_duty][_dutyPos] * GetVolume());
+			SendVolume(GetVolume());
 		}
 	}
 

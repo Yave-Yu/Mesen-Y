@@ -31,7 +31,7 @@ protected:
 		_start = true;
 	}
 	
-	uint32_t GetVolume()
+	uint8_t GetVolume()
 	{
 		if(_lengthCounter > 0) {
 			if(_constantVolume) {

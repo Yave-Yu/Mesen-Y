@@ -31,7 +31,7 @@ private:
 	static constexpr uint32_t MaxSampleRate = 96000;
 	static constexpr uint32_t MaxSamplesPerFrame = MaxSampleRate / 60 * 4 * 2; //x4 to allow CPU overclocking up to 10x, x2 for panning stereo
 	static constexpr uint32_t MaxChannelCount = 13;
-	static constexpr double squareSumFactor[32] = { 0, 1.352456, 1.336216, 1.320361, 1.304879, 1.289755, 1.274978, 1.260535, 1.246416, 1.232610, 1.219107, 1.205896, 1.192968, 1.180314, 1.167927, 1.155796, 1.143915, 1.132276, 1.120871, 1.109693, 1.098737, 1.087994, 1.077460, 1.067127, 1.056991, 1.047046, 1.037286, 1.027706, 1.018302, 1.009068, 1.0 };
+	static constexpr double squareSumFactor[31] = { 1.0, 1.352456, 1.336216, 1.320361, 1.304879, 1.289755, 1.274978, 1.260535, 1.246416, 1.232610, 1.219107, 1.205896, 1.192968, 1.180314, 1.167927, 1.155796, 1.143915, 1.132276, 1.120871, 1.109693, 1.098737, 1.087994, 1.077460, 1.067127, 1.056991, 1.047046, 1.037286, 1.027706, 1.018302, 1.009068, 1.0 };
 
 	IAudioDevice* _audioDevice;
 	EmulationSettings* _settings;
@@ -61,6 +61,7 @@ private:
 	vector<uint32_t> _timestamps;
 	int16_t _channelOutput[MaxChannelCount][CycleLength];
 	int16_t _currentOutput[MaxChannelCount];
+	uint8_t _squareVolume[2];
 
 	blip_t* _blipBufLeft;
 	blip_t* _blipBufRight;
@@ -100,6 +101,7 @@ public:
 	
 	void PlayAudioBuffer(uint32_t cycle);
 	void AddDelta(AudioChannel channel, uint32_t time, int16_t delta);
+	void RawVolume(AudioChannel channel, uint8_t volume);
 
 	void StartRecording(string filepath);
 	void StopRecording();
