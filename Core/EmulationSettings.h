@@ -42,7 +42,7 @@ enum EmulationFlags : uint64_t
 	ShowLagCounter = 0x80000,
 
 	DisableSquarePhaseReset = 0x100000,
-	UseLinearSquareMixer = 0x200000,
+	NonLinearSquareMixer = 0x200000,
 
 	DisableBackground = 0x400000,
 	DisableSprites = 0x800000,
@@ -164,9 +164,9 @@ enum class VideoFilterType
 	Prescale2x = 19,
 	Prescale3x = 20,
 	Prescale4x = 21,
-	Prescale6x = 22,
-	Prescale8x = 23,
-	Prescale10x = 24,
+	Prescale5x = 22,
+	Prescale6x = 23,
+	Prescale8x = 24,
 	Raw = 25,
 	HdPack = 999
 };
