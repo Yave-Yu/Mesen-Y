@@ -21,8 +21,8 @@
 			<Control ID="mnuGameConfig">ゲーム設定</Control>
 			<Control ID="mnuInsertCoin1">インサートコイン 1</Control>
 			<Control ID="mnuInsertCoin2">インサートコイン 2</Control>
-			<Control ID="mnuInsertCoin3">インサートコイン 3 (DualSystem)</Control>
-			<Control ID="mnuInsertCoin4">インサートコイン 4 (DualSystem)</Control>
+			<Control ID="mnuInsertCoin3">インサートコイン 3（DualSystem）</Control>
+			<Control ID="mnuInsertCoin4">インサートコイン 4（DualSystem）</Control>
 			<Control ID="mnuInputBarcode">バーコードを入力</Control>
 			<Control ID="mnuTapeRecorder">テープレコーダー</Control>
 			<Control ID="mnuLoadTapeFile">ファイルから再生する</Control>
@@ -30,7 +30,7 @@
 			<Control ID="mnuStopRecordTapeFile">録音を停止する</Control>
 			<Control ID="mnuOptions">設定</Control>
 			<Control ID="mnuEmulationSpeed">速度</Control>
-			<Control ID="mnuEmuSpeedNormal">通常　(100%)</Control>
+			<Control ID="mnuEmuSpeedNormal">通常　(100%）</Control>
 			<Control ID="mnuIncreaseSpeed">速度を上げる</Control>
 			<Control ID="mnuDecreaseSpeed">速度を下げる</Control>
 			<Control ID="mnuEmuSpeedMaximumSpeed">最高速度</Control>
@@ -51,7 +51,30 @@
 			<Control ID="mnuFullscreen">全画面表示</Control>
 			<Control ID="mnuVideoFilter">画面エフェクト</Control>
 			<Control ID="mnuNoneFilter">なし</Control>
-			<Control ID="mnuNtscFilter">NTSC 2x (blargg)</Control>
+			<Control ID="mnuNtscFilter">NTSC 2x（blargg）</Control>
+			<Control ID="mnuNtscBisqwitQuarterFilter">NTSC 2x (Bisqwit)</Control>
+			<Control ID="mnuNtscBisqwitHalfFilter">NTSC 4x (Bisqwit)</Control>
+			<Control ID="mnuNtscBisqwitFullFilter">NTSC 8x (Bisqwit)</Control>
+			<Control ID="mnuXBRZ2xFilter">xBRZ 2x</Control>
+			<Control ID="mnuXBRZ3xFilter">xBRZ 3x</Control>
+			<Control ID="mnuXBRZ4xFilter">xBRZ 4x</Control>
+			<Control ID="mnuXBRZ5xFilter">xBRZ 5x</Control>
+			<Control ID="mnuXBRZ6xFilter">xBRZ 6x</Control>
+			<Control ID="mnuHQ2xFilter">HQ 2x</Control>
+			<Control ID="mnuHQ3xFilter">HQ 3x</Control>
+			<Control ID="mnuHQ4xFilter">HQ 4x</Control>
+			<Control ID="mnuScale2xFilter">Scale 2x</Control>
+			<Control ID="mnuScale3xFilter">Scale 3x</Control>
+			<Control ID="mnuScale4xFilter">Scale 4x</Control>
+			<Control ID="mnu2xSaiFilter">2xSai</Control>
+			<Control ID="mnuSuper2xSaiFilter">Super 2xSai</Control>
+			<Control ID="mnuSuperEagleFilter">Super Eagle</Control>
+			<Control ID="mnuPrescale2xFilter">Prescale 2x</Control>
+			<Control ID="mnuPrescale3xFilter">Prescale 3x</Control>
+			<Control ID="mnuPrescale4xFilter">Prescale 4x</Control>
+			<Control ID="mnuPrescale5xFilter">Prescale 5x</Control>
+			<Control ID="mnuPrescale6xFilter">Prescale 6x</Control>
+			<Control ID="mnuPrescale8xFilter">Prescale 8x</Control>
 			<Control ID="mnuBilinearInterpolation">バイリニア補間</Control>
 			<Control ID="mnuAudioConfig">音声</Control>
 			<Control ID="mnuInput">コントローラ</Control>
@@ -96,6 +119,7 @@
 			<Control ID="mnuTestRecordTest">Test</Control>
 			<Control ID="mnuTestStopRecording">Stop recording</Control>
 			<Control ID="mnuRunAllTests">Run all tests</Control>
+			<Control ID="mnuDebug">デバッグ</Control>
 			<Control ID="mnuDebugger">デバッガ</Control>
 			<Control ID="mnuLogWindow">ログウィンドウ</Control>
 			<Control ID="mnuInstallHdPack">HDパックをインストールする</Control>
@@ -131,15 +155,16 @@
 			<Control ID="chkDisableDynamicSampleRate">サンプルレートの自動調整を無効にする</Control>
 			<Control ID="chkSwapDutyCycles">Squareチャンネルのデューティサイクルをスワップする</Control>
 			<Control ID="chkDisableSquarePhaseReset">Squareチャンネルは位相をリセットしない</Control>
-			<Control ID="chkUseLinearSquareMixer">線形Squareチャンネルミキサーを使用する</Control>
+			<Control ID="chkNonLinearSquareMixer">非線形Squareチャネルミキサーを使用する</Control>
 			<Control ID="chkDisableNoiseModeFlag">Noiseチャンネルのモードフラッグを無効にする</Control>
+			<Control ID="lblEPSMClockFrequency">EPSMのクロック周波数（デフォルトは8000000Hz）</Control>
 			<Control ID="tpgEffects">エフェクト</Control>
 			<Control ID="grpStereo">ステレオ</Control>
 			<Control ID="radStereoDisabled">無効</Control>
 			<Control ID="radStereoDelay">ディレイ</Control>
 			<Control ID="radStereoPanning">パニング</Control>
 			<Control ID="lblStereoDelayMs">ミリ秒</Control>
-			<Control ID="lblStereoPanningAngle">(角度)</Control>
+			<Control ID="lblStereoPanningAngle">(角度）</Control>
 			<Control ID="radStereoCombFilter">コムフィルタ</Control>
 			<Control ID="lblStereoCombFilterMs">ミリ秒</Control>
 			<Control ID="lblStereoCombFilterDelay">ディレイ:</Control>
@@ -155,6 +180,7 @@
 			<Control ID="trkVolumeReduction">音量の軽減度（％）</Control>
 			<Control ID="lblVolumeReductionSettings">音量軽減設定</Control>
 			<Control ID="chkEnableAudio">音声オン</Control>
+			<Control ID="chkEnableEPSM">EPSMオン</Control>
 			<Control ID="lblSampleRate">サンプルレート:</Control>
 			<Control ID="lblLatencyMs">ミリ秒</Control>
 			<Control ID="lblLatencyWarning">低すぎる場合は、音声にノイズが発生することがある</Control>
@@ -256,7 +282,7 @@
 			<Control ID="lblRight">右</Control>
 			<Control ID="tpgPalette">パレット</Control>
 			<Control ID="chkShowColorIndexes">色のインデックスを表示する</Control>
-			<Control ID="mnuDefaultPalette">デフォルト (NTSC)</Control>
+			<Control ID="mnuDefaultPalette">デフォルト（NTSC）</Control>
 			<Control ID="btnSelectPalette">プリセットを選ぶ...</Control>
 			<Control ID="btnExportPalette">.palファイルにエクスポートする</Control>
 			<Control ID="btnLoadPalFile">.palファイルをロードする</Control>
@@ -278,9 +304,9 @@
 			<Control ID="chkMergeFields">画像をマージする</Control>
 			<Control ID="chkVerticalBlend">垂直ブレンドを使う</Control>
 
-			<Control ID="trkYFilterLength">Y フィルター (ブラー)</Control>
-			<Control ID="trkIFilterLength">I フィルター (色にじみ)</Control>
-			<Control ID="trkQFilterLength">Q フィルター (色にじみ)</Control>
+			<Control ID="trkYFilterLength">Y フィルター（ブラー）</Control>
+			<Control ID="trkIFilterLength">I フィルター（色にじみ）</Control>
+			<Control ID="trkQFilterLength">Q フィルター（色にじみ）</Control>
 
 			<Control ID="grpScanlines">走査線</Control>
 			<Control ID="trkScanlines">走査線</Control>
@@ -292,7 +318,7 @@
 
 			<Control ID="tpgAdvanced">詳細設定</Control>
 			<Control ID="lblScreenRotation">画面の回転:</Control>
-			<Control ID="chkRemoveSpriteLimit">スプライトの制限を解除　(点滅を軽減する)</Control>
+			<Control ID="chkRemoveSpriteLimit">スプライトの制限を解除　(点滅を軽減する）</Control>
 			<Control ID="chkAdaptiveSpriteLimit">必要な時だけにスプライトの制限を戻す（制限解除による映像バグの発生率を軽減する）</Control>
 			<Control ID="chkDisableBackground">バックグラウンドを隠す</Control>
 			<Control ID="chkDisableSprites">スプライトを隠す</Control>
@@ -304,17 +330,17 @@
 		</Form>
 		<Form ID="frmEmulationConfig" Title="エミュレーション設定">
 			<Control ID="tpgGeneral">全般</Control>
-			<Control ID="lblEmuSpeedHint">%  (0 = 最高速度)</Control>
+			<Control ID="lblEmuSpeedHint">% （0 = 最高速度）</Control>
 			<Control ID="lblEmulationSpeed">エミュレーションの速度:</Control>
-			<Control ID="lblTurboSpeedHint">%  (0 = 最高速度)</Control>
+			<Control ID="lblTurboSpeedHint">% （0 = 最高速度）</Control>
 			<Control ID="lblTurboSpeed">早送りの速度:</Control>
-			<Control ID="lblRewindSpeedHint">%  (0 = 最高速度)</Control>
+			<Control ID="lblRewindSpeedHint">% （0 = 最高速度）</Control>
 			<Control ID="lblRewindSpeed">巻き戻しの速度:</Control>
 			<Control ID="lblRunAhead">Run Ahead:</Control>
-			<Control ID="lblRunAheadFrames">フレーム (入力遅延低下)</Control>
+			<Control ID="lblRunAheadFrames">フレーム（入力遅延低下）</Control>
 
 			<Control ID="tpgAdvanced">詳細設定</Control>
-			<Control ID="lblDeveloperSettings">開発者向け設定 (自作ソフト / ROM hacking)</Control>
+			<Control ID="lblDeveloperSettings">開発者向け設定（自作ソフト / ROM hacking）</Control>
 			<Control ID="lblMiscSettings">その他</Control>
 			<Control ID="chkUseAlternativeMmc3Irq">MMC3AのIRQ仕様を使う</Control>
 			<Control ID="chkAllowInvalidInput">コントローラでは不可能インプットを可能にする　（同時に上と下や右と左）</Control>
@@ -336,15 +362,15 @@
 			<Control ID="grpOverclocking">オーバークロック</Control>
 			<Control ID="lblOverclockHint">オーバークロックを使って実機の処理落ちを直すことができます。&#13;「NMIの前の追加走査線数」を400以上にするのを推奨します。&#13;注意：　場合によって、ゲームがバグることもあります。</Control>
 			<Control ID="lblClockRate">クロックレートの倍率： </Control>
-			<Control ID="lblClockRatePercent">% (デフォルト： 100%)</Control>
-			<Control ID="chkOverclockAdjustApu">APUのオーバークロックを無効にする (オーバークロックによる音声のピッチ変化を中和)</Control>
+			<Control ID="lblClockRatePercent">%（デフォルト： 100%）</Control>
+			<Control ID="chkOverclockAdjustApu">APUのオーバークロックを無効にする（オーバークロックによる音声のピッチ変化を中和）</Control>
 
 			<Control ID="grpPpuTiming">PPUタイミング</Control>
 			<Control ID="lblExtraScanlinesBeforeNmi">NMIの前の追加走査線数: </Control>
 			<Control ID="lblExtraScanlinesAfterNmi">NMIの後の追加走査線数: </Control>
-			<Control ID="lblEffectiveClockRate">クロックレート (NTSC) : </Control>
-			<Control ID="lblEffectiveClockRatePal">クロックレート (PAL) : </Control>
-			<Control ID="lblEffectiveClockRateDendy">クロックレート (Dendy) : </Control>
+			<Control ID="lblEffectiveClockRate">クロックレート（NTSC）: </Control>
+			<Control ID="lblEffectiveClockRatePal">クロックレート（PAL）: </Control>
+			<Control ID="lblEffectiveClockRateDendy">クロックレート（Dendy）: </Control>
 
 			<Control ID="chkShowLagCounter">ラグカウンタを表示する</Control>
 			<Control ID="btnResetLagCounter">カウンタをリセットする</Control>
@@ -380,10 +406,10 @@
 
 			<Control ID="tpgFiles">ファイル・フォルダ</Control>
 			<Control ID="grpFileAssociations">ファイルの関連付け</Control>
-			<Control ID="chkNesFormat">.NES (ファミコン)</Control>
-			<Control ID="chkFdsFormat">.FDS (ファミコンディスクシステム)</Control>
-			<Control ID="chkMmoFormat">.MMO (Mesenの動画)</Control>
-			<Control ID="chkMstFormat">.MST (Mesenのクイックセーブ)</Control>
+			<Control ID="chkNesFormat">.NES（ファミコン）</Control>
+			<Control ID="chkFdsFormat">.FDS（ファミコンディスクシステム）</Control>
+			<Control ID="chkMmoFormat">.MMO（Mesenの動画）</Control>
+			<Control ID="chkMstFormat">.MST（Mesenのクイックセーブ）</Control>
 
 			<Control ID="grpDataStorageLocation">データの保存先</Control>
 			<Control ID="radStorageDocuments">プロファイルフォルダに保存する</Control>
@@ -410,7 +436,7 @@
 			<Control ID="chkShowVsConfigOnLoad">VSゲームを起動する時に設定ウィンドウを表示する</Control>
 
 			<Control ID="lblRewind">巻き戻し用データの</Control>
-			<Control ID="lblRewindMinutes">分をキープする (メモリの使用量：１分に約１MB)</Control>
+			<Control ID="lblRewindMinutes">分をキープする（メモリの使用量：１分に約１MB）</Control>
 
 			<Control ID="tpgShortcuts"> ショートカットキー </Control>
 			<Control ID="lblShortcutWarning">注意：　使っている設定の中には同じマッピングが何回もあります。　間違いでこの設定にした場合は、設定を確認して直してください。</Control>
@@ -552,7 +578,7 @@
 		</Form>
 		<Form ID="frmAbout" Title="Mesenとは">
 			<Control ID="labelProductName">Mesen</Control>
-			<Control ID="labelCopyright">© 2020 M. Bibaud (aka Sour)</Control>
+			<Control ID="labelCopyright">© 2020 M. Bibaud（aka Sour）</Control>
 			<Control ID="lblWebsite">サイト:</Control>
 			<Control ID="lblLink">www.mesen.ca</Control>
 			<Control ID="labelVersion">バージョン:</Control>
@@ -577,7 +603,6 @@
 			<Control ID="lblLatestVersion">最新バージョン： </Control>
 			<Control ID="lblCurrentVersion">現在のバージョン： </Control>
 			<Control ID="lblChangeLog">更新歴</Control>
-			<Control ID="lblDonate">あなたはYave YuによるMesen-Yというフォークを使用しています。</Control>
 			<Control ID="btnUpdate">更新</Control>
 			<Control ID="btnCancel">キャンセル</Control>
 		</Form>
@@ -598,8 +623,8 @@
 			<Control ID="lblAviFile">保存先：</Control>
 			<Control ID="lblCodec">ビデオコーデック：</Control>
 			<Control ID="lblCompressionLevel">圧縮レベル：</Control>
-			<Control ID="lblLowCompression">低い&#13;(早い)</Control>
-			<Control ID="lblHighCompression">高い&#13;(遅い)</Control>
+			<Control ID="lblLowCompression">低い&#13;(早い）</Control>
+			<Control ID="lblHighCompression">高い&#13;(遅い）</Control>
 			<Control ID="btnBrowse">参照...</Control>
 			<Control ID="btnOK">OK</Control>
 			<Control ID="btnCancel">キャンセル</Control>
@@ -772,19 +797,19 @@
 		</UserControl>
 	</UserControls>
 	<Messages>
-		<Message ID="FilterAll">すべてのファイル (*.*)|*.*</Message>
-		<Message ID="FilterZipFiles">ZIPファイル (*.zip)|*.zip</Message>
-		<Message ID="FilterMovie">動画 (*.mmo)|*.mmo|すべてのファイル (*.*)|*.*</Message>
-		<Message ID="FilterWave">WAVファイル (*.wav)|*.wav|すべてのファイル (*.*)|*.*</Message>
-		<Message ID="FilterAvi">AVIファイル (*.avi)|*.avi|すべてのファイル (*.*)|*.*</Message>
-		<Message ID="FilterGif">GIFファイル (*.gif)|*.gif|すべてのファイル (*.*)|*.*</Message>
-		<Message ID="FilterPalette">パレットファイル (*.pal)|*.pal|すべてのファイル (*.*)|*.*</Message>
-		<Message ID="FilterRom">対応するすべてのファイル (*.nes, *.zip, *.7z, *.fds, *.nsf, *.nsfe, *.unf, *.unif, *.studybox)|*.NES;*.ZIP;*.FDS;*.7z;*.NSF;*.NSFE;*.UNF;*.UNIF;*.STUDYBOX|ファミコンゲーム (*.nes, *.unf, *.unif)|*.NES;*.UNF;*.UNIF|ファミコンディスクシステムのゲーム (*.fds)|*.FDS|NSFファイル (*.nsf, *.nsfe)|*.NSF;*.NSFE|ZIPファイル (*.zip)|*.ZIP|7-Zipファイル (*.7z)|*.7z|すべてのファイル (*.*)|*.*</Message>
-		<Message ID="FilterRomIps">対応するすべてのファイル (*.nes, *.zip, *.7z, *.fds, *.nsf, *.nsfe, *.unf, *.unif, *.studybox, *.ips, *.bps, *.ups)|*.NES;*.ZIP;*.7z;*.IPS;*.BPS;*.UPS;*.FDS;*.NSF;*.NSFE;*.UNF;*.UNIF;*.STUDYBOX|ファミコンゲーム (*.nes, *.unf, *.unif)|*.NES;*.UNF;*.UNIF|ファミコンディスクシステムのゲーム (*.fds)|*.FDS|NSFファイル (*.nsf, *.nsfe)|*.NSF;*.NSFE|ZIPファイル (*.zip)|*.ZIP|7-Zipファイル (*.7z)|*.7z|パッチファイル (*.ips, *.bps, *.ups)|*.IPS;*.BPS;*.UPS|すべてのファイル (*.*)|*.*</Message>
-		<Message ID="FilterTest">テストファイル (*.mtp)|*.mtp|すべてのファイル (*.*)|*.*</Message>
-		<Message ID="FilterCheat">対応するすべてのファイル (*.cht, *.xml)|*.cht;*.xml</Message>
-		<Message ID="FilterSavestate">Mesenのクイックセーブデータ (*.mst)|*.mst|すべてのファイル (*.*)|*.*</Message>
-		<Message ID="FilterTapeFiles">Family Basicテープファイル (*.fbt)|*.fbt|すべてのファイル (*.*)|*.*</Message>
+		<Message ID="FilterAll">すべてのファイル（*.*）|*.*</Message>
+		<Message ID="FilterZipFiles">ZIPファイル（*.zip）|*.zip</Message>
+		<Message ID="FilterMovie">動画（*.mmo）|*.mmo|すべてのファイル（*.*）|*.*</Message>
+		<Message ID="FilterWave">WAVファイル（*.wav）|*.wav|すべてのファイル（*.*）|*.*</Message>
+		<Message ID="FilterAvi">AVIファイル（*.avi）|*.avi|すべてのファイル（*.*）|*.*</Message>
+		<Message ID="FilterGif">GIFファイル（*.gif）|*.gif|すべてのファイル（*.*）|*.*</Message>
+		<Message ID="FilterPalette">パレットファイル（*.pal）|*.pal|すべてのファイル（*.*）|*.*</Message>
+		<Message ID="FilterRom">対応するすべてのファイル（*.nes, *.zip, *.7z, *.fds, *.nsf, *.nsfe, *.unf, *.unif, *.studybox）|*.NES;*.ZIP;*.FDS;*.7z;*.NSF;*.NSFE;*.UNF;*.UNIF;*.STUDYBOX|ファミコンゲーム（*.nes, *.unf, *.unif）|*.NES;*.UNF;*.UNIF|ファミコンディスクシステムのゲーム（*.fds）|*.FDS|NSFファイル（*.nsf, *.nsfe）|*.NSF;*.NSFE|ZIPファイル（*.zip）|*.ZIP|7-Zipファイル（*.7z）|*.7z|すべてのファイル（*.*）|*.*</Message>
+		<Message ID="FilterRomIps">対応するすべてのファイル（*.nes, *.zip, *.7z, *.fds, *.nsf, *.nsfe, *.unf, *.unif, *.studybox, *.ips, *.bps, *.ups）|*.NES;*.ZIP;*.7z;*.IPS;*.BPS;*.UPS;*.FDS;*.NSF;*.NSFE;*.UNF;*.UNIF;*.STUDYBOX|ファミコンゲーム（*.nes, *.unf, *.unif）|*.NES;*.UNF;*.UNIF|ファミコンディスクシステムのゲーム（*.fds）|*.FDS|NSFファイル（*.nsf, *.nsfe）|*.NSF;*.NSFE|ZIPファイル（*.zip）|*.ZIP|7-Zipファイル（*.7z）|*.7z|パッチファイル（*.ips, *.bps, *.ups）|*.IPS;*.BPS;*.UPS|すべてのファイル（*.*）|*.*</Message>
+		<Message ID="FilterTest">テストファイル（*.mtp）|*.mtp|すべてのファイル（*.*）|*.*</Message>
+		<Message ID="FilterCheat">対応するすべてのファイル（*.cht, *.xml）|*.cht;*.xml</Message>
+		<Message ID="FilterSavestate">Mesenのクイックセーブデータ（*.mst）|*.mst|すべてのファイル（*.*）|*.*</Message>
+		<Message ID="FilterTapeFiles">Family Basicテープファイル（*.fbt）|*.fbt|すべてのファイル（*.*）|*.*</Message>
 
 		<Message ID="LastSession">前セッション</Message>
 		<Message ID="AutoSave">オートクイックセーブ</Message>
@@ -839,7 +864,7 @@
 		<Message ID="CheatsFound">ゲーム{0}個とチートコード{1}個を見つけました</Message>
 		<Message ID="CheatsImported">{1}用のチートコード{0}個がインポートされました。.</Message>
 
-		<Message ID="NsfNextTrack">次の曲　(長押しで早送り)</Message>
+		<Message ID="NsfNextTrack">次の曲　(長押しで早送り）</Message>
 		<Message ID="NsfUnnamedTrack">[名無し]</Message>
 		<Message ID="NsfUnknownField">[不明]</Message>
 
@@ -854,8 +879,8 @@
 
 		<Message ID="HDNesTooltip">このオプションを有効にすれば、MesenはHDNesのようにHDパックをロード出来るようになります。&#xA;&#xA;HDパックはMesenのフォルダの中にある「HdPacks」のフォルダにゲームと同じ名前のサブフォルダに置くと自動的にロードされます。&#xA;例）ゲームファイルは「MyRom.nes」なら、「HdPacks\MyRom」にHDパックを置くとロードされます。</Message>
 		<Message ID="HdPackBuilderScaleHelp">Selects the scale and video filter to use when generating the PNG files&#xA;for the HD Pack. Use the "Prescale" filters to generate the tiles&#xA;at a larger scale without applying any transformation to the pixels.</Message>
-		<Message ID="HdPackBuilderBankSizeHelp">This option is only available for CHR RAM games.  CHR RAM games have no&#xA;fixed "banks" - they are dynamically created by the game's code.&#xA;This option alters the HD Pack Builder's behavior when grouping the tiles into &#xA;the PNG files - a smaller bank size will usually result in less PNG &#xA;files (but depending on the game's code, larger values may produce &#xA;better results).</Message>
-		<Message ID="HdPackBuilderFrequencyHelp">When this option is enabled, the tiles in PNG files are sorted by the&#xA;frequency at which they are shown on the screen while recording (more &#xA;common palettes will be grouped together in the first PNG for a specific bank &#xA;number. If this option is unchecked, the PNGs will be sorted by palette - &#xA;each PNG will only contain up to 4 different colors in this case.</Message>
+		<Message ID="HdPackBuilderBankSizeHelp">This option is only available for CHR RAM games.  CHR RAM games have no&#xA;fixed "banks" - they are dynamically created by the game's code.&#xA;This option alters the HD Pack Builder's behavior when grouping the tiles into &#xA;the PNG files - a smaller bank size will usually result in less PNG &#xA;files（but depending on the game's code, larger values may produce &#xA;better results）.</Message>
+		<Message ID="HdPackBuilderFrequencyHelp">When this option is enabled, the tiles in PNG files are sorted by the&#xA;frequency at which they are shown on the screen while recording（more &#xA;common palettes will be grouped together in the first PNG for a specific bank &#xA;number. If this option is unchecked, the PNGs will be sorted by palette - &#xA;each PNG will only contain up to 4 different colors in this case.</Message>
 		<Message ID="HdPackBuilderGroupBlankHelp">This option groups all the blank tiles sequentially into the same PNG&#xA;files - this helps reduce the number of PNG files produced by removing &#xA;almost-empty PNG files containing only blank tiles.</Message>
 		<Message ID="HdPackBuilderLargeSpritesHelp">When enabled, this option will alter the display order of CHR banks&#xA;that contain only sprites to make the sprites easier to edit in the PNG file.</Message>
 		<Message ID="HdPackBuilderIgnoreOverscanHelp">When enabled, this will make the builder ignore any pixels in the overscan area.&#xA;This is useful in games that contain glitches on the outer edge of the screen.&#xA;Incorrect palette combinations due to these glitches will be ignored and won't be shown in the PNG files.</Message>
@@ -864,7 +889,7 @@
 		<Message ID="InstallHdPackError">HD Packをインストールする時にエラーが発生しました：&#xA;&#xA;{0}</Message>
 		<Message ID="InstallHdPackInvalidPack">選択したファイルはHD Packではないため、インストールできません。</Message>
 		<Message ID="InstallHdPackInvalidZipFile">選択したファイルはZIPファイルではないため、ロードできません。</Message>
-		<Message ID="InstallHdPackConfirmOverwrite">インストール先のフォルダ({0})はすでに存在しています。　上書きしますか？</Message>
+		<Message ID="InstallHdPackConfirmOverwrite">インストール先のフォルダ({0}）はすでに存在しています。　上書きしますか？</Message>
 		<Message ID="InstallHdPackConfirmReset">HD Packのインストールは成功しました。　ゲームを再起動して、HD Packをロードしますか？</Message>
 
 		<Message ID="MesenUpToDate">既にMesenの最新のバージョンを使っています。</Message>
@@ -908,11 +933,11 @@
 		<Message ID="EmulatorShortcutMappings_InsertNextDisk">FDS - 次のディスクを入れる</Message>
 		<Message ID="EmulatorShortcutMappings_InsertCoin1">VS - インサートコイン 1</Message>
 		<Message ID="EmulatorShortcutMappings_InsertCoin2">VS - インサートコイン 2</Message>
-		<Message ID="EmulatorShortcutMappings_InsertCoin3">VS - インサートコイン 3 (DualSystem)</Message>
-		<Message ID="EmulatorShortcutMappings_InsertCoin4">VS - インサートコイン 4 (DualSystem)</Message>
+		<Message ID="EmulatorShortcutMappings_InsertCoin3">VS - インサートコイン 3（DualSystem）</Message>
+		<Message ID="EmulatorShortcutMappings_InsertCoin4">VS - インサートコイン 4（DualSystem）</Message>
 		<Message ID="EmulatorShortcutMappings_InputBarcode">バーコードを入力</Message>
 		<Message ID="EmulatorShortcutMappings_VsServiceButton">VS - サービスボタン</Message>
-		<Message ID="EmulatorShortcutMappings_VsServiceButton2">VS - サービスボタン 2 (DualSystem)</Message>
+		<Message ID="EmulatorShortcutMappings_VsServiceButton2">VS - サービスボタン 2（DualSystem）</Message>
 		<Message ID="EmulatorShortcutMappings_MoveToNextStateSlot">次のクイックセーブスロットを選ぶ</Message>
 		<Message ID="EmulatorShortcutMappings_MoveToPreviousStateSlot">前のクイックセーブスロットを選ぶ</Message>
 		<Message ID="EmulatorShortcutMappings_SaveState">選択中スロットにクイックセーブ</Message>
@@ -1031,12 +1056,12 @@
 			<Value ID="BattleBox">バトルボックス</Value>
 		</Enum>
 		<Enum ID="VideoAspectRatio">
-			<Value ID="NoStretching">デフォルト (1:1)</Value>
-			<Value ID="Auto">自動的 (ゲーム8:7や11:8を使う)</Value>
-			<Value ID="NTSC">NTSC (8:7)</Value>
-			<Value ID="PAL">PAL (11:8)</Value>
-			<Value ID="Standard">ノーマル (4:3)</Value>
-			<Value ID="Widescreen">ワイド (16:9)</Value>
+			<Value ID="NoStretching">デフォルト（1:1）</Value>
+			<Value ID="Auto">自動的（ゲーム8:7や11:8を使う）</Value>
+			<Value ID="NTSC">NTSC（8:7）</Value>
+			<Value ID="PAL">PAL（11:8）</Value>
+			<Value ID="Standard">ノーマル（4:3）</Value>
+			<Value ID="Widescreen">ワイド（16:9）</Value>
 			<Value ID="Custom">カスタム</Value>
 		</Enum>
 		<Enum ID="VideoRefreshRates">
@@ -1055,10 +1080,10 @@
 		</Enum>
 		<Enum ID="VideoFilterType">
 			<Value ID="None">なし</Value>
-			<Value ID="NTSC">NTSC 2x (blargg)</Value>
-			<Value ID="BisqwitNtscQuarterRes">NTSC 2x (Bisqwit)</Value>
-			<Value ID="BisqwitNtscHalfRes">NTSC 4x (Bisqwit)</Value>
-			<Value ID="BisqwitNtsc">NTSC 8x (Bisqwit)</Value>
+			<Value ID="NTSC">NTSC 2x（blargg）</Value>
+			<Value ID="BisqwitNtscQuarterRes">NTSC 2x（Bisqwit）</Value>
+			<Value ID="BisqwitNtscHalfRes">NTSC 4x（Bisqwit）</Value>
+			<Value ID="BisqwitNtsc">NTSC 8x（Bisqwit）</Value>
 			<Value ID="xBRZ2x">xBRZ 2x</Value>
 			<Value ID="xBRZ3x">xBRZ 3x</Value>
 			<Value ID="xBRZ4x">xBRZ 4x</Value>
@@ -1071,14 +1096,14 @@
 			<Value ID="Scale3x">Scale 3x</Value>
 			<Value ID="Scale4x">Scale 4x</Value>
 			<Value ID="_2xSai">2xSai</Value>
-			<Value ID="Super2xSai">Super2xSai</Value>
-			<Value ID="SuperEagle">SuperEagle</Value>
+			<Value ID="Super2xSai">Super 2xSai</Value>
+			<Value ID="SuperEagle">Super Eagle</Value>
 			<Value ID="Prescale2x">Prescale 2x</Value>
 			<Value ID="Prescale3x">Prescale 3x</Value>
 			<Value ID="Prescale4x">Prescale 4x</Value>
+			<Value ID="Prescale5x">Prescale 5x</Value>
 			<Value ID="Prescale6x">Prescale 6x</Value>
 			<Value ID="Prescale8x">Prescale 8x</Value>
-			<Value ID="Prescale10x">Prescale 10x</Value>
 		</Enum>
 		<Enum ID="VsDualOutputOption">
 			<Value ID="Both">両方</Value>
@@ -1145,8 +1170,8 @@
 		</Enum>
 		<Enum ID="VideoCodec">
 			<Value ID="None">圧縮なし</Value>
-			<Value ID="ZMBV">Zip Motion Block Video (ZMBV)</Value>
-			<Value ID="CSCD">Camstudio (CSCD)</Value>
+			<Value ID="ZMBV">Zip Motion Block Video（ZMBV）</Value>
+			<Value ID="CSCD">Camstudio（CSCD）</Value>
 		</Enum>
 		<Enum ID="RecordMovieFrom">
 			<Value ID="StartWithoutSaveData">パワーオンから</Value>

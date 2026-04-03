@@ -52,6 +52,29 @@
 			<Control ID="mnuVideoFilter">Filtri Video</Control>
 			<Control ID="mnuNoneFilter">Nessuno</Control>
 			<Control ID="mnuNtscFilter">NTSC 2x (blargg)</Control>
+			<Control ID="mnuNtscBisqwitQuarterFilter">NTSC 2x (Bisqwit)</Control>
+			<Control ID="mnuNtscBisqwitHalfFilter">NTSC 4x (Bisqwit)</Control>
+			<Control ID="mnuNtscBisqwitFullFilter">NTSC 8x (Bisqwit)</Control>
+			<Control ID="mnuXBRZ2xFilter">xBRZ 2x</Control>
+			<Control ID="mnuXBRZ3xFilter">xBRZ 3x</Control>
+			<Control ID="mnuXBRZ4xFilter">xBRZ 4x</Control>
+			<Control ID="mnuXBRZ5xFilter">xBRZ 5x</Control>
+			<Control ID="mnuXBRZ6xFilter">xBRZ 6x</Control>
+			<Control ID="mnuHQ2xFilter">HQ 2x</Control>
+			<Control ID="mnuHQ3xFilter">HQ 3x</Control>
+			<Control ID="mnuHQ4xFilter">HQ 4x</Control>
+			<Control ID="mnuScale2xFilter">Scale 2x</Control>
+			<Control ID="mnuScale3xFilter">Scale 3x</Control>
+			<Control ID="mnuScale4xFilter">Scale 4x</Control>
+			<Control ID="mnu2xSaiFilter">2xSai</Control>
+			<Control ID="mnuSuper2xSaiFilter">Super 2xSai</Control>
+			<Control ID="mnuSuperEagleFilter">Super Aquila</Control>
+			<Control ID="mnuPrescale2xFilter">Preimpostare 2x</Control>
+			<Control ID="mnuPrescale3xFilter">Preimpostare 3x</Control>
+			<Control ID="mnuPrescale4xFilter">Preimpostare 4x</Control>
+			<Control ID="mnuPrescale5xFilter">Preimpostare 5x</Control>
+			<Control ID="mnuPrescale6xFilter">Preimpostare 6x</Control>
+			<Control ID="mnuPrescale8xFilter">Preimpostare 8x</Control>
 			<Control ID="mnuBilinearInterpolation">Usa Interpolazione Bilineare</Control>
 			<Control ID="mnuAudioConfig">Audio</Control>
 			<Control ID="mnuInput">Input</Control>
@@ -97,6 +120,7 @@
 			<Control ID="mnuTestRecordTest">Test</Control>
 			<Control ID="mnuTestStopRecording">Ferma registrazione</Control>
 			<Control ID="mnuRunAllTests">Avvia tutti i test</Control>
+			<Control ID="mnuDebug">Debug</Control>
 			<Control ID="mnuDebugger">Debugger</Control>
 			<Control ID="mnuLogWindow">Finestra Log</Control>
 			<Control ID="mnuInstallHdPack">Installa HD Pack</Control>
@@ -132,8 +156,9 @@
 			<Control ID="chkDisableDynamicSampleRate">Disabilita frequenza di campionamento dinamica</Control>
 			<Control ID="chkSwapDutyCycles">Scambia i duty cycle dei canali square (imita i vecchi cloni)</Control>
 			<Control ID="chkDisableSquarePhaseReset">I canali quadrati non resetta fase (imita i vecchi cloni)</Control>
-			<Control ID="chkUseLinearSquareMixer">Usa un mixer a canale quadrato lineare</Control>
+			<Control ID="chkNonLinearSquareMixer">Usa il mixer del canale quadrato non lineare</Control>
 			<Control ID="chkDisableNoiseModeFlag">Disabilita il canale noise</Control>
+			<Control ID="lblEPSMClockFrequency">Frequenza dell'orologio EPSM (predefinita è 8000000Hz)</Control>
 			<Control ID="tpgEffects">Effetti</Control>
 			<Control ID="grpStereo">Stereo</Control>
 			<Control ID="radStereoDisabled">Disabilita</Control>
@@ -156,6 +181,7 @@
 			<Control ID="trkVolumeReduction">Riduzione Volume (%)</Control>
 			<Control ID="lblVolumeReductionSettings">Opzioni Riduzione Volume</Control>
 			<Control ID="chkEnableAudio">Abilita Audio</Control>
+			<Control ID="chkEnableEPSM">Abilita EPSM</Control>
 			<Control ID="lblSampleRate">Frequenza campionamento:</Control>
 			<Control ID="lblLatencyMs">ms</Control>
 			<Control ID="lblLatencyWarning">Bassi valori può causare problemi</Control>
@@ -589,7 +615,6 @@
 			<Control ID="lblLatestVersion">Ultima Versione:</Control>
 			<Control ID="lblCurrentVersion">Versione Attuale:</Control>
 			<Control ID="lblChangeLog">Changelog:</Control>
-			<Control ID="lblDonate">Stai usando un fork, Mesen-Y di Yave Yu.</Control>
 			<Control ID="btnUpdate">Aggiorna</Control>
 			<Control ID="btnCancel">Annulla</Control>
 		</Form>
@@ -1085,14 +1110,14 @@
 			<Value ID="Scale3x">Scale 3x</Value>
 			<Value ID="Scale4x">Scale 4x</Value>
 			<Value ID="_2xSai">2xSai</Value>
-			<Value ID="Super2xSai">Super2xSai</Value>
-			<Value ID="SuperEagle">SuperEagle</Value>
-			<Value ID="Prescale2x">Prescale 2x</Value>
-			<Value ID="Prescale3x">Prescale 3x</Value>
-			<Value ID="Prescale4x">Prescale 4x</Value>
-			<Value ID="Prescale6x">Prescale 6x</Value>
-			<Value ID="Prescale8x">Prescale 8x</Value>
-			<Value ID="Prescale10x">Prescale 10x</Value>
+			<Value ID="Super2xSai">Super 2xSai</Value>
+			<Value ID="SuperEagle">Super Aquila</Value>
+			<Value ID="Prescale2x">Preimpostare 2x</Value>
+			<Value ID="Prescale3x">Preimpostare 3x</Value>
+			<Value ID="Prescale4x">Preimpostare 4x</Value>
+			<Value ID="Prescale5x">Preimpostare 5x</Value>
+			<Value ID="Prescale6x">Preimpostare 6x</Value>
+			<Value ID="Prescale8x">Preimpostare 8x</Value>
 		</Enum>
 		<Enum ID="VsDualOutputOption">
 			<Value ID="Both">Entrambi</Value>

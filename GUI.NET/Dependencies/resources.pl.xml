@@ -52,6 +52,29 @@
 			<Control ID="mnuVideoFilter">Filtr wideo</Control>
 			<Control ID="mnuNoneFilter">Żaden</Control>
 			<Control ID="mnuNtscFilter">NTSC 2x (blargg)</Control>
+			<Control ID="mnuNtscBisqwitQuarterFilter">NTSC 2x (Bisqwit)</Control>
+			<Control ID="mnuNtscBisqwitHalfFilter">NTSC 4x (Bisqwit)</Control>
+			<Control ID="mnuNtscBisqwitFullFilter">NTSC 8x (Bisqwit)</Control>
+			<Control ID="mnuXBRZ2xFilter">xBRZ 2x</Control>
+			<Control ID="mnuXBRZ3xFilter">xBRZ 3x</Control>
+			<Control ID="mnuXBRZ4xFilter">xBRZ 4x</Control>
+			<Control ID="mnuXBRZ5xFilter">xBRZ 5x</Control>
+			<Control ID="mnuXBRZ6xFilter">xBRZ 6x</Control>
+			<Control ID="mnuHQ2xFilter">HQ 2x</Control>
+			<Control ID="mnuHQ3xFilter">HQ 3x</Control>
+			<Control ID="mnuHQ4xFilter">HQ 4x</Control>
+			<Control ID="mnuScale2xFilter">Skala 2x</Control>
+			<Control ID="mnuScale3xFilter">Skala 3x</Control>
+			<Control ID="mnuScale4xFilter">Skala 4x</Control>
+			<Control ID="mnu2xSaiFilter">2xSai</Control>
+			<Control ID="mnuSuper2xSaiFilter">Super 2xSai</Control>
+			<Control ID="mnuSuperEagleFilter">Super Orzeł</Control>
+			<Control ID="mnuPrescale2xFilter">Przedskalowanie 2x</Control>
+			<Control ID="mnuPrescale3xFilter">Przedskalowanie 3x</Control>
+			<Control ID="mnuPrescale4xFilter">Przedskalowanie 4x</Control>
+			<Control ID="mnuPrescale5xFilter">Przedskalowanie 5x</Control>
+			<Control ID="mnuPrescale6xFilter">Przedskalowanie 6x</Control>
+			<Control ID="mnuPrescale8xFilter">Przedskalowanie 8x</Control>
 			<Control ID="mnuBilinearInterpolation">Użyj interpolacji dwuliniowej</Control>
 			<Control ID="mnuAudioConfig">Audio</Control>
 			<Control ID="mnuInput">Wejście</Control>
@@ -97,7 +120,8 @@
 			<Control ID="mnuTestRecordTest">Test</Control>
 			<Control ID="mnuTestStopRecording">Zatrzymaj nagrywanie</Control>
 			<Control ID="mnuRunAllTests">Uruchom wszystkie testy</Control>
-			<Control ID="mnuDebugger">Debugger</Control>
+			<Control ID="mnuDebug">Debug</Control>
+			<Control ID="mnuDebugger">Debuger</Control>
 			<Control ID="mnuLogWindow">Okno dziennika</Control>
 			<Control ID="mnuInstallHdPack">Zainstaluj pakiet HD</Control>
 			<Control ID="mnuHdPackEditor">Konstruktor pakietu HD</Control>
@@ -132,8 +156,9 @@
 			<Control ID="chkDisableDynamicSampleRate">Wyłącz dynamiczną częstotliwość próbkowania</Control>
 			<Control ID="chkSwapDutyCycles">Zamień cykle pracy kanałów kwadratowych (naśladuje stare klony)</Control>
 			<Control ID="chkDisableSquarePhaseReset">Kwadratowe kanały nie resetują fazy (naśladuje stare klony)</Control>
-			<Control ID="chkUseLinearSquareMixer">Użyj liniowego miksera kanałowego kwadratowego</Control>
+			<Control ID="chkNonLinearSquareMixer">Użyj nieliniowego miksera kanału kwadratowego</Control>
 			<Control ID="chkDisableNoiseModeFlag">Wyłącz flagę trybu kanału szumu</Control>
+			<Control ID="lblEPSMClockFrequency">Częstotliwość zegara EPSM (domyślnie 8000000Hz)</Control>
 			<Control ID="tpgEffects">Efekty</Control>
 			<Control ID="grpStereo">Stereofoniczny</Control>
 			<Control ID="radStereoDisabled">Wyłączony</Control>
@@ -156,6 +181,7 @@
 			<Control ID="trkVolumeReduction">Zmniejszenie głośności (%)</Control>
 			<Control ID="lblVolumeReductionSettings">Ustawienia redukcji głośności</Control>
 			<Control ID="chkEnableAudio">Włącz dźwięk</Control>
+			<Control ID="chkEnableEPSM">Włącz EPSM</Control>
 			<Control ID="lblSampleRate">Częstotliwość próbkowania:</Control>
 			<Control ID="lblLatencyMs">ms</Control>
 			<Control ID="lblLatencyWarning">Niskie wartości mogą powodować problemy z dźwiękiem</Control>
@@ -589,7 +615,6 @@
 			<Control ID="lblLatestVersion">Najnowsza wersja:</Control>
 			<Control ID="lblCurrentVersion">Obecna wersja:</Control>
 			<Control ID="lblChangeLog">Dziennik zmian:</Control>
-			<Control ID="lblDonate">Używasz forka Mesen-Y autorstwa Yave Yu.</Control>
 			<Control ID="btnUpdate">Aktualizuj</Control>
 			<Control ID="btnCancel">Anuluj</Control>
 		</Form>
@@ -1085,14 +1110,14 @@
 			<Value ID="Scale3x">Skala 3x</Value>
 			<Value ID="Scale4x">Skala 4x</Value>
 			<Value ID="_2xSai">2xSai</Value>
-			<Value ID="Super2xSai">Super2xSai</Value>
-			<Value ID="SuperEagle">SuperEagle</Value>
+			<Value ID="Super2xSai">Super 2xSai</Value>
+			<Value ID="SuperEagle">Super Orzeł</Value>
 			<Value ID="Prescale2x">Przedskalowanie 2x</Value>
 			<Value ID="Prescale3x">Przedskalowanie 3x</Value>
 			<Value ID="Prescale4x">Przedskalowanie 4x</Value>
+			<Value ID="Prescale5x">Przedskalowanie 5x</Value>
 			<Value ID="Prescale6x">Przedskalowanie 6x</Value>
 			<Value ID="Prescale8x">Przedskalowanie 8x</Value>
-			<Value ID="Prescale10x">Przedskalowanie 10x</Value>
 		</Enum>
 		<Enum ID="VsDualOutputOption">
 			<Value ID="Both">Oba</Value>

@@ -52,6 +52,29 @@
 			<Control ID="mnuVideoFilter">Filtre de vídeo</Control>
 			<Control ID="mnuNoneFilter">Cap</Control>
 			<Control ID="mnuNtscFilter">NTSC 2x (blargg)</Control>
+			<Control ID="mnuNtscBisqwitQuarterFilter">NTSC 2x (Bisqwit)</Control>
+			<Control ID="mnuNtscBisqwitHalfFilter">NTSC 4x (Bisqwit)</Control>
+			<Control ID="mnuNtscBisqwitFullFilter">NTSC 8x (Bisqwit)</Control>
+			<Control ID="mnuXBRZ2xFilter">xBRZ 2x</Control>
+			<Control ID="mnuXBRZ3xFilter">xBRZ 3x</Control>
+			<Control ID="mnuXBRZ4xFilter">xBRZ 4x</Control>
+			<Control ID="mnuXBRZ5xFilter">xBRZ 5x</Control>
+			<Control ID="mnuXBRZ6xFilter">xBRZ 6x</Control>
+			<Control ID="mnuHQ2xFilter">HQ 2x</Control>
+			<Control ID="mnuHQ3xFilter">HQ 3x</Control>
+			<Control ID="mnuHQ4xFilter">HQ 4x</Control>
+			<Control ID="mnuScale2xFilter">Escalat 2x</Control>
+			<Control ID="mnuScale3xFilter">Escalat 3x</Control>
+			<Control ID="mnuScale4xFilter">Escalat 4x</Control>
+			<Control ID="mnu2xSaiFilter">2xSai</Control>
+			<Control ID="mnuSuper2xSaiFilter">Super 2xSai</Control>
+			<Control ID="mnuSuperEagleFilter">Super Eagle</Control>
+			<Control ID="mnuPrescale2xFilter">Preescalat 2x</Control>
+			<Control ID="mnuPrescale3xFilter">Preescalat 3x</Control>
+			<Control ID="mnuPrescale4xFilter">Preescalat 4x</Control>
+			<Control ID="mnuPrescale5xFilter">Preescalat 5x</Control>
+			<Control ID="mnuPrescale6xFilter">Preescalat 6x</Control>
+			<Control ID="mnuPrescale8xFilter">Preescalat 8x</Control>
 			<Control ID="mnuBilinearInterpolation">Fes servir interpolació bilineal</Control>
 			<Control ID="mnuAudioConfig">So</Control>
 			<Control ID="mnuInput">Comandaments</Control>
@@ -97,6 +120,7 @@
 			<Control ID="mnuTestRecordTest">Prova</Control>
 			<Control ID="mnuTestStopRecording">Atura l'enregistrament</Control>
 			<Control ID="mnuRunAllTests">Executa tots els tests</Control>
+			<Control ID="mnuDebug">Depurar</Control>
 			<Control ID="mnuDebugger">Depurador</Control>
 			<Control ID="mnuLogWindow">Finestra del registre</Control>
 			<Control ID="mnuInstallHdPack">Install HD Pack</Control>
@@ -132,8 +156,9 @@
 			<Control ID="chkDisableDynamicSampleRate">Disable dynamic sample rate</Control>
 			<Control ID="chkSwapDutyCycles">Els canals quadrats no reinicien la fase (imita clons antics)</Control>
 			<Control ID="chkDisableSquarePhaseReset">Désactiver la réinitialisation de phase en onde carrée (imita clons antics)</Control>
-			<Control ID="chkUseLinearSquareMixer">Utilitzeu mesclador de canal quadrat lineal</Control>
+			<Control ID="chkNonLinearSquareMixer">Utilitzeu un mesclador de canal quadrat no lineal</Control>
 			<Control ID="chkDisableNoiseModeFlag">Desactiva el mode alternatiu del canal de soroll</Control>
+			<Control ID="lblEPSMClockFrequency">Freqüència del rellotge EPSM (per defecte és 8000000Hz)</Control>
 			<Control ID="tpgEffects">Efectes</Control>
 			<Control ID="grpStereo">Estèreo</Control>
 			<Control ID="radStereoDisabled">Desactivat</Control>
@@ -156,6 +181,7 @@
 			<Control ID="trkVolumeReduction">Volume Reduction (%)</Control>
 			<Control ID="lblVolumeReductionSettings">Volume Reduction Settings</Control>
 			<Control ID="chkEnableAudio">Activa el so</Control>
+			<Control ID="chkEnableEPSM">Activa el EPSM</Control>
 			<Control ID="lblSampleRate">Freqüència de mostratge:</Control>
 			<Control ID="lblLatencyMs">ms</Control>
 			<Control ID="lblLatencyWarning">Valors baixos poden causar problemes de so</Control>
@@ -580,7 +606,6 @@
 			<Control ID="lblLatestVersion">Darrera versió: </Control>
 			<Control ID="lblCurrentVersion">Versió actual: </Control>
 			<Control ID="lblChangeLog">Llista de canvis</Control>
-			<Control ID="lblDonate">Estàs utilitzant un fork, Mesen-Y de Yave Yu.</Control>
 			<Control ID="btnUpdate">Actualitza</Control>
 			<Control ID="btnCancel">Cancel·la</Control>
 		</Form>
@@ -1053,14 +1078,14 @@
 			<Value ID="Scale3x">Escalat 3x</Value>
 			<Value ID="Scale4x">Escalat 4x</Value>
 			<Value ID="_2xSai">2xSai</Value>
-			<Value ID="Super2xSai">Super2xSai</Value>
-			<Value ID="SuperEagle">SuperEagle</Value>
+			<Value ID="Super2xSai">Super 2xSai</Value>
+			<Value ID="SuperEagle">Super Eagle</Value>
 			<Value ID="Prescale2x">Preescalat 2x</Value>
 			<Value ID="Prescale3x">Preescalat 3x</Value>
 			<Value ID="Prescale4x">Preescalat 4x</Value>
+			<Value ID="Prescale5x">Preescalat 5x</Value>
 			<Value ID="Prescale6x">Preescalat 6x</Value>
 			<Value ID="Prescale8x">Preescalat 8x</Value>
-			<Value ID="Prescale10x">Preescalat 10x</Value>
 		</Enum>
 		<Enum ID="VsDualOutputOption">
 			<Value ID="Both">Both</Value>

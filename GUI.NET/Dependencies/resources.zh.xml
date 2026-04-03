@@ -69,12 +69,13 @@
 			<Control ID="mnuScale4xFilter">圆滑4倍</Control>
 			<Control ID="mnu2xSaiFilter">2倍Sai</Control>
 			<Control ID="mnuSuper2xSaiFilter">超级2倍Sai</Control>
+			<Control ID="mnuSuperEagleFilter">超级鹰</Control>
 			<Control ID="mnuPrescale2xFilter">预缩放2倍</Control>
 			<Control ID="mnuPrescale3xFilter">预缩放3倍</Control>
 			<Control ID="mnuPrescale4xFilter">预缩放4倍</Control>
+			<Control ID="mnuPrescale5xFilter">预缩放5倍</Control>
 			<Control ID="mnuPrescale6xFilter">预缩放6倍</Control>
 			<Control ID="mnuPrescale8xFilter">预缩放8倍</Control>
-			<Control ID="mnuPrescale10xFilter">预缩放10倍</Control>
 			<Control ID="mnuBilinearInterpolation">使用双线性插值</Control>
 			<Control ID="mnuAudioConfig">声音</Control>
 			<Control ID="mnuInput">输入</Control>
@@ -155,9 +156,10 @@
 			<Control ID="tpgAdvanced">高级</Control>
 			<Control ID="chkDisableDynamicSampleRate">禁用动态采样率</Control>
 			<Control ID="chkSwapDutyCycles">互换方波音色（模仿山寨机）</Control>
-			<Control ID="chkDisableSquarePhaseReset">不重置方波的相位（模仿山寨机）</Control>
-			<Control ID="chkUseLinearSquareMixer">使用线性方波混音器</Control>
+			<Control ID="chkDisableSquarePhaseReset">不重置方波相位（模仿山寨机）</Control>
+			<Control ID="chkNonLinearSquareMixer">非线性方波混音器</Control>
 			<Control ID="chkDisableNoiseModeFlag">禁用噪波模式标记</Control>
+			<Control ID="lblEPSMClockFrequency">EPSM时钟频率（默认8000000Hz）</Control>
 			<Control ID="tpgEffects">效果</Control>
 			<Control ID="grpStereo">伪立体声</Control>
 			<Control ID="radStereoDisabled">无</Control>
@@ -180,10 +182,11 @@
 			<Control ID="trkVolumeReduction">减小音量比</Control>
 			<Control ID="lblVolumeReductionSettings">减小音量设置</Control>
 			<Control ID="chkEnableAudio">启用声音</Control>
+			<Control ID="chkEnableEPSM">启用EPSM</Control>
 			<Control ID="lblSampleRate">采样率：</Control>
 			<Control ID="lblLatencyMs">毫秒</Control>
-			<Control ID="lblLatencyWarning">延迟过低可能导致声音出问题</Control>
-			<Control ID="lblAudioLatency">延迟：</Control>
+			<Control ID="lblLatencyWarning">缓冲过低可能导致声音出问题</Control>
+			<Control ID="lblAudioLatency">缓冲：</Control>
 			<Control ID="lblAudioDevice">设备：</Control>
 			<Control ID="tpgVolume">混音器</Control>
 			<Control ID="grpVolume">混音器</Control>
@@ -603,7 +606,6 @@
 			<Control ID="lblLatestVersion">最新版本：</Control>
 			<Control ID="lblCurrentVersion">当前版本：</Control>
 			<Control ID="lblChangeLog">更新日志</Control>
-			<Control ID="lblDonate">你正在使用Mesen-Y分支，作者Yave Yu。</Control>
 			<Control ID="btnUpdate">更新</Control>
 			<Control ID="btnCancel">取消</Control>
 		</Form>
@@ -1100,13 +1102,13 @@
 			<Value ID="Scale4x">缩放4倍</Value>
 			<Value ID="_2xSai">2倍Sai</Value>
 			<Value ID="Super2xSai">超级2倍Sai</Value>
-			<Value ID="SuperEagle">SuperEagle</Value>
+			<Value ID="SuperEagle">超级鹰</Value>
 			<Value ID="Prescale2x">预缩放2倍</Value>
 			<Value ID="Prescale3x">预缩放3倍</Value>
 			<Value ID="Prescale4x">预缩放4倍</Value>
+			<Value ID="Prescale5x">预缩放5倍</Value>
 			<Value ID="Prescale6x">预缩放6倍</Value>
 			<Value ID="Prescale8x">预缩放8倍</Value>
-			<Value ID="Prescale10x">预缩放10倍</Value>
 		</Enum>
 		<Enum ID="VsDualOutputOption">
 			<Value ID="Both">双机</Value>
