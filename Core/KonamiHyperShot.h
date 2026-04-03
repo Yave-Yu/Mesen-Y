@@ -26,7 +26,7 @@ protected:
 			SetPressedState(Buttons::Player1Jump, keyMapping.A);
 			SetPressedState(Buttons::Player1Run, keyMapping.B);
 
-			uint8_t turboFreq = 1 << (4 - _p1TurboSpeed);
+			uint8_t turboFreq = 5 - _p1TurboSpeed;
 			bool turboOn = (uint8_t)(_console->GetFrameCount() % turboFreq) < turboFreq / 2;
 			if(turboOn) {
 				SetPressedState(Buttons::Player1Jump, keyMapping.TurboA);
@@ -38,7 +38,7 @@ protected:
 			SetPressedState(Buttons::Player2Jump, keyMapping.A);
 			SetPressedState(Buttons::Player2Run, keyMapping.B);
 
-			uint8_t turboFreq = 1 << (4 - _p2TurboSpeed);
+			uint8_t turboFreq = 5 - _p2TurboSpeed;
 			bool turboOn = (uint8_t)(_console->GetFrameCount() % turboFreq) < turboFreq / 2;
 			if(turboOn) {
 				SetPressedState(Buttons::Player2Jump, keyMapping.TurboA);
