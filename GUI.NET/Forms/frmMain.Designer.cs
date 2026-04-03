@@ -130,9 +130,9 @@ namespace Mesen.GUI.Forms
             this.mnuPrescale2xFilter = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrescale3xFilter = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrescale4xFilter = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPrescale5xFilter = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrescale6xFilter = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPrescale8xFilter = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPrescale10xFilter = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem19 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuBilinearInterpolation = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuRegion = new System.Windows.Forms.ToolStripMenuItem();
@@ -234,6 +234,7 @@ namespace Mesen.GUI.Forms
             // panelRenderer
             // 
             this.panelRenderer.BackColor = System.Drawing.Color.Black;
+            this.panelRenderer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelRenderer.Controls.Add(this.ctrlRendererDualSystem);
             this.panelRenderer.Controls.Add(this.ctrlLoading);
             this.panelRenderer.Controls.Add(this.panelInfo);
@@ -252,6 +253,7 @@ namespace Mesen.GUI.Forms
             // ctrlRendererDualSystem
             // 
             this.ctrlRendererDualSystem.BackColor = System.Drawing.Color.Black;
+            this.ctrlRendererDualSystem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ctrlRendererDualSystem.Location = new System.Drawing.Point(275, 0);
             this.ctrlRendererDualSystem.Margin = new System.Windows.Forms.Padding(0);
             this.ctrlRendererDualSystem.Name = "ctrlRendererDualSystem";
@@ -262,6 +264,7 @@ namespace Mesen.GUI.Forms
             // ctrlLoading
             // 
             this.ctrlLoading.BackColor = System.Drawing.Color.Black;
+            this.ctrlLoading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ctrlLoading.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ctrlLoading.Location = new System.Drawing.Point(0, 0);
             this.ctrlLoading.Name = "ctrlLoading";
@@ -273,6 +276,7 @@ namespace Mesen.GUI.Forms
             // 
             this.panelInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panelInfo.BackColor = System.Drawing.Color.Transparent;
+            this.panelInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelInfo.Controls.Add(this.tableLayoutPanel1);
             this.panelInfo.Location = new System.Drawing.Point(353, 283);
             this.panelInfo.Name = "panelInfo";
@@ -312,16 +316,17 @@ namespace Mesen.GUI.Forms
             this.lblVersion.AutoSize = true;
             this.lblVersion.BackColor = System.Drawing.Color.Transparent;
             this.lblVersion.ForeColor = System.Drawing.Color.White;
-            this.lblVersion.Location = new System.Drawing.Point(55, 7);
+            this.lblVersion.Location = new System.Drawing.Point(55, 6);
             this.lblVersion.Margin = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(0, 12);
+            this.lblVersion.Size = new System.Drawing.Size(0, 15);
             this.lblVersion.TabIndex = 6;
             this.lblVersion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ctrlNsfPlayer
             // 
             this.ctrlNsfPlayer.BackColor = System.Drawing.Color.Black;
+            this.ctrlNsfPlayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ctrlNsfPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ctrlNsfPlayer.Location = new System.Drawing.Point(0, 0);
             this.ctrlNsfPlayer.Name = "ctrlNsfPlayer";
@@ -333,6 +338,7 @@ namespace Mesen.GUI.Forms
             // ctrlRenderer
             // 
             this.ctrlRenderer.BackColor = System.Drawing.Color.Black;
+            this.ctrlRenderer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ctrlRenderer.Location = new System.Drawing.Point(0, 0);
             this.ctrlRenderer.Margin = new System.Windows.Forms.Padding(0);
             this.ctrlRenderer.Name = "ctrlRenderer";
@@ -346,6 +352,7 @@ namespace Mesen.GUI.Forms
             // ctrlRecentGames
             // 
             this.ctrlRecentGames.BackColor = System.Drawing.Color.Transparent;
+            this.ctrlRecentGames.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ctrlRecentGames.Dock = System.Windows.Forms.DockStyle.Top;
             this.ctrlRecentGames.Location = new System.Drawing.Point(0, 24);
             this.ctrlRecentGames.Name = "ctrlRecentGames";
@@ -358,6 +365,7 @@ namespace Mesen.GUI.Forms
             // 
             // menuStrip
             // 
+            this.menuStrip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuFile,
             this.mnuGame,
@@ -864,9 +872,9 @@ namespace Mesen.GUI.Forms
             this.mnuPrescale2xFilter,
             this.mnuPrescale3xFilter,
             this.mnuPrescale4xFilter,
+            this.mnuPrescale5xFilter,
             this.mnuPrescale6xFilter,
             this.mnuPrescale8xFilter,
-            this.mnuPrescale10xFilter,
             this.toolStripMenuItem19,
             this.mnuBilinearInterpolation});
             this.mnuVideoFilter.Image = global::Mesen.GUI.Properties.Resources.VideoFilter;
@@ -1058,6 +1066,13 @@ namespace Mesen.GUI.Forms
             this.mnuPrescale4xFilter.Text = "Prescale 4x";
             this.mnuPrescale4xFilter.Click += new System.EventHandler(this.mnuPrescale4xFilter_Click);
             // 
+            // mnuPrescale5xFilter
+            // 
+            this.mnuPrescale5xFilter.Name = "mnuPrescale5xFilter";
+            this.mnuPrescale5xFilter.Size = new System.Drawing.Size(206, 22);
+            this.mnuPrescale5xFilter.Text = "Prescale 5x";
+            this.mnuPrescale5xFilter.Click += new System.EventHandler(this.mnuPrescale5xFilter_Click);
+            // 
             // mnuPrescale6xFilter
             // 
             this.mnuPrescale6xFilter.Name = "mnuPrescale6xFilter";
@@ -1071,13 +1086,6 @@ namespace Mesen.GUI.Forms
             this.mnuPrescale8xFilter.Size = new System.Drawing.Size(206, 22);
             this.mnuPrescale8xFilter.Text = "Prescale 8x";
             this.mnuPrescale8xFilter.Click += new System.EventHandler(this.mnuPrescale8xFilter_Click);
-            // 
-            // mnuPrescale10xFilter
-            // 
-            this.mnuPrescale10xFilter.Name = "mnuPrescale10xFilter";
-            this.mnuPrescale10xFilter.Size = new System.Drawing.Size(206, 22);
-            this.mnuPrescale10xFilter.Text = "Prescale 10x";
-            this.mnuPrescale10xFilter.Click += new System.EventHandler(this.mnuPrescale10xFilter_Click);
             // 
             // toolStripMenuItem19
             // 
@@ -1950,9 +1958,9 @@ namespace Mesen.GUI.Forms
 		private System.Windows.Forms.ToolStripMenuItem mnuAviRecord;
 		private System.Windows.Forms.ToolStripMenuItem mnuAviStop;
 		private System.Windows.Forms.ToolStripMenuItem mnuHelpWindow;
+		private System.Windows.Forms.ToolStripMenuItem mnuPrescale5xFilter;
 		private System.Windows.Forms.ToolStripMenuItem mnuPrescale6xFilter;
 		private System.Windows.Forms.ToolStripMenuItem mnuPrescale8xFilter;
-		private System.Windows.Forms.ToolStripMenuItem mnuPrescale10xFilter;
 		private System.Windows.Forms.ToolStripMenuItem mnuRunAutomaticTest;
 		private System.Windows.Forms.PictureBox picIcon;
 		private System.Windows.Forms.Panel panelInfo;

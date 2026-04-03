@@ -38,18 +38,6 @@ namespace Mesen.GUI.Forms
 		protected override void OnLoad(EventArgs e)
 		{
 			base.OnLoad(e);
-
-			if(_donateText != null) {
-				if(!string.IsNullOrEmpty(_donateText)) {
-					this.lblDonate.Text = _donateText;
-				}
-				this.lblDonate.Visible = true;
-				this.picDonate.Visible = true;
-			} else {
-				this.lblDonate.Visible = false;
-				this.picDonate.Visible = false;
-			}
-
 			btnUpdate.Focus();
 		}
 		

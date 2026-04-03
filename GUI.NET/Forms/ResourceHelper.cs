@@ -153,9 +153,7 @@ namespace Mesen.GUI.Forms
 		
 		public static void ApplyResources(Form form)
 		{
-			if (GetCurrentLanguage() == Language.English){
-				form.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f);
-			}
+			form.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f);
 			ApplyResources(form, form.Name);
 		}
 
