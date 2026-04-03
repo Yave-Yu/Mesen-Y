@@ -102,7 +102,7 @@ namespace Mesen.GUI.Forms.Config
 
 			AddBinding("SwapDutyCycles", chkSwapDutyCycles);
 			AddBinding("DisableSquarePhaseReset", chkDisableSquarePhaseReset);
-			AddBinding("UseLinearSquareMixer", chkUseLinearSquareMixer);
+			AddBinding("NonLinearSquareMixer", chkNonLinearSquareMixer);
 			AddBinding("DisableNoiseModeFlag", chkDisableNoiseModeFlag);
 			
 			radStereoDisabled.Tag = InteropEmu.StereoFilter.None;

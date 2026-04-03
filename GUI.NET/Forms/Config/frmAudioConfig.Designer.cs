@@ -46,8 +46,8 @@ namespace Mesen.GUI.Forms.Config
             this.trkEPSMVol_L = new Mesen.GUI.Controls.ctrlTrackbar();
             this.trkEPSMVol_R = new Mesen.GUI.Controls.ctrlTrackbar();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.chkEnableAudio = new System.Windows.Forms.CheckBox();
             this.chkEnableEPSM = new System.Windows.Forms.CheckBox();
+            this.chkEnableAudio = new System.Windows.Forms.CheckBox();
             this.lblSampleRate = new System.Windows.Forms.Label();
             this.lblAudioLatency = new System.Windows.Forms.Label();
             this.cboSampleRate = new System.Windows.Forms.ComboBox();
@@ -151,7 +151,7 @@ namespace Mesen.GUI.Forms.Config
             this.lblEPSMClockFrequency = new System.Windows.Forms.Label();
             this.chkSwapDutyCycles = new Mesen.GUI.Controls.ctrlRiskyOption();
             this.chkDisableSquarePhaseReset = new Mesen.GUI.Controls.ctrlRiskyOption();
-            this.chkUseLinearSquareMixer = new System.Windows.Forms.CheckBox();
+            this.chkNonLinearSquareMixer = new System.Windows.Forms.CheckBox();
             this.baseConfigPanel.SuspendLayout();
             this.grpVolume.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -226,13 +226,13 @@ namespace Mesen.GUI.Forms.Config
             this.tableLayoutPanel1.Controls.Add(this.trkEPSMVol_L, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.trkEPSMVol_R, 6, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 17);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(457, 369);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(457, 370);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // trkDmcVol
@@ -464,8 +464,8 @@ namespace Mesen.GUI.Forms.Config
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.Controls.Add(this.chkEnableAudio, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.chkEnableEPSM, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.chkEnableAudio, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblSampleRate, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.lblAudioLatency, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.cboSampleRate, 1, 2);
@@ -491,37 +491,37 @@ namespace Mesen.GUI.Forms.Config
             this.tableLayoutPanel2.Size = new System.Drawing.Size(463, 389);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
-            // chkEnableAudio
-            // 
-            this.chkEnableAudio.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.chkEnableAudio, 2);
-            this.chkEnableAudio.Location = new System.Drawing.Point(6, 31);
-            this.chkEnableAudio.Margin = new System.Windows.Forms.Padding(6, 6, 6, 3);
-            this.chkEnableAudio.Name = "chkEnableAudio";
-            this.chkEnableAudio.Size = new System.Drawing.Size(96, 16);
-            this.chkEnableAudio.TabIndex = 3;
-            this.chkEnableAudio.Text = "Enable Audio";
-            this.chkEnableAudio.UseVisualStyleBackColor = true;
-            // 
             // chkEnableEPSM
             // 
             this.chkEnableEPSM.AutoSize = true;
             this.tableLayoutPanel2.SetColumnSpan(this.chkEnableEPSM, 2);
-            this.chkEnableEPSM.Location = new System.Drawing.Point(6, 6);
+            this.chkEnableEPSM.Location = new System.Drawing.Point(6, 32);
             this.chkEnableEPSM.Margin = new System.Windows.Forms.Padding(6, 6, 6, 3);
             this.chkEnableEPSM.Name = "chkEnableEPSM";
-            this.chkEnableEPSM.Size = new System.Drawing.Size(90, 16);
+            this.chkEnableEPSM.Size = new System.Drawing.Size(92, 17);
             this.chkEnableEPSM.TabIndex = 3;
             this.chkEnableEPSM.Text = "Enable EPSM";
             this.chkEnableEPSM.UseVisualStyleBackColor = true;
+            // 
+            // chkEnableAudio
+            // 
+            this.chkEnableAudio.AutoSize = true;
+            this.tableLayoutPanel2.SetColumnSpan(this.chkEnableAudio, 2);
+            this.chkEnableAudio.Location = new System.Drawing.Point(6, 6);
+            this.chkEnableAudio.Margin = new System.Windows.Forms.Padding(6, 6, 6, 3);
+            this.chkEnableAudio.Name = "chkEnableAudio";
+            this.chkEnableAudio.Size = new System.Drawing.Size(89, 17);
+            this.chkEnableAudio.TabIndex = 3;
+            this.chkEnableAudio.Text = "Enable Audio";
+            this.chkEnableAudio.UseVisualStyleBackColor = true;
             // 
             // lblSampleRate
             // 
             this.lblSampleRate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblSampleRate.AutoSize = true;
-            this.lblSampleRate.Location = new System.Drawing.Point(3, 83);
+            this.lblSampleRate.Location = new System.Drawing.Point(3, 86);
             this.lblSampleRate.Name = "lblSampleRate";
-            this.lblSampleRate.Size = new System.Drawing.Size(77, 12);
+            this.lblSampleRate.Size = new System.Drawing.Size(71, 13);
             this.lblSampleRate.TabIndex = 0;
             this.lblSampleRate.Text = "Sample Rate:";
             // 
@@ -529,9 +529,9 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.lblAudioLatency.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblAudioLatency.AutoSize = true;
-            this.lblAudioLatency.Location = new System.Drawing.Point(3, 109);
+            this.lblAudioLatency.Location = new System.Drawing.Point(3, 113);
             this.lblAudioLatency.Name = "lblAudioLatency";
-            this.lblAudioLatency.Size = new System.Drawing.Size(53, 12);
+            this.lblAudioLatency.Size = new System.Drawing.Size(48, 13);
             this.lblAudioLatency.TabIndex = 0;
             this.lblAudioLatency.Text = "Latency:";
             // 
@@ -540,23 +540,23 @@ namespace Mesen.GUI.Forms.Config
             this.cboSampleRate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboSampleRate.FormattingEnabled = true;
             this.cboSampleRate.Items.AddRange(new object[] {
-            "11,025 Hz",
-            "22,050 Hz",
-            "44,100 Hz",
-            "48,000 Hz",
-            "96,000 Hz"});
-            this.cboSampleRate.Location = new System.Drawing.Point(86, 79);
+            "11025 Hz",
+            "22050 Hz",
+            "44100 Hz",
+            "48000 Hz",
+            "96000 Hz"});
+            this.cboSampleRate.Location = new System.Drawing.Point(80, 82);
             this.cboSampleRate.Name = "cboSampleRate";
-            this.cboSampleRate.Size = new System.Drawing.Size(75, 20);
+            this.cboSampleRate.Size = new System.Drawing.Size(75, 21);
             this.cboSampleRate.TabIndex = 5;
             // 
             // lblAudioDevice
             // 
             this.lblAudioDevice.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblAudioDevice.AutoSize = true;
-            this.lblAudioDevice.Location = new System.Drawing.Point(3, 57);
+            this.lblAudioDevice.Location = new System.Drawing.Point(3, 59);
             this.lblAudioDevice.Name = "lblAudioDevice";
-            this.lblAudioDevice.Size = new System.Drawing.Size(47, 12);
+            this.lblAudioDevice.Size = new System.Drawing.Size(44, 13);
             this.lblAudioDevice.TabIndex = 6;
             this.lblAudioDevice.Text = "Device:";
             // 
@@ -564,9 +564,9 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.cboAudioDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboAudioDevice.FormattingEnabled = true;
-            this.cboAudioDevice.Location = new System.Drawing.Point(86, 53);
+            this.cboAudioDevice.Location = new System.Drawing.Point(80, 55);
             this.cboAudioDevice.Name = "cboAudioDevice";
-            this.cboAudioDevice.Size = new System.Drawing.Size(209, 20);
+            this.cboAudioDevice.Size = new System.Drawing.Size(209, 21);
             this.cboAudioDevice.TabIndex = 7;
             // 
             // tableLayoutPanel7
@@ -583,22 +583,22 @@ namespace Mesen.GUI.Forms.Config
             this.tableLayoutPanel7.Controls.Add(this.lblLatencyMs, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.nudLatency, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(83, 102);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(77, 106);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(380, 27);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(386, 27);
             this.tableLayoutPanel7.TabIndex = 15;
             // 
             // lblLatencyWarning
             // 
             this.lblLatencyWarning.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblLatencyWarning.AutoSize = true;
-            this.lblLatencyWarning.Location = new System.Drawing.Point(95, 7);
+            this.lblLatencyWarning.Location = new System.Drawing.Point(98, 7);
             this.lblLatencyWarning.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.lblLatencyWarning.Name = "lblLatencyWarning";
-            this.lblLatencyWarning.Size = new System.Drawing.Size(215, 12);
+            this.lblLatencyWarning.Size = new System.Drawing.Size(192, 13);
             this.lblLatencyWarning.TabIndex = 4;
             this.lblLatencyWarning.Text = "Low values may cause sound problems";
             // 
@@ -607,7 +607,7 @@ namespace Mesen.GUI.Forms.Config
             this.picLatencyWarning.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.picLatencyWarning.BackgroundImage = global::Mesen.GUI.Properties.Resources.Warning;
             this.picLatencyWarning.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.picLatencyWarning.Location = new System.Drawing.Point(79, 5);
+            this.picLatencyWarning.Location = new System.Drawing.Point(82, 5);
             this.picLatencyWarning.Margin = new System.Windows.Forms.Padding(5, 3, 0, 3);
             this.picLatencyWarning.Name = "picLatencyWarning";
             this.picLatencyWarning.Size = new System.Drawing.Size(16, 16);
@@ -620,7 +620,7 @@ namespace Mesen.GUI.Forms.Config
             this.lblLatencyMs.AutoSize = true;
             this.lblLatencyMs.Location = new System.Drawing.Point(54, 7);
             this.lblLatencyMs.Name = "lblLatencyMs";
-            this.lblLatencyMs.Size = new System.Drawing.Size(17, 12);
+            this.lblLatencyMs.Size = new System.Drawing.Size(20, 13);
             this.lblLatencyMs.TabIndex = 2;
             this.lblLatencyMs.Text = "ms";
             // 
@@ -668,7 +668,7 @@ namespace Mesen.GUI.Forms.Config
             this.tableLayoutPanel8.Controls.Add(this.chkReduceSoundInFastForward, 0, 2);
             this.tableLayoutPanel8.Controls.Add(this.trkVolumeReduction, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.chkMuteSoundInBackground, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(10, 147);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(10, 152);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(10, 3, 0, 0);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 4;
@@ -682,9 +682,9 @@ namespace Mesen.GUI.Forms.Config
             // chkReduceSoundInBackground
             // 
             this.chkReduceSoundInBackground.AutoSize = true;
-            this.chkReduceSoundInBackground.Location = new System.Drawing.Point(3, 25);
+            this.chkReduceSoundInBackground.Location = new System.Drawing.Point(3, 26);
             this.chkReduceSoundInBackground.Name = "chkReduceSoundInBackground";
-            this.chkReduceSoundInBackground.Size = new System.Drawing.Size(174, 16);
+            this.chkReduceSoundInBackground.Size = new System.Drawing.Size(164, 17);
             this.chkReduceSoundInBackground.TabIndex = 13;
             this.chkReduceSoundInBackground.Text = "Reduce when in background";
             this.chkReduceSoundInBackground.UseVisualStyleBackColor = true;
@@ -693,9 +693,9 @@ namespace Mesen.GUI.Forms.Config
             // chkReduceSoundInFastForward
             // 
             this.chkReduceSoundInFastForward.AutoSize = true;
-            this.chkReduceSoundInFastForward.Location = new System.Drawing.Point(3, 47);
+            this.chkReduceSoundInFastForward.Location = new System.Drawing.Point(3, 49);
             this.chkReduceSoundInFastForward.Name = "chkReduceSoundInFastForward";
-            this.chkReduceSoundInFastForward.Size = new System.Drawing.Size(264, 16);
+            this.chkReduceSoundInFastForward.Size = new System.Drawing.Size(225, 17);
             this.chkReduceSoundInFastForward.TabIndex = 16;
             this.chkReduceSoundInFastForward.Text = "Reduce when fast forwarding or rewinding";
             this.chkReduceSoundInFastForward.UseVisualStyleBackColor = true;
@@ -706,7 +706,7 @@ namespace Mesen.GUI.Forms.Config
             this.trkVolumeReduction.AutoSize = true;
             this.trkVolumeReduction.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trkVolumeReduction.Enabled = false;
-            this.trkVolumeReduction.Location = new System.Drawing.Point(270, 22);
+            this.trkVolumeReduction.Location = new System.Drawing.Point(231, 23);
             this.trkVolumeReduction.Margin = new System.Windows.Forms.Padding(0);
             this.trkVolumeReduction.Maximum = 100;
             this.trkVolumeReduction.MaximumSize = new System.Drawing.Size(400, 55);
@@ -714,7 +714,7 @@ namespace Mesen.GUI.Forms.Config
             this.trkVolumeReduction.MinimumSize = new System.Drawing.Size(150, 55);
             this.trkVolumeReduction.Name = "trkVolumeReduction";
             this.tableLayoutPanel8.SetRowSpan(this.trkVolumeReduction, 2);
-            this.trkVolumeReduction.Size = new System.Drawing.Size(183, 55);
+            this.trkVolumeReduction.Size = new System.Drawing.Size(222, 55);
             this.trkVolumeReduction.TabIndex = 17;
             this.trkVolumeReduction.Text = "Volume Reduction";
             this.trkVolumeReduction.Value = 50;
@@ -724,7 +724,7 @@ namespace Mesen.GUI.Forms.Config
             this.chkMuteSoundInBackground.AutoSize = true;
             this.chkMuteSoundInBackground.Location = new System.Drawing.Point(3, 3);
             this.chkMuteSoundInBackground.Name = "chkMuteSoundInBackground";
-            this.chkMuteSoundInBackground.Size = new System.Drawing.Size(198, 16);
+            this.chkMuteSoundInBackground.Size = new System.Drawing.Size(182, 17);
             this.chkMuteSoundInBackground.TabIndex = 18;
             this.chkMuteSoundInBackground.Text = "Mute sound when in background";
             this.chkMuteSoundInBackground.UseVisualStyleBackColor = true;
@@ -736,10 +736,10 @@ namespace Mesen.GUI.Forms.Config
             this.lblVolumeReductionSettings.AutoSize = true;
             this.tableLayoutPanel2.SetColumnSpan(this.lblVolumeReductionSettings, 2);
             this.lblVolumeReductionSettings.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.lblVolumeReductionSettings.Location = new System.Drawing.Point(0, 132);
+            this.lblVolumeReductionSettings.Location = new System.Drawing.Point(0, 136);
             this.lblVolumeReductionSettings.Margin = new System.Windows.Forms.Padding(0, 3, 3, 0);
             this.lblVolumeReductionSettings.Name = "lblVolumeReductionSettings";
-            this.lblVolumeReductionSettings.Size = new System.Drawing.Size(101, 12);
+            this.lblVolumeReductionSettings.Size = new System.Drawing.Size(94, 13);
             this.lblVolumeReductionSettings.TabIndex = 24;
             this.lblVolumeReductionSettings.Text = "Volume Reduction";
             // 
@@ -1072,7 +1072,7 @@ namespace Mesen.GUI.Forms.Config
             this.chkEnableEqualizer.Location = new System.Drawing.Point(7, 0);
             this.chkEnableEqualizer.Name = "chkEnableEqualizer";
             this.chkEnableEqualizer.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.chkEnableEqualizer.Size = new System.Drawing.Size(125, 16);
+            this.chkEnableEqualizer.Size = new System.Drawing.Size(110, 17);
             this.chkEnableEqualizer.TabIndex = 5;
             this.chkEnableEqualizer.Text = "Enable Equalizer";
             this.chkEnableEqualizer.UseVisualStyleBackColor = false;
@@ -1114,21 +1114,21 @@ namespace Mesen.GUI.Forms.Config
             this.tlpEqualizer.Controls.Add(this.flowLayoutPanel6, 0, 0);
             this.tlpEqualizer.Controls.Add(this.flowLayoutPanel7, 6, 0);
             this.tlpEqualizer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpEqualizer.Location = new System.Drawing.Point(3, 17);
+            this.tlpEqualizer.Location = new System.Drawing.Point(3, 16);
             this.tlpEqualizer.Name = "tlpEqualizer";
             this.tlpEqualizer.RowCount = 4;
             this.tlpEqualizer.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpEqualizer.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpEqualizer.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpEqualizer.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpEqualizer.Size = new System.Drawing.Size(457, 369);
+            this.tlpEqualizer.Size = new System.Drawing.Size(457, 370);
             this.tlpEqualizer.TabIndex = 3;
             // 
             // trkBand6Gain
             // 
             this.trkBand6Gain.AutoSize = true;
             this.trkBand6Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand6Gain.Location = new System.Drawing.Point(225, 22);
+            this.trkBand6Gain.Location = new System.Drawing.Point(225, 23);
             this.trkBand6Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand6Gain.Maximum = 200;
             this.trkBand6Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1145,7 +1145,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand5Gain.AutoSize = true;
             this.trkBand5Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand5Gain.Location = new System.Drawing.Point(180, 22);
+            this.trkBand5Gain.Location = new System.Drawing.Point(180, 23);
             this.trkBand5Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand5Gain.Maximum = 200;
             this.trkBand5Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1162,7 +1162,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand4Gain.AutoSize = true;
             this.trkBand4Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand4Gain.Location = new System.Drawing.Point(135, 22);
+            this.trkBand4Gain.Location = new System.Drawing.Point(135, 23);
             this.trkBand4Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand4Gain.Maximum = 200;
             this.trkBand4Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1179,7 +1179,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand3Gain.AutoSize = true;
             this.trkBand3Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand3Gain.Location = new System.Drawing.Point(90, 22);
+            this.trkBand3Gain.Location = new System.Drawing.Point(90, 23);
             this.trkBand3Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand3Gain.Maximum = 200;
             this.trkBand3Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1196,7 +1196,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand2Gain.AutoSize = true;
             this.trkBand2Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand2Gain.Location = new System.Drawing.Point(45, 22);
+            this.trkBand2Gain.Location = new System.Drawing.Point(45, 23);
             this.trkBand2Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand2Gain.Maximum = 200;
             this.trkBand2Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1213,7 +1213,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand1Gain.AutoSize = true;
             this.trkBand1Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand1Gain.Location = new System.Drawing.Point(0, 22);
+            this.trkBand1Gain.Location = new System.Drawing.Point(0, 23);
             this.trkBand1Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand1Gain.Maximum = 200;
             this.trkBand1Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1230,7 +1230,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand11Gain.AutoSize = true;
             this.trkBand11Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand11Gain.Location = new System.Drawing.Point(0, 182);
+            this.trkBand11Gain.Location = new System.Drawing.Point(0, 183);
             this.trkBand11Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand11Gain.Maximum = 200;
             this.trkBand11Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1247,7 +1247,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand12Gain.AutoSize = true;
             this.trkBand12Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand12Gain.Location = new System.Drawing.Point(45, 182);
+            this.trkBand12Gain.Location = new System.Drawing.Point(45, 183);
             this.trkBand12Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand12Gain.Maximum = 200;
             this.trkBand12Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1264,7 +1264,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand13Gain.AutoSize = true;
             this.trkBand13Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand13Gain.Location = new System.Drawing.Point(90, 182);
+            this.trkBand13Gain.Location = new System.Drawing.Point(90, 183);
             this.trkBand13Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand13Gain.Maximum = 200;
             this.trkBand13Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1281,7 +1281,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand14Gain.AutoSize = true;
             this.trkBand14Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand14Gain.Location = new System.Drawing.Point(135, 182);
+            this.trkBand14Gain.Location = new System.Drawing.Point(135, 183);
             this.trkBand14Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand14Gain.Maximum = 200;
             this.trkBand14Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1298,7 +1298,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand15Gain.AutoSize = true;
             this.trkBand15Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand15Gain.Location = new System.Drawing.Point(180, 182);
+            this.trkBand15Gain.Location = new System.Drawing.Point(180, 183);
             this.trkBand15Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand15Gain.Maximum = 200;
             this.trkBand15Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1315,7 +1315,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand16Gain.AutoSize = true;
             this.trkBand16Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand16Gain.Location = new System.Drawing.Point(225, 182);
+            this.trkBand16Gain.Location = new System.Drawing.Point(225, 183);
             this.trkBand16Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand16Gain.Maximum = 200;
             this.trkBand16Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1332,7 +1332,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand7Gain.AutoSize = true;
             this.trkBand7Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand7Gain.Location = new System.Drawing.Point(270, 22);
+            this.trkBand7Gain.Location = new System.Drawing.Point(270, 23);
             this.trkBand7Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand7Gain.Maximum = 200;
             this.trkBand7Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1349,7 +1349,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand8Gain.AutoSize = true;
             this.trkBand8Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand8Gain.Location = new System.Drawing.Point(315, 22);
+            this.trkBand8Gain.Location = new System.Drawing.Point(315, 23);
             this.trkBand8Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand8Gain.Maximum = 200;
             this.trkBand8Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1366,7 +1366,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand9Gain.AutoSize = true;
             this.trkBand9Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand9Gain.Location = new System.Drawing.Point(360, 22);
+            this.trkBand9Gain.Location = new System.Drawing.Point(360, 23);
             this.trkBand9Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand9Gain.Maximum = 200;
             this.trkBand9Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1383,7 +1383,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand10Gain.AutoSize = true;
             this.trkBand10Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand10Gain.Location = new System.Drawing.Point(405, 22);
+            this.trkBand10Gain.Location = new System.Drawing.Point(405, 23);
             this.trkBand10Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand10Gain.Maximum = 200;
             this.trkBand10Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1400,7 +1400,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand17Gain.AutoSize = true;
             this.trkBand17Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand17Gain.Location = new System.Drawing.Point(270, 182);
+            this.trkBand17Gain.Location = new System.Drawing.Point(270, 183);
             this.trkBand17Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand17Gain.Maximum = 200;
             this.trkBand17Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1417,7 +1417,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand18Gain.AutoSize = true;
             this.trkBand18Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand18Gain.Location = new System.Drawing.Point(315, 182);
+            this.trkBand18Gain.Location = new System.Drawing.Point(315, 183);
             this.trkBand18Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand18Gain.Maximum = 200;
             this.trkBand18Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1434,7 +1434,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand19Gain.AutoSize = true;
             this.trkBand19Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand19Gain.Location = new System.Drawing.Point(360, 182);
+            this.trkBand19Gain.Location = new System.Drawing.Point(360, 183);
             this.trkBand19Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand19Gain.Maximum = 200;
             this.trkBand19Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1451,7 +1451,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.trkBand20Gain.AutoSize = true;
             this.trkBand20Gain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trkBand20Gain.Location = new System.Drawing.Point(405, 182);
+            this.trkBand20Gain.Location = new System.Drawing.Point(405, 183);
             this.trkBand20Gain.Margin = new System.Windows.Forms.Padding(0);
             this.trkBand20Gain.Maximum = 200;
             this.trkBand20Gain.MaximumSize = new System.Drawing.Size(63, 160);
@@ -1473,7 +1473,7 @@ namespace Mesen.GUI.Forms.Config
             this.flowLayoutPanel6.Location = new System.Drawing.Point(0, 2);
             this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(174, 20);
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(167, 21);
             this.flowLayoutPanel6.TabIndex = 33;
             this.flowLayoutPanel6.Visible = false;
             // 
@@ -1483,7 +1483,7 @@ namespace Mesen.GUI.Forms.Config
             this.lblEqualizerPreset.AutoSize = true;
             this.lblEqualizerPreset.Location = new System.Drawing.Point(3, 4);
             this.lblEqualizerPreset.Name = "lblEqualizerPreset";
-            this.lblEqualizerPreset.Size = new System.Drawing.Size(47, 12);
+            this.lblEqualizerPreset.Size = new System.Drawing.Size(40, 13);
             this.lblEqualizerPreset.TabIndex = 32;
             this.lblEqualizerPreset.Text = "Preset:";
             // 
@@ -1492,10 +1492,10 @@ namespace Mesen.GUI.Forms.Config
             this.cboEqualizerPreset.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cboEqualizerPreset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEqualizerPreset.FormattingEnabled = true;
-            this.cboEqualizerPreset.Location = new System.Drawing.Point(53, 0);
+            this.cboEqualizerPreset.Location = new System.Drawing.Point(46, 0);
             this.cboEqualizerPreset.Margin = new System.Windows.Forms.Padding(0);
             this.cboEqualizerPreset.Name = "cboEqualizerPreset";
-            this.cboEqualizerPreset.Size = new System.Drawing.Size(121, 20);
+            this.cboEqualizerPreset.Size = new System.Drawing.Size(121, 21);
             this.cboEqualizerPreset.TabIndex = 33;
             this.cboEqualizerPreset.SelectedIndexChanged += new System.EventHandler(this.cboEqualizerPreset_SelectedIndexChanged);
             // 
@@ -1506,10 +1506,10 @@ namespace Mesen.GUI.Forms.Config
             this.tlpEqualizer.SetColumnSpan(this.flowLayoutPanel7, 4);
             this.flowLayoutPanel7.Controls.Add(this.lblEqualizerFilterType);
             this.flowLayoutPanel7.Controls.Add(this.cboEqualizerFilterType);
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(283, 2);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(298, 2);
             this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            this.flowLayoutPanel7.Size = new System.Drawing.Size(174, 20);
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(159, 21);
             this.flowLayoutPanel7.TabIndex = 34;
             this.flowLayoutPanel7.Visible = false;
             // 
@@ -1519,7 +1519,7 @@ namespace Mesen.GUI.Forms.Config
             this.lblEqualizerFilterType.AutoSize = true;
             this.lblEqualizerFilterType.Location = new System.Drawing.Point(3, 4);
             this.lblEqualizerFilterType.Name = "lblEqualizerFilterType";
-            this.lblEqualizerFilterType.Size = new System.Drawing.Size(47, 12);
+            this.lblEqualizerFilterType.Size = new System.Drawing.Size(32, 13);
             this.lblEqualizerFilterType.TabIndex = 31;
             this.lblEqualizerFilterType.Text = "Filter:";
             // 
@@ -1528,10 +1528,10 @@ namespace Mesen.GUI.Forms.Config
             this.cboEqualizerFilterType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cboEqualizerFilterType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEqualizerFilterType.FormattingEnabled = true;
-            this.cboEqualizerFilterType.Location = new System.Drawing.Point(53, 0);
+            this.cboEqualizerFilterType.Location = new System.Drawing.Point(38, 0);
             this.cboEqualizerFilterType.Margin = new System.Windows.Forms.Padding(0);
             this.cboEqualizerFilterType.Name = "cboEqualizerFilterType";
-            this.cboEqualizerFilterType.Size = new System.Drawing.Size(121, 20);
+            this.cboEqualizerFilterType.Size = new System.Drawing.Size(121, 21);
             this.cboEqualizerFilterType.TabIndex = 32;
             // 
             // tpgEffects
@@ -1590,7 +1590,7 @@ namespace Mesen.GUI.Forms.Config
             this.tlpStereoFilter.Controls.Add(this.nudStereoPanning, 1, 2);
             this.tlpStereoFilter.Controls.Add(this.tableLayoutPanel9, 1, 3);
             this.tlpStereoFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpStereoFilter.Location = new System.Drawing.Point(3, 17);
+            this.tlpStereoFilter.Location = new System.Drawing.Point(3, 16);
             this.tlpStereoFilter.Name = "tlpStereoFilter";
             this.tlpStereoFilter.RowCount = 5;
             this.tlpStereoFilter.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -1598,15 +1598,15 @@ namespace Mesen.GUI.Forms.Config
             this.tlpStereoFilter.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpStereoFilter.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpStereoFilter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpStereoFilter.Size = new System.Drawing.Size(451, 95);
+            this.tlpStereoFilter.Size = new System.Drawing.Size(451, 96);
             this.tlpStereoFilter.TabIndex = 0;
             // 
             // radStereoCombFilter
             // 
             this.radStereoCombFilter.AutoSize = true;
-            this.radStereoCombFilter.Location = new System.Drawing.Point(3, 69);
+            this.radStereoCombFilter.Location = new System.Drawing.Point(3, 72);
             this.radStereoCombFilter.Name = "radStereoCombFilter";
-            this.radStereoCombFilter.Size = new System.Drawing.Size(89, 16);
+            this.radStereoCombFilter.Size = new System.Drawing.Size(77, 17);
             this.radStereoCombFilter.TabIndex = 4;
             this.radStereoCombFilter.TabStop = true;
             this.radStereoCombFilter.Tag = "Panning";
@@ -1617,9 +1617,9 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.lblStereoDelayMs.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblStereoDelayMs.AutoSize = true;
-            this.lblStereoDelayMs.Location = new System.Drawing.Point(143, 27);
+            this.lblStereoDelayMs.Location = new System.Drawing.Point(131, 28);
             this.lblStereoDelayMs.Name = "lblStereoDelayMs";
-            this.lblStereoDelayMs.Size = new System.Drawing.Size(17, 12);
+            this.lblStereoDelayMs.Size = new System.Drawing.Size(20, 13);
             this.lblStereoDelayMs.TabIndex = 1;
             this.lblStereoDelayMs.Text = "ms";
             // 
@@ -1627,9 +1627,9 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.lblStereoPanningAngle.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblStereoPanningAngle.AutoSize = true;
-            this.lblStereoPanningAngle.Location = new System.Drawing.Point(143, 49);
+            this.lblStereoPanningAngle.Location = new System.Drawing.Point(131, 51);
             this.lblStereoPanningAngle.Name = "lblStereoPanningAngle";
-            this.lblStereoPanningAngle.Size = new System.Drawing.Size(113, 12);
+            this.lblStereoPanningAngle.Size = new System.Drawing.Size(92, 13);
             this.lblStereoPanningAngle.TabIndex = 1;
             this.lblStereoPanningAngle.Text = "(Angle in degrees)";
             // 
@@ -1639,7 +1639,7 @@ namespace Mesen.GUI.Forms.Config
             this.radStereoDisabled.Checked = true;
             this.radStereoDisabled.Location = new System.Drawing.Point(3, 3);
             this.radStereoDisabled.Name = "radStereoDisabled";
-            this.radStereoDisabled.Size = new System.Drawing.Size(71, 16);
+            this.radStereoDisabled.Size = new System.Drawing.Size(66, 17);
             this.radStereoDisabled.TabIndex = 1;
             this.radStereoDisabled.TabStop = true;
             this.radStereoDisabled.Tag = "None";
@@ -1649,9 +1649,9 @@ namespace Mesen.GUI.Forms.Config
             // radStereoDelay
             // 
             this.radStereoDelay.AutoSize = true;
-            this.radStereoDelay.Location = new System.Drawing.Point(3, 25);
+            this.radStereoDelay.Location = new System.Drawing.Point(3, 26);
             this.radStereoDelay.Name = "radStereoDelay";
-            this.radStereoDelay.Size = new System.Drawing.Size(53, 16);
+            this.radStereoDelay.Size = new System.Drawing.Size(52, 17);
             this.radStereoDelay.TabIndex = 2;
             this.radStereoDelay.TabStop = true;
             this.radStereoDelay.Tag = "Delay";
@@ -1661,9 +1661,9 @@ namespace Mesen.GUI.Forms.Config
             // radStereoPanning
             // 
             this.radStereoPanning.AutoSize = true;
-            this.radStereoPanning.Location = new System.Drawing.Point(3, 47);
+            this.radStereoPanning.Location = new System.Drawing.Point(3, 49);
             this.radStereoPanning.Name = "radStereoPanning";
-            this.radStereoPanning.Size = new System.Drawing.Size(65, 16);
+            this.radStereoPanning.Size = new System.Drawing.Size(64, 17);
             this.radStereoPanning.TabIndex = 3;
             this.radStereoPanning.TabStop = true;
             this.radStereoPanning.Tag = "Panning";
@@ -1681,7 +1681,7 @@ namespace Mesen.GUI.Forms.Config
             0,
             0});
             this.nudStereoDelay.IsHex = false;
-            this.nudStereoDelay.Location = new System.Drawing.Point(95, 22);
+            this.nudStereoDelay.Location = new System.Drawing.Point(83, 24);
             this.nudStereoDelay.Margin = new System.Windows.Forms.Padding(0);
             this.nudStereoDelay.Maximum = new decimal(new int[] {
             100,
@@ -1715,7 +1715,7 @@ namespace Mesen.GUI.Forms.Config
             0,
             0});
             this.nudStereoPanning.IsHex = false;
-            this.nudStereoPanning.Location = new System.Drawing.Point(95, 44);
+            this.nudStereoPanning.Location = new System.Drawing.Point(83, 47);
             this.nudStereoPanning.Margin = new System.Windows.Forms.Padding(0);
             this.nudStereoPanning.Maximum = new decimal(new int[] {
             180,
@@ -1756,12 +1756,12 @@ namespace Mesen.GUI.Forms.Config
             this.tableLayoutPanel9.Controls.Add(this.lblStereoCombFilterStrength, 3, 0);
             this.tableLayoutPanel9.Controls.Add(this.lblCombFilterPercent, 5, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(95, 66);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(83, 69);
             this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(356, 27);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(368, 27);
             this.tableLayoutPanel9.TabIndex = 5;
             // 
             // nudStereoCombFilterStrength
@@ -1775,7 +1775,7 @@ namespace Mesen.GUI.Forms.Config
             0,
             0});
             this.nudStereoCombFilterStrength.IsHex = false;
-            this.nudStereoCombFilterStrength.Location = new System.Drawing.Point(197, 3);
+            this.nudStereoCombFilterStrength.Location = new System.Drawing.Point(187, 3);
             this.nudStereoCombFilterStrength.Margin = new System.Windows.Forms.Padding(0);
             this.nudStereoCombFilterStrength.Maximum = new decimal(new int[] {
             200,
@@ -1802,9 +1802,9 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.lblStereoCombFilterMs.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblStereoCombFilterMs.AutoSize = true;
-            this.lblStereoCombFilterMs.Location = new System.Drawing.Point(95, 7);
+            this.lblStereoCombFilterMs.Location = new System.Drawing.Point(91, 7);
             this.lblStereoCombFilterMs.Name = "lblStereoCombFilterMs";
-            this.lblStereoCombFilterMs.Size = new System.Drawing.Size(17, 12);
+            this.lblStereoCombFilterMs.Size = new System.Drawing.Size(20, 13);
             this.lblStereoCombFilterMs.TabIndex = 3;
             this.lblStereoCombFilterMs.Text = "ms";
             // 
@@ -1819,7 +1819,7 @@ namespace Mesen.GUI.Forms.Config
             0,
             0});
             this.nudStereoCombFilterDelay.IsHex = false;
-            this.nudStereoCombFilterDelay.Location = new System.Drawing.Point(47, 3);
+            this.nudStereoCombFilterDelay.Location = new System.Drawing.Point(43, 3);
             this.nudStereoCombFilterDelay.Margin = new System.Windows.Forms.Padding(0);
             this.nudStereoCombFilterDelay.Maximum = new decimal(new int[] {
             100,
@@ -1848,7 +1848,7 @@ namespace Mesen.GUI.Forms.Config
             this.lblStereoCombFilterDelay.AutoSize = true;
             this.lblStereoCombFilterDelay.Location = new System.Drawing.Point(3, 7);
             this.lblStereoCombFilterDelay.Name = "lblStereoCombFilterDelay";
-            this.lblStereoCombFilterDelay.Size = new System.Drawing.Size(41, 12);
+            this.lblStereoCombFilterDelay.Size = new System.Drawing.Size(37, 13);
             this.lblStereoCombFilterDelay.TabIndex = 0;
             this.lblStereoCombFilterDelay.Text = "Delay:";
             // 
@@ -1856,10 +1856,10 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.lblStereoCombFilterStrength.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblStereoCombFilterStrength.AutoSize = true;
-            this.lblStereoCombFilterStrength.Location = new System.Drawing.Point(135, 7);
+            this.lblStereoCombFilterStrength.Location = new System.Drawing.Point(134, 7);
             this.lblStereoCombFilterStrength.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.lblStereoCombFilterStrength.Name = "lblStereoCombFilterStrength";
-            this.lblStereoCombFilterStrength.Size = new System.Drawing.Size(59, 12);
+            this.lblStereoCombFilterStrength.Size = new System.Drawing.Size(50, 13);
             this.lblStereoCombFilterStrength.TabIndex = 4;
             this.lblStereoCombFilterStrength.Text = "Strength:";
             // 
@@ -1867,9 +1867,9 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.lblCombFilterPercent.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblCombFilterPercent.AutoSize = true;
-            this.lblCombFilterPercent.Location = new System.Drawing.Point(245, 7);
+            this.lblCombFilterPercent.Location = new System.Drawing.Point(235, 7);
             this.lblCombFilterPercent.Name = "lblCombFilterPercent";
-            this.lblCombFilterPercent.Size = new System.Drawing.Size(11, 12);
+            this.lblCombFilterPercent.Size = new System.Drawing.Size(15, 13);
             this.lblCombFilterPercent.TabIndex = 6;
             this.lblCombFilterPercent.Text = "%";
             // 
@@ -1895,14 +1895,14 @@ namespace Mesen.GUI.Forms.Config
             this.tableLayoutPanel5.Controls.Add(this.trkReverbDelay, 1, 2);
             this.tableLayoutPanel5.Controls.Add(this.trkReverbStrength, 1, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 17);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 4;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(451, 86);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(451, 87);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // chkReverbEnabled
@@ -1911,7 +1911,7 @@ namespace Mesen.GUI.Forms.Config
             this.tableLayoutPanel5.SetColumnSpan(this.chkReverbEnabled, 2);
             this.chkReverbEnabled.Location = new System.Drawing.Point(3, 3);
             this.chkReverbEnabled.Name = "chkReverbEnabled";
-            this.chkReverbEnabled.Size = new System.Drawing.Size(102, 16);
+            this.chkReverbEnabled.Size = new System.Drawing.Size(97, 17);
             this.chkReverbEnabled.TabIndex = 0;
             this.chkReverbEnabled.Text = "Enable Reverb";
             this.chkReverbEnabled.UseVisualStyleBackColor = true;
@@ -1922,7 +1922,7 @@ namespace Mesen.GUI.Forms.Config
             this.lblReverbStrength.AutoSize = true;
             this.lblReverbStrength.Location = new System.Drawing.Point(3, 32);
             this.lblReverbStrength.Name = "lblReverbStrength";
-            this.lblReverbStrength.Size = new System.Drawing.Size(59, 12);
+            this.lblReverbStrength.Size = new System.Drawing.Size(50, 13);
             this.lblReverbStrength.TabIndex = 2;
             this.lblReverbStrength.Text = "Strength:";
             // 
@@ -1932,13 +1932,13 @@ namespace Mesen.GUI.Forms.Config
             this.lblReverbDelay.AutoSize = true;
             this.lblReverbDelay.Location = new System.Drawing.Point(3, 64);
             this.lblReverbDelay.Name = "lblReverbDelay";
-            this.lblReverbDelay.Size = new System.Drawing.Size(41, 12);
+            this.lblReverbDelay.Size = new System.Drawing.Size(37, 13);
             this.lblReverbDelay.TabIndex = 3;
             this.lblReverbDelay.Text = "Delay:";
             // 
             // trkReverbDelay
             // 
-            this.trkReverbDelay.Location = new System.Drawing.Point(68, 57);
+            this.trkReverbDelay.Location = new System.Drawing.Point(59, 58);
             this.trkReverbDelay.Maximum = 30;
             this.trkReverbDelay.Minimum = 1;
             this.trkReverbDelay.Name = "trkReverbDelay";
@@ -1949,7 +1949,7 @@ namespace Mesen.GUI.Forms.Config
             // 
             // trkReverbStrength
             // 
-            this.trkReverbStrength.Location = new System.Drawing.Point(68, 25);
+            this.trkReverbStrength.Location = new System.Drawing.Point(59, 26);
             this.trkReverbStrength.Minimum = 1;
             this.trkReverbStrength.Name = "trkReverbStrength";
             this.trkReverbStrength.Size = new System.Drawing.Size(96, 26);
@@ -1966,7 +1966,7 @@ namespace Mesen.GUI.Forms.Config
             this.flowLayoutPanel5.Location = new System.Drawing.Point(6, 233);
             this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(457, 24);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(457, 25);
             this.flowLayoutPanel5.TabIndex = 6;
             // 
             // chkCrossFeedEnabled
@@ -1976,7 +1976,7 @@ namespace Mesen.GUI.Forms.Config
             this.chkCrossFeedEnabled.Location = new System.Drawing.Point(3, 5);
             this.chkCrossFeedEnabled.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
             this.chkCrossFeedEnabled.Name = "chkCrossFeedEnabled";
-            this.chkCrossFeedEnabled.Size = new System.Drawing.Size(126, 16);
+            this.chkCrossFeedEnabled.Size = new System.Drawing.Size(112, 17);
             this.chkCrossFeedEnabled.TabIndex = 1;
             this.chkCrossFeedEnabled.Text = "Enable Crossfeed:";
             this.chkCrossFeedEnabled.UseVisualStyleBackColor = true;
@@ -1992,7 +1992,7 @@ namespace Mesen.GUI.Forms.Config
             0,
             0});
             this.nudCrossFeedRatio.IsHex = false;
-            this.nudCrossFeedRatio.Location = new System.Drawing.Point(132, 1);
+            this.nudCrossFeedRatio.Location = new System.Drawing.Point(118, 2);
             this.nudCrossFeedRatio.Margin = new System.Windows.Forms.Padding(0);
             this.nudCrossFeedRatio.Maximum = new decimal(new int[] {
             100,
@@ -2019,9 +2019,9 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.lblCrossFeedRatio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblCrossFeedRatio.AutoSize = true;
-            this.lblCrossFeedRatio.Location = new System.Drawing.Point(177, 6);
+            this.lblCrossFeedRatio.Location = new System.Drawing.Point(163, 6);
             this.lblCrossFeedRatio.Name = "lblCrossFeedRatio";
-            this.lblCrossFeedRatio.Size = new System.Drawing.Size(11, 12);
+            this.lblCrossFeedRatio.Size = new System.Drawing.Size(15, 13);
             this.lblCrossFeedRatio.TabIndex = 3;
             this.lblCrossFeedRatio.Text = "%";
             // 
@@ -2046,7 +2046,7 @@ namespace Mesen.GUI.Forms.Config
             this.tableLayoutPanel3.Controls.Add(this.lblEPSMClockFrequency, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.chkSwapDutyCycles, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.chkDisableSquarePhaseReset, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.chkUseLinearSquareMixer, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.chkNonLinearSquareMixer, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -2121,9 +2121,9 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.lblEPSMClockFrequency.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblEPSMClockFrequency.AutoSize = true;
-            this.lblEPSMClockFrequency.Location = new System.Drawing.Point(3, 126);
+            this.lblEPSMClockFrequency.Location = new System.Drawing.Point(3, 125);
             this.lblEPSMClockFrequency.Name = "lblEPSMClockFrequency";
-            this.lblEPSMClockFrequency.Size = new System.Drawing.Size(263, 12);
+            this.lblEPSMClockFrequency.Size = new System.Drawing.Size(229, 13);
             this.lblEPSMClockFrequency.TabIndex = 3;
             this.lblEPSMClockFrequency.Text = "EPSM Clock Frequency (default is 8000000Hz)";
             // 
@@ -2149,17 +2149,19 @@ namespace Mesen.GUI.Forms.Config
             this.chkDisableSquarePhaseReset.TabIndex = 5;
             this.chkDisableSquarePhaseReset.Text = "Not reset square channels phase (Mimics old clones)";
             // 
-            // chkUseLinearSquareMixer
+            // chkNonLinearSquareMixer
             // 
-            this.chkUseLinearSquareMixer.AutoSize = true;
-            this.chkUseLinearSquareMixer.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.chkUseLinearSquareMixer.Location = new System.Drawing.Point(3, 3);
-            this.chkUseLinearSquareMixer.Name = "chkUseLinearSquareMixer";
-            this.chkUseLinearSquareMixer.Size = new System.Drawing.Size(210, 16);
-            this.chkUseLinearSquareMixer.TabIndex = 2;
-            this.chkUseLinearSquareMixer.Text = "Use linear square channel mixer";
-            this.chkUseLinearSquareMixer.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.chkUseLinearSquareMixer.UseVisualStyleBackColor = true;
+            this.chkNonLinearSquareMixer.AutoSize = true;
+            this.chkNonLinearSquareMixer.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.chkNonLinearSquareMixer.Checked = true;
+            this.chkNonLinearSquareMixer.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkNonLinearSquareMixer.Location = new System.Drawing.Point(3, 3);
+            this.chkNonLinearSquareMixer.Name = "chkNonLinearSquareMixer";
+            this.chkNonLinearSquareMixer.Size = new System.Drawing.Size(197, 17);
+            this.chkNonLinearSquareMixer.TabIndex = 2;
+            this.chkNonLinearSquareMixer.Text = "Use non-linear square channel mixer";
+            this.chkNonLinearSquareMixer.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.chkNonLinearSquareMixer.UseVisualStyleBackColor = true;
             // 
             // frmAudioConfig
             // 
@@ -2167,6 +2169,7 @@ namespace Mesen.GUI.Forms.Config
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(477, 450);
             this.Controls.Add(this.tabMain);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -2228,8 +2231,8 @@ namespace Mesen.GUI.Forms.Config
 
 		private System.Windows.Forms.GroupBox grpVolume;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-		private System.Windows.Forms.CheckBox chkEnableAudio;
 		private System.Windows.Forms.CheckBox chkEnableEPSM;
+		private System.Windows.Forms.CheckBox chkEnableAudio;
 		private System.Windows.Forms.Label lblAudioLatency;
 		private MesenNumericUpDown nudLatency;
 		private System.Windows.Forms.Label lblLatencyMs;
@@ -2278,7 +2281,7 @@ namespace Mesen.GUI.Forms.Config
 		private System.Windows.Forms.Label lblReverbDelay;
 		private System.Windows.Forms.TrackBar trkReverbDelay;
 		private System.Windows.Forms.TrackBar trkReverbStrength;
-		private System.Windows.Forms.CheckBox chkUseLinearSquareMixer;
+		private System.Windows.Forms.CheckBox chkNonLinearSquareMixer;
 		private System.Windows.Forms.PictureBox picLatencyWarning;
 		private System.Windows.Forms.Label lblLatencyWarning;
 		private System.Windows.Forms.TabPage tpgPanning;
