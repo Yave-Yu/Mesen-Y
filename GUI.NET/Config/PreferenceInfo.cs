@@ -6,7 +6,7 @@ namespace Mesen.GUI.Config
 {
 	public class PreferenceInfo
 	{
-		public Language DisplayLanguage = Language.SystemDefault;
+		public Language DisplayLanguage = Language.English;
 
 		public bool SingleInstance = true;
 		public bool PauseWhenInBackground = false;
