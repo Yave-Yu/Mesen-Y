@@ -54,7 +54,7 @@ private:
 protected:
 	virtual uint16_t GetPRGPageSize() override { return 0x2000; }
 	virtual uint16_t GetCHRPageSize() override { return 0x400; }
-	virtual uint32_t GetSaveRamPageSize() override { return 0x80; }
+	virtual uint32_t GetSaveRamPageSize() override { return 0x800; }
 	virtual bool AllowRegisterRead() override { return true; }
 	
 	void InitMapper() override
