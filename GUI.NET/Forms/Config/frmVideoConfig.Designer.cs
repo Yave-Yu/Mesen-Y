@@ -2016,56 +2016,56 @@ namespace Mesen.GUI.Forms.Config
             // 
             this.mnuPaletteCompositeDirect.Name = "mnuPaletteCompositeDirect";
             this.mnuPaletteCompositeDirect.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteCompositeDirect.Text = "Nestopia YUV";
+            this.mnuPaletteCompositeDirect.Text = "Digital Prime (by FirebrandX)";
             this.mnuPaletteCompositeDirect.Click += new System.EventHandler(this.mnuPaletteCompositeDirect_Click);
             // 
             // mnuPaletteNesClassic
             // 
             this.mnuPaletteNesClassic.Name = "mnuPaletteNesClassic";
             this.mnuPaletteNesClassic.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteNesClassic.Text = "Nintendulator NTSC";
+            this.mnuPaletteNesClassic.Text = "Wavebeam (by nakedarthur)";
             this.mnuPaletteNesClassic.Click += new System.EventHandler(this.mnuPaletteNesClassic_Click);
             // 
             // mnuPaletteNestopiaRgb
             // 
             this.mnuPaletteNestopiaRgb.Name = "mnuPaletteNestopiaRgb";
             this.mnuPaletteNestopiaRgb.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteNestopiaRgb.Text = "Sony CXA2025AS";
+            this.mnuPaletteNestopiaRgb.Text = "Kizul\'s Definitive NTSC-U NES";
             this.mnuPaletteNestopiaRgb.Click += new System.EventHandler(this.mnuPaletteNestopiaRgb_Click);
             // 
             // mnuPaletteOriginalHardware
             // 
             this.mnuPaletteOriginalHardware.Name = "mnuPaletteOriginalHardware";
             this.mnuPaletteOriginalHardware.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteOriginalHardware.Text = "Zero Degree YUV";
+            this.mnuPaletteOriginalHardware.Text = "NES Classic";
             this.mnuPaletteOriginalHardware.Click += new System.EventHandler(this.mnuPaletteOriginalHardware_Click);
             // 
             // mnuPalettePvmStyle
             // 
             this.mnuPalettePvmStyle.Name = "mnuPalettePvmStyle";
             this.mnuPalettePvmStyle.Size = new System.Drawing.Size(230, 22);
-            this.mnuPalettePvmStyle.Text = "NES Classic";
+            this.mnuPalettePvmStyle.Text = "Nestopia YUV";
             this.mnuPalettePvmStyle.Click += new System.EventHandler(this.mnuPalettePvmStyle_Click);
             // 
             // mnuPaletteSonyCxa2025As
             // 
             this.mnuPaletteSonyCxa2025As.Name = "mnuPaletteSonyCxa2025As";
             this.mnuPaletteSonyCxa2025As.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteSonyCxa2025As.Text = "Digital Prime (by FirebrandX)";
+            this.mnuPaletteSonyCxa2025As.Text = "Nintendulator NTSC";
             this.mnuPaletteSonyCxa2025As.Click += new System.EventHandler(this.mnuPaletteSonyCxa2025As_Click);
             // 
             // mnuPaletteUnsaturated
             // 
             this.mnuPaletteUnsaturated.Name = "mnuPaletteUnsaturated";
             this.mnuPaletteUnsaturated.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteUnsaturated.Text = "Wavebeam (by nakedarthur)";
+            this.mnuPaletteUnsaturated.Text = "Sony CXA2025AS";
             this.mnuPaletteUnsaturated.Click += new System.EventHandler(this.mnuPaletteUnsaturated_Click);
             // 
             // mnuPaletteYuv
             // 
             this.mnuPaletteYuv.Name = "mnuPaletteYuv";
             this.mnuPaletteYuv.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteYuv.Text = "Kizul\'s Definitive NTSC-U NES";
+            this.mnuPaletteYuv.Text = "Zero Degree YUV";
             this.mnuPaletteYuv.Click += new System.EventHandler(this.mnuPaletteYuv_Click);
             // 
             // frmVideoConfig
