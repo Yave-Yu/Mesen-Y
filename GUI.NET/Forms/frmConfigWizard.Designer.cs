@@ -377,14 +377,12 @@
             // radStorageDocuments
             // 
             this.radStorageDocuments.AutoSize = true;
-            this.radStorageDocuments.Checked = true;
             this.radStorageDocuments.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radStorageDocuments.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radStorageDocuments.Location = new System.Drawing.Point(3, 3);
             this.radStorageDocuments.Name = "radStorageDocuments";
             this.radStorageDocuments.Size = new System.Drawing.Size(380, 17);
             this.radStorageDocuments.TabIndex = 0;
-            this.radStorageDocuments.TabStop = true;
             this.radStorageDocuments.Text = "Store the data in my user profile";
             this.radStorageDocuments.UseVisualStyleBackColor = true;
             this.radStorageDocuments.CheckedChanged += new System.EventHandler(this.radStorageDocuments_CheckedChanged);
@@ -392,12 +390,14 @@
             // radStoragePortable
             // 
             this.radStoragePortable.AutoSize = true;
+            this.radStoragePortable.Checked = true;
             this.radStoragePortable.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radStoragePortable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radStoragePortable.Location = new System.Drawing.Point(3, 26);
             this.radStoragePortable.Name = "radStoragePortable";
             this.radStoragePortable.Size = new System.Drawing.Size(380, 17);
             this.radStoragePortable.TabIndex = 1;
+            this.radStoragePortable.TabStop = true;
             this.radStoragePortable.Text = "Store the data in the same folder as the application";
             this.radStoragePortable.UseVisualStyleBackColor = true;
             this.radStoragePortable.CheckedChanged += new System.EventHandler(this.radStoragePortable_CheckedChanged);
