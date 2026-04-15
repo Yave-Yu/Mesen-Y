@@ -10,9 +10,9 @@ namespace Mesen.GUI.Config
 
 		public bool DisableDynamicSampleRate = false;
 
-		[MinMax(15, 300)] public UInt32 AudioLatency = 100;
+		[MinMax(15, 300)] public UInt32 AudioLatency = 60;
 
-		[MinMax(0, 100)] public UInt32 MasterVolume = 70;
+		[MinMax(0, 100)] public UInt32 MasterVolume = 75;
 		[MinMax(0, 100)] public UInt32 Square1Volume = 100;
 		[MinMax(0, 100)] public UInt32 Square2Volume = 100;
 		[MinMax(0, 100)] public UInt32 TriangleVolume = 100;
