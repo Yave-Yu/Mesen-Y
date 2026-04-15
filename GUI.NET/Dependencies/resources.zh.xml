@@ -9,7 +9,7 @@
 			<Control ID="mnuLoadLastSession">自动载入上次会话</Control>
 			<Control ID="mnuRecentFiles">历史文件</Control>
 			<Control ID="mnuExit">退出</Control>
-			<Control ID="mnuGame">主机</Control>
+			<Control ID="mnuGame">游戏</Control>
 			<Control ID="mnuPause">暂停</Control>
 			<Control ID="mnuReset">复位</Control>
 			<Control ID="mnuPowerCycle">重启电源</Control>
@@ -581,10 +581,8 @@
 		<Form ID="frmAbout" Title="关于 Mesen">
 			<Control ID="labelProductName">Mesen</Control>
 			<Control ID="labelCopyright">© 2020 M. Bibaud（又名Sour）</Control>
-			<Control ID="lblWebsite">网站：</Control>
-			<Control ID="lblLink">www.mesen.ca</Control>
 			<Control ID="labelVersion">版本：</Control>
-			<Control ID="lblBuildDateLabel">构建日期：</Control>
+			<Control ID="labelForkVer">该版本在0.9.9版之后</Control>
 
 			<Control ID="grpAcknowledgements">鸣谢</Control>
 			<Control ID="lblUsedSoftware">本软件使用下列库：</Control>

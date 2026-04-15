@@ -282,7 +282,7 @@
 			<Control ID="lblRight">右</Control>
 			<Control ID="tpgPalette">パレット</Control>
 			<Control ID="chkShowColorIndexes">色のインデックスを表示する</Control>
-			<Control ID="mnuDefaultPalette">デフォルト（NTSC）</Control>
+			<Control ID="mnuDefaultPalette">デフォルトNTSC</Control>
 			<Control ID="btnSelectPalette">プリセットを選ぶ...</Control>
 			<Control ID="btnExportPalette">.palファイルにエクスポートする</Control>
 			<Control ID="btnLoadPalFile">.palファイルをロードする</Control>
@@ -579,10 +579,8 @@
 		<Form ID="frmAbout" Title="Mesenとは">
 			<Control ID="labelProductName">Mesen</Control>
 			<Control ID="labelCopyright">© 2020 M. Bibaud（aka Sour）</Control>
-			<Control ID="lblWebsite">サイト:</Control>
-			<Control ID="lblLink">www.mesen.ca</Control>
 			<Control ID="labelVersion">バージョン:</Control>
-			<Control ID="lblBuildDateLabel">ビルド日時:</Control>
+			<Control ID="labelForkVer">このバージョンは0.9.9以降です</Control>
 
 			<Control ID="grpAcknowledgements">謝辞</Control>
 			<Control ID="lblUsedSoftware">次のソフトが含まれています:</Control>

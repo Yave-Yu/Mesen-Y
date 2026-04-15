@@ -283,7 +283,7 @@
 			<Control ID="lblRight">Droite</Control>
 			<Control ID="tpgPalette">Palette</Control>
 			<Control ID="chkShowColorIndexes">Afficher l'indexe des couleurs</Control>
-			<Control ID="mnuDefaultPalette">Défaut (NTSC)</Control>
+			<Control ID="mnuDefaultPalette">Défaut NTSC</Control>
 			<Control ID="btnSelectPalette">Choisir une palette...</Control>
 			<Control ID="btnExportPalette">Exporter fichier .pal</Control>
 			<Control ID="btnLoadPalFile">Charger fichier .pal</Control>
@@ -591,10 +591,8 @@
 		<Form ID="frmAbout" Title="À propos de...">
 			<Control ID="labelProductName">Mesen</Control>
 			<Control ID="labelCopyright">© 2020 M. Bibaud (aka Sour)</Control>
-			<Control ID="lblWebsite">Site web:</Control>
-			<Control ID="lblLink">www.mesen.ca</Control>
 			<Control ID="labelVersion">Version:</Control>
-			<Control ID="lblBuildDateLabel">Date de compilation:</Control>
+			<Control ID="labelForkVer">Cette version est après 0.9.9</Control>
 
 			<Control ID="grpAcknowledgements">Remerciements</Control>
 			<Control ID="lblUsedSoftware">Cette application utilise les librairies suivantes :</Control>

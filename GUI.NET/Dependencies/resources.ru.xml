@@ -282,7 +282,7 @@
 			<Control ID="lblRight">Справа</Control>
 			<Control ID="tpgPalette">Палитра</Control>
 			<Control ID="chkShowColorIndexes">Показывать индексы номеров</Control>
-			<Control ID="mnuDefaultPalette">По умолчанию (NTSC)</Control>
+			<Control ID="mnuDefaultPalette">По умолчанию NTSC</Control>
 			<Control ID="btnSelectPalette">Выбрать палитру</Control>
 			<Control ID="btnExportPalette">Экспорт .pal</Control>
 			<Control ID="btnLoadPalFile">Загрузить .pal</Control>
@@ -579,10 +579,8 @@
 		<Form ID="frmAbout" Title="О программе">
 			<Control ID="labelProductName">Mesen</Control>
 			<Control ID="labelCopyright">© 2020 M. Bibaud (aka Sour)</Control>
-			<Control ID="lblWebsite">Сайт:</Control>
-			<Control ID="lblLink">www.mesen.ca</Control>
 			<Control ID="labelVersion">Версия:</Control>
-			<Control ID="lblBuildDateLabel">Build Date:</Control>
+			<Control ID="labelForkVer">Эта версия после 0.9.9</Control>
 
 			<Control ID="grpAcknowledgements">Acknowledgements</Control>
 			<Control ID="lblUsedSoftware">This software uses the following libraries:</Control>

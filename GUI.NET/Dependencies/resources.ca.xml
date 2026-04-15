@@ -284,7 +284,7 @@
 			<Control ID="lblRight">Dreta</Control>
 			<Control ID="tpgPalette">Paleta de colors</Control>
 			<Control ID="chkShowColorIndexes">Show color indexes</Control>
-			<Control ID="mnuDefaultPalette">Per defecte (NTSC)</Control>
+			<Control ID="mnuDefaultPalette">Per defecte NTSC</Control>
 			<Control ID="btnSelectPalette">Escollir una paleta...</Control>
 			<Control ID="btnExportPalette">Exportar fitxer .pal</Control>
 			<Control ID="btnLoadPalFile">Carregar fitxer .pal</Control>
@@ -582,10 +582,8 @@
 		<Form ID="frmAbout" Title="Quant a...">
 			<Control ID="labelProductName">Mesen</Control>
 			<Control ID="labelCopyright">© 2020 M. Bibaud (aka Sour)</Control>
-			<Control ID="lblWebsite">Lloc web:</Control>
-			<Control ID="lblLink">www.mesen.ca</Control>
 			<Control ID="labelVersion">Versió:</Control>
-			<Control ID="lblBuildDateLabel">Build Date:</Control>
+			<Control ID="labelForkVer">Aquesta versió és posterior a la 0.9.9</Control>
 
 			<Control ID="grpAcknowledgements">Acknowledgements</Control>
 			<Control ID="lblUsedSoftware">This software uses the following libraries:</Control>
