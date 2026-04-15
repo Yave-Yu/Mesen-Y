@@ -21,7 +21,7 @@ SoundMixer::SoundMixer(shared_ptr<Console> console)
 	_outputBuffer = new int16_t[SoundMixer::MaxSamplesPerFrame];
 	_blipBufLeft = blip_new(SoundMixer::MaxSamplesPerFrame);
 	_blipBufRight = blip_new(SoundMixer::MaxSamplesPerFrame);
-	_sampleRate = _settings->GetSampleRate();
+	_sampleRate = 96000;
 	_model = NesModel::NTSC;
 }
 
@@ -120,7 +120,7 @@ void SoundMixer::PlayAudioBuffer(uint32_t time)
 	_console->GetMapper()->ApplySamples(_outputBuffer, sampleCount, _settings->GetMasterVolume());
 
 	if(_oggMixer) {
-		_oggMixer->ApplySamples(_outputBuffer, sampleCount, _settings->GetMasterVolume());
+		_oggMixer->ApplySamples(_outputBuffer, sampleCount, 96000);
 	}
 
 	if(_console->IsDualSystem()) {
@@ -255,10 +255,10 @@ double SoundMixer::GetChannelOutput(AudioChannel channel, bool forRightChannel)
 int16_t SoundMixer::GetOutputVolume(bool forRightChannel)
 {
 	double squareOutput = GetChannelOutput(AudioChannel::Square1, forRightChannel) + GetChannelOutput(AudioChannel::Square2, forRightChannel);
-	double tndOutput = 2.751671 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.849359 * GetChannelOutput(AudioChannel::Noise, forRightChannel) + GetChannelOutput(AudioChannel::DMC, forRightChannel);
+	double tndOutput = GetChannelOutput(AudioChannel::DMC, forRightChannel) + 2.7 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.8 * GetChannelOutput(AudioChannel::Noise, forRightChannel);
 	
 	//Added linear square channel mixer flag
-	double squareVolume = _settings->CheckFlag(EmulationFlags::NonLinearSquareMixer) ? 479400.0 / (8128.0 / squareOutput + 100.0) : 20.833333 * squareOutput * squareSumFactor[_squareVolume[(int)AudioChannel::Square1] + _squareVolume[(int)AudioChannel::Square2]] * 0.258483;
+	double squareVolume = _settings->CheckFlag(EmulationFlags::NonLinearSquareMixer) ? 479400.0 / (8128.0 / squareOutput + 64.0) : 20.833333 * squareOutput * squareSumFactor[_squareVolume[(int)AudioChannel::Square1] + _squareVolume[(int)AudioChannel::Square2]] * 0.258483;
 	double tndVolume = 798950.0 / (1.0 / (tndOutput / 22638.0) + 100.0);
 	
 	return (int16_t)(squareVolume + tndVolume +
