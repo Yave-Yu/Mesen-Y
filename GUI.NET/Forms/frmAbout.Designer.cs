@@ -61,19 +61,16 @@
             this.lblCheatDatabase = new System.Windows.Forms.Label();
             this.lblSpecialThanks = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblBuildDateLabel = new System.Windows.Forms.Label();
-            this.lblBuildDate = new System.Windows.Forms.Label();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.labelProductName = new System.Windows.Forms.Label();
             this.labelCopyright = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblWebsite = new System.Windows.Forms.Label();
-            this.lblLink = new System.Windows.Forms.Label();
             this.okButton = new System.Windows.Forms.Button();
             this.lblDonate = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelVersion = new System.Windows.Forms.Label();
             this.lblMesenVersion = new System.Windows.Forms.Label();
+            this.labelForkVer = new System.Windows.Forms.Label();
             this.tableLayoutPanel.SuspendLayout();
             this.grpAcknowledgements.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -83,7 +80,6 @@
             this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,7 +94,7 @@
             this.tableLayoutPanel.Controls.Add(this.flowLayoutPanel3, 1, 2);
             this.tableLayoutPanel.Controls.Add(this.logoPictureBox, 0, 0);
             this.tableLayoutPanel.Controls.Add(this.labelProductName, 1, 0);
-            this.tableLayoutPanel.Controls.Add(this.labelCopyright, 1, 3);
+            this.tableLayoutPanel.Controls.Add(this.labelCopyright, 1, 2);
             this.tableLayoutPanel.Controls.Add(this.flowLayoutPanel1, 1, 4);
             this.tableLayoutPanel.Controls.Add(this.okButton, 1, 7);
             this.tableLayoutPanel.Controls.Add(this.lblDonate, 0, 6);
@@ -545,35 +541,12 @@
             // 
             // flowLayoutPanel3
             // 
-            this.flowLayoutPanel3.Controls.Add(this.lblBuildDateLabel);
-            this.flowLayoutPanel3.Controls.Add(this.lblBuildDate);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(84, 38);
+            this.flowLayoutPanel3.Controls.Add(this.labelForkVer);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(84, 55);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(250, 15);
             this.flowLayoutPanel3.TabIndex = 32;
-            // 
-            // lblBuildDateLabel
-            // 
-            this.lblBuildDateLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblBuildDateLabel.AutoSize = true;
-            this.lblBuildDateLabel.Location = new System.Drawing.Point(6, 0);
-            this.lblBuildDateLabel.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
-            this.lblBuildDateLabel.Name = "lblBuildDateLabel";
-            this.lblBuildDateLabel.Size = new System.Drawing.Size(59, 13);
-            this.lblBuildDateLabel.TabIndex = 0;
-            this.lblBuildDateLabel.Text = "Build Date:";
-            this.lblBuildDateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblBuildDate
-            // 
-            this.lblBuildDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblBuildDate.AutoSize = true;
-            this.lblBuildDate.Location = new System.Drawing.Point(71, 0);
-            this.lblBuildDate.Name = "lblBuildDate";
-            this.lblBuildDate.Size = new System.Drawing.Size(65, 13);
-            this.lblBuildDate.TabIndex = 1;
-            this.lblBuildDate.Text = "<build date>";
             // 
             // logoPictureBox
             // 
@@ -604,7 +577,7 @@
             // 
             this.labelCopyright.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelCopyright.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCopyright.Location = new System.Drawing.Point(90, 53);
+            this.labelCopyright.Location = new System.Drawing.Point(90, 35);
             this.labelCopyright.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.labelCopyright.Name = "labelCopyright";
             this.labelCopyright.Size = new System.Drawing.Size(244, 17);
@@ -614,39 +587,11 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.lblWebsite);
-            this.flowLayoutPanel1.Controls.Add(this.lblLink);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(84, 70);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(236, 18);
             this.flowLayoutPanel1.TabIndex = 26;
-            // 
-            // lblWebsite
-            // 
-            this.lblWebsite.AutoSize = true;
-            this.lblWebsite.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWebsite.Location = new System.Drawing.Point(6, 0);
-            this.lblWebsite.Margin = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.lblWebsite.Name = "lblWebsite";
-            this.lblWebsite.Size = new System.Drawing.Size(60, 16);
-            this.lblWebsite.TabIndex = 25;
-            this.lblWebsite.Text = "Website:";
-            this.lblWebsite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lblLink
-            // 
-            this.lblLink.AutoSize = true;
-            this.lblLink.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLink.ForeColor = System.Drawing.Color.Blue;
-            this.lblLink.Location = new System.Drawing.Point(66, 2);
-            this.lblLink.Margin = new System.Windows.Forms.Padding(0, 2, 3, 0);
-            this.lblLink.Name = "lblLink";
-            this.lblLink.Size = new System.Drawing.Size(80, 13);
-            this.lblLink.TabIndex = 26;
-            this.lblLink.Text = "www.mesen.ca";
-            this.lblLink.Click += new System.EventHandler(this.lblLink_Click);
             // 
             // okButton
             // 
@@ -701,6 +646,18 @@
             this.lblMesenVersion.TabIndex = 1;
             this.lblMesenVersion.Text = "<version>";
             // 
+            // labelForkVer
+            // 
+            this.labelForkVer.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelForkVer.AutoSize = true;
+            this.labelForkVer.Location = new System.Drawing.Point(6, 0);
+            this.labelForkVer.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
+            this.labelForkVer.Name = "labelForkVer";
+            this.labelForkVer.Size = new System.Drawing.Size(125, 13);
+            this.labelForkVer.TabIndex = 2;
+            this.labelForkVer.Text = "This version is after 0.9.9";
+            this.labelForkVer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // frmAbout
             // 
             this.AcceptButton = this.okButton;
@@ -736,8 +693,6 @@
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -753,15 +708,11 @@
 		private System.Windows.Forms.Label labelVersion;
 		private System.Windows.Forms.Label labelCopyright;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-		private System.Windows.Forms.Label lblWebsite;
-		private System.Windows.Forms.Label lblLink;
 		private System.Windows.Forms.Button okButton;
 		private System.Windows.Forms.Label lblDonate;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
 		private System.Windows.Forms.Label lblMesenVersion;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-		private System.Windows.Forms.Label lblBuildDateLabel;
-		private System.Windows.Forms.Label lblBuildDate;
 	  private System.Windows.Forms.GroupBox grpAcknowledgements;
 	  private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 	  private System.Windows.Forms.Label lblEmulation;
@@ -795,5 +746,6 @@
 	  private Controls.ctrlLinkLabel ctrlLinkLabel14;
 	  private Controls.ctrlLinkLabel ctrlLinkLabel15;
 	  private Controls.ctrlLinkLabel ctrlLinkLabel16;
+	  private System.Windows.Forms.Label labelForkVer;
    }
 }
