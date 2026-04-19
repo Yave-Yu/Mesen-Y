@@ -12,7 +12,7 @@ namespace Mesen.GUI.Config
 
 		[MinMax(15, 300)] public UInt32 AudioLatency = 60;
 
-		[MinMax(0, 100)] public UInt32 MasterVolume = 75;
+		[MinMax(0, 100)] public UInt32 MasterVolume = 80;
 		[MinMax(0, 100)] public UInt32 Square1Volume = 100;
 		[MinMax(0, 100)] public UInt32 Square2Volume = 100;
 		[MinMax(0, 100)] public UInt32 TriangleVolume = 100;
