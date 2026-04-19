@@ -652,7 +652,7 @@ namespace Mesen.GUI.Forms.Config
             this.nudLatency.Size = new System.Drawing.Size(45, 21);
             this.nudLatency.TabIndex = 1;
             this.nudLatency.Value = new decimal(new int[] {
-            100,
+            50,
             0,
             0,
             0});

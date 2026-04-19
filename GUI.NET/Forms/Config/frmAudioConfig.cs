@@ -148,8 +148,8 @@ namespace Mesen.GUI.Forms.Config
 
 		private void UpdateLatencyWarning()
 		{
-			picLatencyWarning.Visible = nudLatency.Value <= 55;
-			lblLatencyWarning.Visible = nudLatency.Value <= 55;
+			picLatencyWarning.Visible = nudLatency.Value < 50;
+			lblLatencyWarning.Visible = nudLatency.Value < 50;
 		}
 
 		private void nudLatency_ValueChanged(object sender, EventArgs e)
