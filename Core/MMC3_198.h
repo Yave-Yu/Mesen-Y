@@ -47,7 +47,7 @@ protected:
 	void WriteRegister(uint16_t addr, uint8_t value) override
 	{
 		if(addr == 0x8001 && (GetState().Reg8000 & 0x07) >= 6) {
-			_exRegs[(GetState().Reg8000 & 0x07) - 6] = value & 0x7F;
+			_exRegs[(GetState().Reg8000 & 0x07) - 6] = value & (value >= 0x40 ? 0x4F : 0x3F);
 		}
 		MMC3::WriteRegister(addr, value);
 	}
