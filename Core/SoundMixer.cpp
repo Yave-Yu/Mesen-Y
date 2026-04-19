@@ -255,7 +255,7 @@ double SoundMixer::GetChannelOutput(AudioChannel channel, bool forRightChannel)
 int16_t SoundMixer::GetOutputVolume(bool forRightChannel)
 {
 	double squareOutput = GetChannelOutput(AudioChannel::Square1, forRightChannel) + GetChannelOutput(AudioChannel::Square2, forRightChannel);
-	double tndOutput = GetChannelOutput(AudioChannel::DMC, forRightChannel) + 2.7 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.8 * GetChannelOutput(AudioChannel::Noise, forRightChannel);
+	double tndOutput = 2.751671 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.849359 * GetChannelOutput(AudioChannel::Noise, forRightChannel) + GetChannelOutput(AudioChannel::DMC, forRightChannel);
 	
 	//Added linear square channel mixer flag
 	double squareVolume = _settings->CheckFlag(EmulationFlags::NonLinearSquareMixer) ? 479400.0 / (8128.0 / squareOutput + 64.0) : 20.833333 * squareOutput * squareSumFactor[_squareVolume[(int)AudioChannel::Square1] + _squareVolume[(int)AudioChannel::Square2]] * 0.258483;
@@ -266,7 +266,7 @@ int16_t SoundMixer::GetOutputVolume(bool forRightChannel)
 		GetChannelOutput(AudioChannel::MMC5, forRightChannel) * 43 +
 		GetChannelOutput(AudioChannel::Namco163, forRightChannel) * 20 +
 		GetChannelOutput(AudioChannel::Sunsoft5B, forRightChannel) * 15 +
-		GetChannelOutput(AudioChannel::VRC6, forRightChannel) * 75 +
+		GetChannelOutput(AudioChannel::VRC6, forRightChannel) * 60 +
 #ifndef VRC7_USE_OLD_EMU
 #define VRC7_USE_NUKED
 #endif
