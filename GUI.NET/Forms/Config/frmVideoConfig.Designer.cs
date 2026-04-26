@@ -151,13 +151,16 @@ namespace Mesen.GUI.Forms.Config
             this.mnuDefaultPalette = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuPaletteCompositeDirect = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPaletteNesClassic = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPaletteNestopiaRgb = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPaletteOriginalHardware = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPalettePvmStyle = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPaletteSonyCxa2025As = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPaletteUnsaturated = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuPaletteYuv = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPaletteSmooth = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPaletteDigitalPrime = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPaletteWavebeam = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPaletteNESClassic = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPaletteNestopia = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPaletteRockNES = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPaletteNintendulator = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPaletteSonyCXA = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPaletteZeroDegree = new System.Windows.Forms.ToolStripMenuItem();
             this.tlpMain.SuspendLayout();
             this.flpResolution.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
@@ -1989,84 +1992,108 @@ namespace Mesen.GUI.Forms.Config
             this.mnuDefaultPalette,
             this.toolStripMenuItem1,
             this.mnuPaletteCompositeDirect,
-            this.mnuPaletteNesClassic,
-            this.mnuPaletteNestopiaRgb,
-            this.mnuPaletteOriginalHardware,
-            this.mnuPalettePvmStyle,
-            this.mnuPaletteSonyCxa2025As,
             this.mnuPaletteUnsaturated,
-            this.mnuPaletteYuv});
+            this.mnuPaletteSmooth,
+            this.mnuPaletteDigitalPrime,
+            this.mnuPaletteWavebeam,
+            this.mnuPaletteNESClassic,
+            this.mnuPaletteNestopia,
+            this.mnuPaletteRockNES,
+            this.mnuPaletteNintendulator,
+            this.mnuPaletteSonyCXA,
+            this.mnuPaletteZeroDegree});
             this.contextPaletteList.Name = "contextPicturePresets";
-            this.contextPaletteList.Size = new System.Drawing.Size(231, 208);
+            this.contextPaletteList.Size = new System.Drawing.Size(251, 274);
             this.contextPaletteList.Opening += new System.ComponentModel.CancelEventHandler(this.contextPaletteList_Opening);
             // 
             // mnuDefaultPalette
             // 
             this.mnuDefaultPalette.Name = "mnuDefaultPalette";
-            this.mnuDefaultPalette.Size = new System.Drawing.Size(230, 22);
+            this.mnuDefaultPalette.Size = new System.Drawing.Size(250, 22);
             this.mnuDefaultPalette.Text = "Default NTSC";
             this.mnuDefaultPalette.Click += new System.EventHandler(this.mnuDefaultPalette_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(227, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(247, 6);
             // 
             // mnuPaletteCompositeDirect
             // 
             this.mnuPaletteCompositeDirect.Name = "mnuPaletteCompositeDirect";
-            this.mnuPaletteCompositeDirect.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteCompositeDirect.Text = "Digital Prime (by FirebrandX)";
+            this.mnuPaletteCompositeDirect.Size = new System.Drawing.Size(250, 22);
+            this.mnuPaletteCompositeDirect.Text = "Composite Direct (by FirebrandX)";
             this.mnuPaletteCompositeDirect.Click += new System.EventHandler(this.mnuPaletteCompositeDirect_Click);
-            // 
-            // mnuPaletteNesClassic
-            // 
-            this.mnuPaletteNesClassic.Name = "mnuPaletteNesClassic";
-            this.mnuPaletteNesClassic.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteNesClassic.Text = "Wavebeam (by nakedarthur)";
-            this.mnuPaletteNesClassic.Click += new System.EventHandler(this.mnuPaletteNesClassic_Click);
-            // 
-            // mnuPaletteNestopiaRgb
-            // 
-            this.mnuPaletteNestopiaRgb.Name = "mnuPaletteNestopiaRgb";
-            this.mnuPaletteNestopiaRgb.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteNestopiaRgb.Text = "Kizul\'s Definitive NTSC-U NES";
-            this.mnuPaletteNestopiaRgb.Click += new System.EventHandler(this.mnuPaletteNestopiaRgb_Click);
-            // 
-            // mnuPaletteOriginalHardware
-            // 
-            this.mnuPaletteOriginalHardware.Name = "mnuPaletteOriginalHardware";
-            this.mnuPaletteOriginalHardware.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteOriginalHardware.Text = "NES Classic";
-            this.mnuPaletteOriginalHardware.Click += new System.EventHandler(this.mnuPaletteOriginalHardware_Click);
-            // 
-            // mnuPalettePvmStyle
-            // 
-            this.mnuPalettePvmStyle.Name = "mnuPalettePvmStyle";
-            this.mnuPalettePvmStyle.Size = new System.Drawing.Size(230, 22);
-            this.mnuPalettePvmStyle.Text = "Nestopia YUV";
-            this.mnuPalettePvmStyle.Click += new System.EventHandler(this.mnuPalettePvmStyle_Click);
-            // 
-            // mnuPaletteSonyCxa2025As
-            // 
-            this.mnuPaletteSonyCxa2025As.Name = "mnuPaletteSonyCxa2025As";
-            this.mnuPaletteSonyCxa2025As.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteSonyCxa2025As.Text = "Nintendulator NTSC";
-            this.mnuPaletteSonyCxa2025As.Click += new System.EventHandler(this.mnuPaletteSonyCxa2025As_Click);
             // 
             // mnuPaletteUnsaturated
             // 
             this.mnuPaletteUnsaturated.Name = "mnuPaletteUnsaturated";
-            this.mnuPaletteUnsaturated.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteUnsaturated.Text = "Sony CXA2025AS";
+            this.mnuPaletteUnsaturated.Size = new System.Drawing.Size(250, 22);
+            this.mnuPaletteUnsaturated.Text = "Unsaturated V6 (by FirebrandX)";
             this.mnuPaletteUnsaturated.Click += new System.EventHandler(this.mnuPaletteUnsaturated_Click);
             // 
-            // mnuPaletteYuv
+            // mnuPaletteSmooth
             // 
-            this.mnuPaletteYuv.Name = "mnuPaletteYuv";
-            this.mnuPaletteYuv.Size = new System.Drawing.Size(230, 22);
-            this.mnuPaletteYuv.Text = "Zero Degree YUV";
-            this.mnuPaletteYuv.Click += new System.EventHandler(this.mnuPaletteYuv_Click);
+            this.mnuPaletteSmooth.Name = "mnuPaletteSmooth";
+            this.mnuPaletteSmooth.Size = new System.Drawing.Size(250, 22);
+            this.mnuPaletteSmooth.Text = "Smooth V2 (by FirebrandX)";
+            this.mnuPaletteSmooth.Click += new System.EventHandler(this.mnuPaletteSmooth_Click);
+            // 
+            // mnuPaletteDigitalPrime
+            // 
+            this.mnuPaletteDigitalPrime.Name = "mnuPaletteDigitalPrime";
+            this.mnuPaletteDigitalPrime.Size = new System.Drawing.Size(250, 22);
+            this.mnuPaletteDigitalPrime.Text = "Digital Prime (by FirebrandX)";
+            this.mnuPaletteDigitalPrime.Click += new System.EventHandler(this.mnuPaletteDigitalPrime_Click);
+            // 
+            // mnuPaletteWavebeam
+            // 
+            this.mnuPaletteWavebeam.Name = "mnuPaletteWavebeam";
+            this.mnuPaletteWavebeam.Size = new System.Drawing.Size(250, 22);
+            this.mnuPaletteWavebeam.Text = "Wavebeam (by nakedarthur)";
+            this.mnuPaletteWavebeam.Click += new System.EventHandler(this.mnuPaletteWavebeam_Click);
+            // 
+            // mnuPaletteNESClassic
+            // 
+            this.mnuPaletteNESClassic.Name = "mnuPaletteNESClassic";
+            this.mnuPaletteNESClassic.Size = new System.Drawing.Size(250, 22);
+            this.mnuPaletteNESClassic.Text = "NES Classic";
+            this.mnuPaletteNESClassic.Click += new System.EventHandler(this.mnuPaletteNESClassic_Click);
+            // 
+            // mnuPaletteNestopia
+            // 
+            this.mnuPaletteNestopia.Name = "mnuPaletteNestopia";
+            this.mnuPaletteNestopia.Size = new System.Drawing.Size(250, 22);
+            this.mnuPaletteNestopia.Text = "Nestopia";
+            this.mnuPaletteNestopia.Click += new System.EventHandler(this.mnuPaletteNestopia_Click);
+            // 
+            // mnuPaletteRockNES
+            // 
+            this.mnuPaletteRockNES.Name = "mnuPaletteRockNES";
+            this.mnuPaletteRockNES.Size = new System.Drawing.Size(250, 22);
+            this.mnuPaletteRockNES.Text = "RockNES";
+            this.mnuPaletteRockNES.Click += new System.EventHandler(this.mnuPaletteRockNES_Click);
+            // 
+            // mnuPaletteNintendulator
+            // 
+            this.mnuPaletteNintendulator.Name = "mnuPaletteNintendulator";
+            this.mnuPaletteNintendulator.Size = new System.Drawing.Size(250, 22);
+            this.mnuPaletteNintendulator.Text = "Nintendulator";
+            this.mnuPaletteNintendulator.Click += new System.EventHandler(this.mnuPaletteNintendulator_Click);
+            // 
+            // mnuPaletteSonyCXA
+            // 
+            this.mnuPaletteSonyCXA.Name = "mnuPaletteSonyCXA";
+            this.mnuPaletteSonyCXA.Size = new System.Drawing.Size(250, 22);
+            this.mnuPaletteSonyCXA.Text = "Sony CXA2025AS";
+            this.mnuPaletteSonyCXA.Click += new System.EventHandler(this.mnuPaletteSonyCXA_Click);
+            // 
+            // mnuPaletteZeroDegree
+            // 
+            this.mnuPaletteZeroDegree.Name = "mnuPaletteZeroDegree";
+            this.mnuPaletteZeroDegree.Size = new System.Drawing.Size(250, 22);
+            this.mnuPaletteZeroDegree.Text = "Zero Degree YUV";
+            this.mnuPaletteZeroDegree.Click += new System.EventHandler(this.mnuPaletteZeroDegree_Click);
             // 
             // frmVideoConfig
             // 
@@ -2213,9 +2240,6 @@ namespace Mesen.GUI.Forms.Config
 		private System.Windows.Forms.ContextMenuStrip contextPaletteList;
 		private System.Windows.Forms.ToolStripMenuItem mnuDefaultPalette;
 		private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-		private System.Windows.Forms.ToolStripMenuItem mnuPaletteUnsaturated;
-		private System.Windows.Forms.ToolStripMenuItem mnuPaletteYuv;
-		private System.Windows.Forms.ToolStripMenuItem mnuPaletteNestopiaRgb;
 		private System.Windows.Forms.Button btnExportPalette;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
 		private System.Windows.Forms.Label lblVideoFilter;
@@ -2226,17 +2250,13 @@ namespace Mesen.GUI.Forms.Config
 		private ctrlRiskyOption chkDisableSprites;
 		private ctrlRiskyOption chkForceBackgroundFirstColumn;
 		private ctrlRiskyOption chkForceSpritesFirstColumn;
-		private System.Windows.Forms.ToolStripMenuItem mnuPaletteNesClassic;
 		private System.Windows.Forms.TableLayoutPanel tlpNtscFilter2;
 		private Controls.ctrlHorizontalTrackbar trkYFilterLength;
 		private Controls.ctrlHorizontalTrackbar trkIFilterLength;
 		private Controls.ctrlHorizontalTrackbar trkQFilterLength;
-		private System.Windows.Forms.ToolStripMenuItem mnuPaletteSonyCxa2025As;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
 		private System.Windows.Forms.Label lblCustomRatio;
 		private MesenNumericUpDown nudCustomRatio;
-		private System.Windows.Forms.ToolStripMenuItem mnuPalettePvmStyle;
-		private System.Windows.Forms.ToolStripMenuItem mnuPaletteOriginalHardware;
 		private System.Windows.Forms.ToolStripMenuItem mnuPaletteCompositeDirect;
 		private System.Windows.Forms.CheckBox chkUseCustomVsPalette;
 		private System.Windows.Forms.CheckBox chkFullscreenForceIntegerScale;
@@ -2280,5 +2300,15 @@ namespace Mesen.GUI.Forms.Config
 	  private System.Windows.Forms.FlowLayoutPanel flpResolution;
 	  private System.Windows.Forms.Label lblFullscreenResolution;
 	  private System.Windows.Forms.ComboBox cboFullscreenResolution;
+	  private System.Windows.Forms.ToolStripMenuItem mnuPaletteUnsaturated;
+	  private System.Windows.Forms.ToolStripMenuItem mnuPaletteSmooth;
+	  private System.Windows.Forms.ToolStripMenuItem mnuPaletteDigitalPrime;
+	  private System.Windows.Forms.ToolStripMenuItem mnuPaletteWavebeam;
+	  private System.Windows.Forms.ToolStripMenuItem mnuPaletteNESClassic;
+	  private System.Windows.Forms.ToolStripMenuItem mnuPaletteNestopia;
+	  private System.Windows.Forms.ToolStripMenuItem mnuPaletteNintendulator;
+	  private System.Windows.Forms.ToolStripMenuItem mnuPaletteRockNES;
+	  private System.Windows.Forms.ToolStripMenuItem mnuPaletteSonyCXA;
+	  private System.Windows.Forms.ToolStripMenuItem mnuPaletteZeroDegree;
    }
 }
