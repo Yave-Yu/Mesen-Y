@@ -258,7 +258,7 @@ int16_t SoundMixer::GetOutputVolume(bool forRightChannel)
 	double tndOutput = 2.751671 * GetChannelOutput(AudioChannel::Triangle, forRightChannel) + 1.849359 * GetChannelOutput(AudioChannel::Noise, forRightChannel) + GetChannelOutput(AudioChannel::DMC, forRightChannel);
 	
 	//Added linear square channel mixer flag
-	double squareVolume = _settings->CheckFlag(EmulationFlags::NonLinearSquareMixer) ? 479400.0 / (8128.0 / squareOutput + 64.0) : 20.833333 * squareOutput * squareSumFactor[_squareVolume[(int)AudioChannel::Square1] + _squareVolume[(int)AudioChannel::Square2]] * 0.258483;
+	double squareVolume = _settings->CheckFlag(EmulationFlags::NonLinearSquareMixer) ? 479400.0 / (8128.0 / squareOutput + 75.0) : 20.833333 * squareOutput * squareSumFactor[_squareVolume[(int)AudioChannel::Square1] + _squareVolume[(int)AudioChannel::Square2]] * 0.258483;
 	double tndVolume = 798950.0 / (1.0 / (tndOutput / 22638.0) + 100.0);
 	
 	return (int16_t)(squareVolume + tndVolume +

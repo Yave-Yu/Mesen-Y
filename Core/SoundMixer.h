@@ -31,7 +31,7 @@ private:
 	static constexpr uint32_t MaxSampleRate = 96000;
 	static constexpr uint32_t MaxSamplesPerFrame = MaxSampleRate / 60 * 4 * 2; //x4 to allow CPU overclocking up to 10x, x2 for panning stereo
 	static constexpr uint32_t MaxChannelCount = 13;
-	static constexpr double squareSumFactor[31] = { 1.0, 1.358399, 1.347869, 1.337501, 1.327291, 1.317235, 1.307331, 1.297575, 1.287964, 1.278493, 1.269161, 1.259964, 1.250900, 1.241965, 1.233157, 1.224472, 1.215909, 1.207466, 1.199138, 1.190925, 1.182824, 1.174832, 1.166947, 1.159167, 1.151490, 1.143915, 1.136438, 1.129059, 1.121775, 1.114584, 1.107484 };
+	static constexpr double squareSumFactor[31] = { 1.0, 1.356577, 1.344287, 1.332217, 1.320361, 1.308715, 1.297273, 1.286029, 1.274977, 1.264115, 1.253436, 1.242936, 1.232610, 1.222455, 1.212465, 1.202638, 1.192968, 1.183453, 1.174088, 1.164870, 1.155796, 1.146862, 1.138065, 1.129403, 1.120871, 1.112467, 1.104188, 1.096031, 1.087994, 1.080074, 1.072269 };
 
 	IAudioDevice* _audioDevice;
 	EmulationSettings* _settings;
