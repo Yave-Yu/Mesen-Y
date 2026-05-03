@@ -423,7 +423,7 @@ void NsfMapper::WriteRegister(uint16_t addr, uint8_t value)
 
 uint32_t NsfMapper::GetClockRate()
 {
-	return ((_nsfHeader.Flags & 0x01) ? CPU::ClockRatePal : CPU::ClockRateNtsc);
+	return (_console->GetModel() == NesModel::PAL ? CPU::ClockRatePal : CPU::ClockRateNtsc);
 }
 
 void NsfMapper::InternalSelectTrack(uint8_t trackNumber, bool requestReset)
