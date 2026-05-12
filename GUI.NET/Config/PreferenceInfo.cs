@@ -53,7 +53,6 @@ namespace Mesen.GUI.Config
 		public bool DisplayDebugInfo = false;
 
 		public bool PauseOnMovieEnd = true;
-		public bool AutomaticallyCheckForUpdates = true;
 
 		public bool CloudSaveIntegration = false;
 		public DateTime CloudLastSync = DateTime.MinValue;

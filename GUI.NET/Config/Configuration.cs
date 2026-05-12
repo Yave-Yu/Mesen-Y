@@ -15,7 +15,7 @@ namespace Mesen.GUI.Config
 		private const int MaxRecentFiles = 10;
 		private bool _needToSave = false;
 
-		public string MesenVersion = "0.9.9";
+		public string MesenVersion = "1.0";
 		public PreferenceInfo PreferenceInfo;
 		public AudioInfo AudioInfo;
 		public VideoInfo VideoInfo;
@@ -93,7 +93,6 @@ namespace Mesen.GUI.Config
 		public void InitializeDefaults()
 		{
 			if(!Program.IsMono && PreferenceInfo.NeedWindowsShortcutReset) {
-				//TODO: Temporary code to reset shortcuts in 0.9.9 dev builds, will need to be moved to upgrade process for next release
 				InputInfo.Controllers = new List<ControllerInfo>();
 				PreferenceInfo.DefaultsInitialized = false;
 				PreferenceInfo.NeedWindowsShortcutReset = false;
