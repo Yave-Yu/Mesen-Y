@@ -61,16 +61,15 @@
             this.lblCheatDatabase = new System.Windows.Forms.Label();
             this.lblSpecialThanks = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.labelForkOld = new System.Windows.Forms.Label();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.labelProductName = new System.Windows.Forms.Label();
             this.labelCopyright = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.okButton = new System.Windows.Forms.Button();
-            this.lblDonate = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelVersion = new System.Windows.Forms.Label();
-            this.lblMesenVersion = new System.Windows.Forms.Label();
-            this.labelForkVer = new System.Windows.Forms.Label();
+            this.labelForkNew = new System.Windows.Forms.Label();
             this.tableLayoutPanel.SuspendLayout();
             this.grpAcknowledgements.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -80,6 +79,7 @@
             this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,7 +97,6 @@
             this.tableLayoutPanel.Controls.Add(this.labelCopyright, 1, 2);
             this.tableLayoutPanel.Controls.Add(this.flowLayoutPanel1, 1, 4);
             this.tableLayoutPanel.Controls.Add(this.okButton, 1, 7);
-            this.tableLayoutPanel.Controls.Add(this.lblDonate, 0, 6);
             this.tableLayoutPanel.Controls.Add(this.flowLayoutPanel2, 1, 1);
             this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel.Location = new System.Drawing.Point(5, 5);
@@ -112,7 +111,7 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(337, 352);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(337, 324);
             this.tableLayoutPanel.TabIndex = 0;
             // 
             // grpAcknowledgements
@@ -541,12 +540,24 @@
             // 
             // flowLayoutPanel3
             // 
-            this.flowLayoutPanel3.Controls.Add(this.labelForkVer);
+            this.flowLayoutPanel3.Controls.Add(this.labelForkOld);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(84, 55);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(250, 15);
             this.flowLayoutPanel3.TabIndex = 32;
+            // 
+            // labelForkOld
+            // 
+            this.labelForkOld.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelForkOld.AutoSize = true;
+            this.labelForkOld.Location = new System.Drawing.Point(6, 0);
+            this.labelForkOld.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
+            this.labelForkOld.Name = "labelForkOld";
+            this.labelForkOld.Size = new System.Drawing.Size(127, 13);
+            this.labelForkOld.TabIndex = 2;
+            this.labelForkOld.Text = "Mesen-X by NovaSquirrel";
+            this.labelForkOld.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // logoPictureBox
             // 
@@ -587,6 +598,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Controls.Add(this.labelForkNew);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(84, 70);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -597,27 +609,15 @@
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.okButton.Location = new System.Drawing.Point(259, 327);
+            this.okButton.Location = new System.Drawing.Point(259, 298);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 24;
             this.okButton.Text = "&OK";
             // 
-            // lblDonate
-            // 
-            this.lblDonate.AutoSize = true;
-            this.tableLayoutPanel.SetColumnSpan(this.lblDonate, 2);
-            this.lblDonate.Location = new System.Drawing.Point(0, 298);
-            this.lblDonate.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.lblDonate.Name = "lblDonate";
-            this.lblDonate.Size = new System.Drawing.Size(211, 26);
-            this.lblDonate.TabIndex = 30;
-            this.lblDonate.Text = "You are using a fork, Mesen-Y by Yave Yu.\r\nBased on Mesen-X, by NovaSquirrel.";
-            // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.labelVersion);
-            this.flowLayoutPanel2.Controls.Add(this.lblMesenVersion);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(84, 20);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -631,32 +631,22 @@
             this.labelVersion.Location = new System.Drawing.Point(6, 0);
             this.labelVersion.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.labelVersion.Name = "labelVersion";
-            this.labelVersion.Size = new System.Drawing.Size(45, 13);
+            this.labelVersion.Size = new System.Drawing.Size(63, 13);
             this.labelVersion.TabIndex = 0;
-            this.labelVersion.Text = "Version:";
+            this.labelVersion.Text = "Version: 1.0";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblMesenVersion
+            // labelForkNew
             // 
-            this.lblMesenVersion.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lblMesenVersion.AutoSize = true;
-            this.lblMesenVersion.Location = new System.Drawing.Point(57, 0);
-            this.lblMesenVersion.Name = "lblMesenVersion";
-            this.lblMesenVersion.Size = new System.Drawing.Size(53, 13);
-            this.lblMesenVersion.TabIndex = 1;
-            this.lblMesenVersion.Text = "<version>";
-            // 
-            // labelForkVer
-            // 
-            this.labelForkVer.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelForkVer.AutoSize = true;
-            this.labelForkVer.Location = new System.Drawing.Point(6, 0);
-            this.labelForkVer.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
-            this.labelForkVer.Name = "labelForkVer";
-            this.labelForkVer.Size = new System.Drawing.Size(125, 13);
-            this.labelForkVer.TabIndex = 2;
-            this.labelForkVer.Text = "This version is after 0.9.9";
-            this.labelForkVer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelForkNew.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelForkNew.AutoSize = true;
+            this.labelForkNew.Location = new System.Drawing.Point(6, 0);
+            this.labelForkNew.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
+            this.labelForkNew.Name = "labelForkNew";
+            this.labelForkNew.Size = new System.Drawing.Size(107, 13);
+            this.labelForkNew.TabIndex = 3;
+            this.labelForkNew.Text = "Mesen-Y by Yave Yu";
+            this.labelForkNew.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // frmAbout
             // 
@@ -666,7 +656,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.CancelButton = this.okButton;
-            this.ClientSize = new System.Drawing.Size(347, 362);
+            this.ClientSize = new System.Drawing.Size(347, 334);
             this.Controls.Add(this.tableLayoutPanel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -678,7 +668,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "About - Mesen";
             this.tableLayoutPanel.ResumeLayout(false);
-            this.tableLayoutPanel.PerformLayout();
             this.grpAcknowledgements.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -693,6 +682,8 @@
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
@@ -709,9 +700,7 @@
 		private System.Windows.Forms.Label labelCopyright;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
 		private System.Windows.Forms.Button okButton;
-		private System.Windows.Forms.Label lblDonate;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-		private System.Windows.Forms.Label lblMesenVersion;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
 	  private System.Windows.Forms.GroupBox grpAcknowledgements;
 	  private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
@@ -746,6 +735,7 @@
 	  private Controls.ctrlLinkLabel ctrlLinkLabel14;
 	  private Controls.ctrlLinkLabel ctrlLinkLabel15;
 	  private Controls.ctrlLinkLabel ctrlLinkLabel16;
-	  private System.Windows.Forms.Label labelForkVer;
+	  private System.Windows.Forms.Label labelForkOld;
+	  private System.Windows.Forms.Label labelForkNew;
    }
 }

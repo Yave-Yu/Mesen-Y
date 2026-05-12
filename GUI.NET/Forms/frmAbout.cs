@@ -16,8 +16,6 @@ namespace Mesen.GUI.Forms
 		{
 			InitializeComponent();
 
-			lblMesenVersion.Text = InteropEmu.GetMesenVersion();
-
 			Version ver = System.Reflection.Assembly.GetEntryAssembly().GetName().Version;
 			//DateTime buildTime = new DateTime(2000, 1, 1, 0, 0, 0, DateTimeKind.Utc).AddDays(ver.Build).AddSeconds(ver.Revision * 2);
 			//lblBuildDate.Text = buildTime.ToShortDateString() + " " + buildTime.ToShortTimeString();

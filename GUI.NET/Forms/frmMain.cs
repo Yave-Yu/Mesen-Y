@@ -74,18 +74,11 @@ namespace Mesen.GUI.Forms
 			ThemeHelper.InitTheme(this.BackColor);
 			InitializeComponent();
 
-			ThemeHelper.ExcludeFromTheme(panelInfo);
 			ThemeHelper.ExcludeFromTheme(panelRenderer);
 
 			this.StartPosition = FormStartPosition.CenterScreen;
 
 			Version currentVersion = new Version(InteropEmu.GetMesenVersion());
-			lblVersion.Text = currentVersion.ToString();
-
-			if(Program.IsMono) {
-				lblVersion.Margin = new Padding(0, 0, 3, 0);
-				picIcon.Margin = new Padding(3, 5, 3, 3);
-			}
 
 #if AUTOBUILD
 			string devVersion = ResourceManager.ReadZippedResource("DevBuild.txt");
@@ -222,7 +215,6 @@ namespace Mesen.GUI.Forms
 			UpdateVideoSettings();
 
 			InitializeCore();
-			PerformUpgrade();
 			InitializeEmu();
 
 			TopMost = ConfigManager.Config.PreferenceInfo.AlwaysOnTop;
@@ -239,10 +231,6 @@ namespace Mesen.GUI.Forms
 
 			if(ConfigManager.Config.PreferenceInfo.CloudSaveIntegration) {
 				Task.Run(() => CloudSyncHelper.Sync());
-			}
-
-			if(ConfigManager.Config.PreferenceInfo.AutomaticallyCheckForUpdates) {
-				CheckForUpdates(false);
 			}
 
 			if(ConfigManager.Config.WindowSize.HasValue && !_overrideWindowSize) {
@@ -1234,8 +1222,6 @@ namespace Mesen.GUI.Forms
 					bool running = _emuThread != null;
 					bool runAheadEnabled = ConfigManager.Config.EmulationInfo.RunAheadFrames > 0;
 
-					panelInfo.Visible = !running;
-
 					ctrlLoading.Visible = (_romLoadCounter > 0);
 
 					UpdateWindowTitle();
@@ -1621,5 +1607,5 @@ namespace Mesen.GUI.Forms
 				}));
 			});
 		}
-	}
+   }
 }
