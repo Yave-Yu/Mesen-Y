@@ -75,7 +75,9 @@
 			<Control ID="mnuPrescale4xFilter">预缩放4倍</Control>
 			<Control ID="mnuPrescale5xFilter">预缩放5倍</Control>
 			<Control ID="mnuPrescale6xFilter">预缩放6倍</Control>
+			<Control ID="mnuPrescale7xFilter">预缩放7倍</Control>
 			<Control ID="mnuPrescale8xFilter">预缩放8倍</Control>
+			<Control ID="mnuPrescale9xFilter">预缩放9倍</Control>
 			<Control ID="mnuBilinearInterpolation">使用双线性插值</Control>
 			<Control ID="mnuAudioConfig">声音</Control>
 			<Control ID="mnuInput">输入</Control>
@@ -129,9 +131,6 @@
 			<Control ID="mnuRandomGame">随机加载游戏</Control>
 			<Control ID="mnuTakeScreenshot">截图</Control>
 			<Control ID="mnuHelp">帮助</Control>
-			<Control ID="mnuOnlineHelp">在线帮助</Control>
-			<Control ID="mnuCheckForUpdates">检查更新</Control>
-			<Control ID="mnuReportBug">报告错误</Control>
 			<Control ID="mnuHelpWindow">命令行选项</Control>
 			<Control ID="mnuAbout">关于</Control>
 
@@ -386,7 +385,7 @@
 			<Control ID="tpgGeneral">常规</Control>
 			<Control ID="lblDisplayLanguage">语言：</Control>
 			<Control ID="chkSingleInstance">单实例模式</Control>
-			<Control ID="chkAutomaticallyCheckForUpdates">自动检查更新</Control>
+
 			<Control ID="lblPauseBackgroundSettings">暂停/后台设置</Control>
 			<Control ID="lblMiscSettings">其他</Control>
 			<Control ID="chkAutoHideMenu">自动隐藏菜单</Control>
@@ -581,8 +580,9 @@
 		<Form ID="frmAbout" Title="关于 Mesen">
 			<Control ID="labelProductName">Mesen</Control>
 			<Control ID="labelCopyright">© 2020 M. Bibaud（又名Sour）</Control>
-			<Control ID="labelVersion">版本：</Control>
-			<Control ID="labelForkVer">该版本在0.9.9版之后</Control>
+			<Control ID="labelVersion">版本：1.0</Control>
+			<Control ID="labelForkOld">Mesen-X由NovaSquirrel魔改而来</Control>
+			<Control ID="labelForkNew">Mesen-Y由Yave Yu魔改而来</Control>
 
 			<Control ID="grpAcknowledgements">鸣谢</Control>
 			<Control ID="lblUsedSoftware">本软件使用下列库：</Control>
@@ -591,9 +591,8 @@
 			<Control ID="lblAudio">音频：</Control>
 			<Control ID="lblEmulation">模拟：</Control>
 			<Control ID="lblCheats">作弊：</Control>
-			<Control ID="lblSpecialThanks">衷心感谢每一个捐赠、反馈、测试、分享或对本模拟器做出贡献的人！</Control>
+			<Control ID="lblSpecialThanks">衷心感谢每一个捐赠、反馈、测试、分享或对本模拟器做出贡献的人！汉化：Licardo、ikyokyo</Control>
 
-			<Control ID="lblDonate">你正在使用Mesen-Y分支，作者Yave Yu。&#13;基于NovaSquirrel的Mesen-X分支修改而来。&#13;汉化：Licardo、ikyokyo&#13;</Control>
 			<Control ID="okButton">确定</Control>
 		</Form>
 		<Form ID="frmGameConfig" Title="游戏配置">
@@ -1106,7 +1105,9 @@
 			<Value ID="Prescale4x">预缩放4倍</Value>
 			<Value ID="Prescale5x">预缩放5倍</Value>
 			<Value ID="Prescale6x">预缩放6倍</Value>
+			<Value ID="Prescale7x">预缩放7倍</Value>
 			<Value ID="Prescale8x">预缩放8倍</Value>
+			<Value ID="Prescale9x">预缩放9倍</Value>
 		</Enum>
 		<Enum ID="VsDualOutputOption">
 			<Value ID="Both">双机</Value>
@@ -1162,8 +1163,8 @@
 			<Value ID="Polish">Polski</Value>
 		</Enum>
 		<Enum ID="RamPowerOnState">
-			<Value ID="AllZeros">全0（默认）</Value>
-			<Value ID="AllOnes">全1</Value>
+			<Value ID="AllZeros">全00</Value>
+			<Value ID="AllOnes">全FF</Value>
 			<Value ID="Random">随机</Value>
 		</Enum>
 		<Enum ID="CheatCurrentFilterType">

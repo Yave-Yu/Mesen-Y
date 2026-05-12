@@ -74,7 +74,9 @@
 			<Control ID="mnuPrescale4xFilter">Preescala 4x</Control>
 			<Control ID="mnuPrescale5xFilter">Preescala 5x</Control>
 			<Control ID="mnuPrescale6xFilter">Preescala 6x</Control>
+			<Control ID="mnuPrescale7xFilter">Preescala 7x</Control>
 			<Control ID="mnuPrescale8xFilter">Preescala 8x</Control>
+			<Control ID="mnuPrescale9xFilter">Preescala 9x</Control>
 			<Control ID="mnuBilinearInterpolation">Usar interpolación bilinear</Control>
 			<Control ID="mnuAudioConfig">Audio</Control>
 			<Control ID="mnuInput">Controles</Control>
@@ -127,9 +129,6 @@
 			<Control ID="mnuTakeScreenshot">Captura de pantalla</Control>
 			<Control ID="mnuRandomGame">Cargar juego aleatorio</Control>
 			<Control ID="mnuHelp">Ayuda</Control>
-			<Control ID="mnuOnlineHelp">Ayuda Online</Control>
-			<Control ID="mnuCheckForUpdates">Buscar actualizaciones</Control>
-			<Control ID="mnuReportBug">Enviar un error</Control>
 			<Control ID="mnuHelpWindow">Opciones de linea de comandos</Control>
 			<Control ID="mnuAbout">Acerca de...</Control>
 
@@ -382,7 +381,6 @@
 			<Control ID="tpgGeneral">General</Control>
 			<Control ID="lblDisplayLanguage">Idioma de pantalla:</Control>
 			<Control ID="chkSingleInstance">Permitir una sola copia de Mesen a la vez</Control>
-			<Control ID="chkAutomaticallyCheckForUpdates">Buscar actualizaciones automáticamente</Control>
 
 			<Control ID="lblPauseBackgroundSettings">Pausa/Configuración en segundo plano</Control>
 			<Control ID="lblMiscSettings">Configuraciones varias</Control>
@@ -579,8 +577,9 @@
 		<Form ID="frmAbout" Title="Acerca de...">
 			<Control ID="labelProductName">Mesen</Control>
 			<Control ID="labelCopyright">© 2020 M. Bibaud (aka Sour)</Control>
-			<Control ID="labelVersion">Versión:</Control>
-			<Control ID="labelForkVer">Esta versión es posterior a la 0.9.9</Control>
+			<Control ID="labelVersion">Versión: 1.0</Control>
+			<Control ID="labelForkOld">Mesen-X por NovaSquirrel</Control>
+			<Control ID="labelForkNew">Mesen-Y por Yave Yu</Control>
 
 			<Control ID="grpAcknowledgements">Agradecimientos</Control>
 			<Control ID="lblUsedSoftware">Este software usa las siguientes librerías:</Control>
@@ -591,7 +590,6 @@
 			<Control ID="lblCheats">Trucos:</Control>
 			<Control ID="lblSpecialThanks">¡Y gracias a todos los que han contribuido de alguna manera! (donaciones, informes de errores, pruebas, compartir información, etc.)</Control>
 
-			<Control ID="lblDonate">Estás usando un fork, Mesen-Y por Yave Yu.&#xA;Este fork está basado en Mesen-X, por NovaSquirrel.</Control>
 			<Control ID="okButton">&amp;OK</Control>
 		</Form>
 		<Form ID="frmGameConfig" Title="Configuración de juego">
@@ -1099,7 +1097,9 @@
 			<Value ID="Prescale4x">Preescala 4x</Value>
 			<Value ID="Prescale5x">Preescala 5x</Value>
 			<Value ID="Prescale6x">Preescala 6x</Value>
+			<Value ID="Prescale7x">Preescala 7x</Value>
 			<Value ID="Prescale8x">Preescala 8x</Value>
+			<Value ID="Prescale9x">Preescala 9x</Value>
 		</Enum>
 		<Enum ID="VsDualOutputOption">
 			<Value ID="Both">Ambos</Value>
@@ -1134,8 +1134,8 @@
 			<Value ID="BottomRight">Abajo a la derecha</Value>
 		</Enum>
 		<Enum ID="RamPowerOnState">
-			<Value ID="AllZeros">Todos los bits a 0 (por defecto)</Value>
-			<Value ID="AllOnes">Todos los bits a 1</Value>
+			<Value ID="AllZeros">Todos los bits a 00</Value>
+			<Value ID="AllOnes">Todos los bits a FF</Value>
 			<Value ID="Random">Valores aleatorios</Value>
 		</Enum>
 		<Enum ID="CheatCurrentFilterType">

@@ -74,7 +74,9 @@
 			<Control ID="mnuPrescale4xFilter">Предделитель 4x</Control>
 			<Control ID="mnuPrescale5xFilter">Предделитель 5x</Control>
 			<Control ID="mnuPrescale6xFilter">Предделитель 6x</Control>
+			<Control ID="mnuPrescale7xFilter">Предделитель 7x</Control>
 			<Control ID="mnuPrescale8xFilter">Предделитель 8x</Control>
+			<Control ID="mnuPrescale9xFilter">Предделитель 9x</Control>
 			<Control ID="mnuBilinearInterpolation">Билинейная интерполяция</Control>
 			<Control ID="mnuAudioConfig">Звук</Control>
 			<Control ID="mnuInput">Устройства ввода</Control>
@@ -127,9 +129,6 @@
 			<Control ID="mnuTakeScreenshot">Сделать скриншот</Control>
 			<Control ID="mnuRandomGame">Загрузить случайную игру</Control>
 			<Control ID="mnuHelp">Помощь</Control>
-			<Control ID="mnuOnlineHelp">Онлайн-помощь</Control>
-			<Control ID="mnuCheckForUpdates">Проверить обновления</Control>
-			<Control ID="mnuReportBug">Сообщить об ошибке</Control>
 			<Control ID="mnuHelpWindow">Настройки командной строки</Control>
 			<Control ID="mnuAbout">О программе</Control>
 
@@ -382,7 +381,6 @@
 			<Control ID="tpgGeneral">Общие</Control>
 			<Control ID="lblDisplayLanguage">Язык :</Control>
 			<Control ID="chkSingleInstance">Запускать только одну копию Mesen</Control>
-			<Control ID="chkAutomaticallyCheckForUpdates">Автоматически проверять обновления</Control>
 
 			<Control ID="lblPauseBackgroundSettings">Настройки паузы/заднего плана</Control>
 			<Control ID="lblMiscSettings">Дополнительные настройки</Control>
@@ -579,8 +577,9 @@
 		<Form ID="frmAbout" Title="О программе">
 			<Control ID="labelProductName">Mesen</Control>
 			<Control ID="labelCopyright">© 2020 M. Bibaud (aka Sour)</Control>
-			<Control ID="labelVersion">Версия:</Control>
-			<Control ID="labelForkVer">Эта версия после 0.9.9</Control>
+			<Control ID="labelVersion">Версия: 1.0</Control>
+			<Control ID="labelForkOld">Mesen-X от NovaSquirrel</Control>
+			<Control ID="labelForkNew">Mesen-Y от Yave Yu</Control>
 
 			<Control ID="grpAcknowledgements">Acknowledgements</Control>
 			<Control ID="lblUsedSoftware">This software uses the following libraries:</Control>
@@ -591,7 +590,6 @@
 			<Control ID="lblCheats">Cheats:</Control>
 			<Control ID="lblSpecialThanks">And thank you to everybody who has contributed in any way! (donations, bug reports, testing, sharing information, etc.)</Control>
 
-			<Control ID="lblDonate">Вы используете форк Mesen-Y от Yave Yu.&#xA;Этот форк основан на Mesen-X от NovaSquirrel.</Control>
 			<Control ID="okButton">&amp;OK</Control>
 		</Form>
 		<Form ID="frmGameConfig" Title="Конфигурация">
@@ -1102,7 +1100,9 @@
 			<Value ID="Prescale4x">Предделитель 4x</Value>
 			<Value ID="Prescale5x">Предделитель 5x</Value>
 			<Value ID="Prescale6x">Предделитель 6x</Value>
+			<Value ID="Prescale7x">Предделитель 7x</Value>
 			<Value ID="Prescale8x">Предделитель 8x</Value>
+			<Value ID="Prescale9x">Предделитель 9x</Value>
 		</Enum>
 		<Enum ID="VsDualOutputOption">
 			<Value ID="Both">Both</Value>
@@ -1151,8 +1151,8 @@
 			<Value ID="Polish">Polski</Value>
 		</Enum>
 		<Enum ID="RamPowerOnState">
-			<Value ID="AllZeros">Все 0 (По умолчанию)</Value>
-			<Value ID="AllOnes">Все 1</Value>
+			<Value ID="AllZeros">Все 00</Value>
+			<Value ID="AllOnes">Все FF</Value>
 			<Value ID="Random">Случайные значения</Value>
 		</Enum>
 		<Enum ID="CheatCurrentFilterType">

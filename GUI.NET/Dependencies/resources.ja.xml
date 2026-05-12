@@ -74,7 +74,9 @@
 			<Control ID="mnuPrescale4xFilter">Prescale 4x</Control>
 			<Control ID="mnuPrescale5xFilter">Prescale 5x</Control>
 			<Control ID="mnuPrescale6xFilter">Prescale 6x</Control>
+			<Control ID="mnuPrescale7xFilter">Prescale 7x</Control>
 			<Control ID="mnuPrescale8xFilter">Prescale 8x</Control>
+			<Control ID="mnuPrescale9xFilter">Prescale 9x</Control>
 			<Control ID="mnuBilinearInterpolation">バイリニア補間</Control>
 			<Control ID="mnuAudioConfig">音声</Control>
 			<Control ID="mnuInput">コントローラ</Control>
@@ -127,9 +129,6 @@
 			<Control ID="mnuTakeScreenshot">スクリーンショットを撮る</Control>
 			<Control ID="mnuRandomGame">ランダムゲームを開く</Control>
 			<Control ID="mnuHelp">ヘルプ</Control>
-			<Control ID="mnuOnlineHelp">オンラインヘルプ</Control>
-			<Control ID="mnuCheckForUpdates">アップデートの確認</Control>
-			<Control ID="mnuReportBug">バグレポート</Control>
 			<Control ID="mnuHelpWindow">コマンドラインオプション</Control>
 			<Control ID="mnuAbout">Mesenとは</Control>
 
@@ -382,7 +381,6 @@
 			<Control ID="tpgGeneral">全般</Control>
 			<Control ID="lblDisplayLanguage">言語:</Control>
 			<Control ID="chkSingleInstance">Mesenを単一インスタンスモードにする</Control>
-			<Control ID="chkAutomaticallyCheckForUpdates">自動的にアップデートを確認</Control>
 
 			<Control ID="lblPauseBackgroundSettings">ポーズ・バックグラウンド設定</Control>
 			<Control ID="lblMiscSettings">その他</Control>
@@ -579,8 +577,9 @@
 		<Form ID="frmAbout" Title="Mesenとは">
 			<Control ID="labelProductName">Mesen</Control>
 			<Control ID="labelCopyright">© 2020 M. Bibaud（aka Sour）</Control>
-			<Control ID="labelVersion">バージョン:</Control>
-			<Control ID="labelForkVer">このバージョンは0.9.9以降です</Control>
+			<Control ID="labelVersion">バージョン: 1.0</Control>
+			<Control ID="labelForkOld">NovaSquirrelによるMesen-X</Control>
+			<Control ID="labelForkNew">Yave YuによるMesen-Y</Control>
 
 			<Control ID="grpAcknowledgements">謝辞</Control>
 			<Control ID="lblUsedSoftware">次のソフトが含まれています:</Control>
@@ -591,7 +590,6 @@
 			<Control ID="lblCheats">チートコード:</Control>
 			<Control ID="lblSpecialThanks">バグ報告とかで手伝ってくれた皆様にも感謝しています。</Control>
 
-			<Control ID="lblDonate">あなたはYave YuによるMesen-YというForkを使用しています。&#13;このForkはNovaSquirrelによるMesen-Xに基づいています。</Control>
 			<Control ID="okButton">&amp;OK</Control>
 		</Form>
 		<Form ID="frmGameConfig" Title="ゲーム設定">
@@ -1101,7 +1099,9 @@
 			<Value ID="Prescale4x">Prescale 4x</Value>
 			<Value ID="Prescale5x">Prescale 5x</Value>
 			<Value ID="Prescale6x">Prescale 6x</Value>
+			<Value ID="Prescale7x">Prescale 7x</Value>
 			<Value ID="Prescale8x">Prescale 8x</Value>
+			<Value ID="Prescale9x">Prescale 9x</Value>
 		</Enum>
 		<Enum ID="VsDualOutputOption">
 			<Value ID="Both">両方</Value>
@@ -1150,8 +1150,8 @@
 			<Value ID="Polish">Polski</Value>
 		</Enum>
 		<Enum ID="RamPowerOnState">
-			<Value ID="AllZeros">ビット全てを０にする　（デフォルト）</Value>
-			<Value ID="AllOnes">ビット全てを１にする</Value>
+			<Value ID="AllZeros">ビット全てを00にする</Value>
+			<Value ID="AllOnes">ビット全てをFFにする</Value>
 			<Value ID="Random">乱数</Value>
 		</Enum>
 		<Enum ID="CheatCurrentFilterType">

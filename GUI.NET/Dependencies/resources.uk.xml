@@ -74,7 +74,9 @@
 			<Control ID="mnuPrescale4xFilter">Піксель 4x</Control>
 			<Control ID="mnuPrescale5xFilter">Піксель 5x</Control>
 			<Control ID="mnuPrescale6xFilter">Піксель 6x</Control>
+			<Control ID="mnuPrescale7xFilter">Піксель 7x</Control>
 			<Control ID="mnuPrescale8xFilter">Піксель 8x</Control>
+			<Control ID="mnuPrescale9xFilter">Піксель 9x</Control>
 			<Control ID="mnuBilinearInterpolation">Білінійна інтерполяція</Control>
 			<Control ID="mnuAudioConfig">Звук</Control>
 			<Control ID="mnuInput">Пристрої введення</Control>
@@ -127,9 +129,6 @@
 			<Control ID="mnuTakeScreenshot">Зробити скріншот</Control>
 			<Control ID="mnuRandomGame">Завантажити випадкову гру</Control>
 			<Control ID="mnuHelp">Допомога</Control>
-			<Control ID="mnuOnlineHelp">Онлайн допомога</Control>
-			<Control ID="mnuCheckForUpdates">Перевірити оновлення</Control>
-			<Control ID="mnuReportBug">Повідомити про помилку</Control>
 			<Control ID="mnuHelpWindow">Параметри командного рядка</Control>
 			<Control ID="mnuAbout">Про програму</Control>
 
@@ -382,7 +381,6 @@
 			<Control ID="tpgGeneral">Загальні</Control>
 			<Control ID="lblDisplayLanguage">Мова :</Control>
 			<Control ID="chkSingleInstance">Дозволити лише одну копію Mesen одночасно</Control>
-			<Control ID="chkAutomaticallyCheckForUpdates">Автоматично перевіряти оновлення</Control>
 
 			<Control ID="lblPauseBackgroundSettings">Пауза/Фонові настройки</Control>
 			<Control ID="lblMiscSettings">Різнi настройки</Control>
@@ -579,8 +577,9 @@
 		<Form ID="frmAbout" Title="Про програму">
 			<Control ID="labelProductName">Mesen</Control>
 			<Control ID="labelCopyright">© 2020 M. Bibaud (aka Sour)</Control>
-			<Control ID="labelVersion">Версiя:</Control>
-			<Control ID="labelForkVer">Ця версія після 0.9.9</Control>
+			<Control ID="labelVersion">Версiя: 1.0</Control>
+			<Control ID="labelForkOld">Mesen-X від NovaSquirrel</Control>
+			<Control ID="labelForkNew">Mesen-Y від Yave Yu</Control>
 
 			<Control ID="grpAcknowledgements">Acknowledgements</Control>
 			<Control ID="lblUsedSoftware">This software uses the following libraries:</Control>
@@ -591,7 +590,6 @@
 			<Control ID="lblCheats">Cheats:</Control>
 			<Control ID="lblSpecialThanks">And thank you to everybody who has contributed in any way! (donations, bug reports, testing, sharing information, etc.)</Control>
 
-			<Control ID="lblDonate">Ви використовуєте форк Mesen-Y від Yave Yu.&#xA;Цей форк базується на Mesen-X від NovaSquirrel.</Control>
 			<Control ID="okButton">&amp;OK</Control>
 		</Form>
 		<Form ID="frmGameConfig" Title="Конфігурація">
@@ -1101,7 +1099,9 @@
 			<Value ID="Prescale4x">Піксель 4x</Value>
 			<Value ID="Prescale5x">Піксель 5x</Value>
 			<Value ID="Prescale6x">Піксель 6x</Value>
+			<Value ID="Prescale7x">Піксель 7x</Value>
 			<Value ID="Prescale8x">Піксель 8x</Value>
+			<Value ID="Prescale9x">Піксель 9x</Value>
 		</Enum>
 		<Enum ID="VsDualOutputOption">
 			<Value ID="Both">Both</Value>
@@ -1150,8 +1150,8 @@
 			<Value ID="Polish">Polski</Value>
 		</Enum>
 		<Enum ID="RamPowerOnState">
-			<Value ID="AllZeros">Всi 0 (По умолчанию)</Value>
-			<Value ID="AllOnes">Всi 1</Value>
+			<Value ID="AllZeros">Всi 00</Value>
+			<Value ID="AllOnes">Всi FF</Value>
 			<Value ID="Random">Випадкові значення</Value>
 		</Enum>
 		<Enum ID="CheatCurrentFilterType">
