@@ -2363,7 +2363,9 @@ namespace Mesen.GUI
 		Prescale4x = 21,
 		Prescale5x = 22,
 		Prescale6x = 23,
-		Prescale8x = 24,
+		Prescale7x = 24,
+		Prescale8x = 25,
+		Prescale9x = 26
 	}
 
 	public enum HDPackOuputTileType
